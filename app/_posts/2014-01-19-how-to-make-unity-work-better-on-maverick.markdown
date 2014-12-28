@@ -18,8 +18,7 @@ sourceUrl: "http://developers.nravo.com/how-to-make-unity-work-better-on-maveric
 
 But today we’ll talk not about how “bad” or “good” Apple is, but how to improve Unity editor performance on Maverick.
 
-**Note:**{:.h-title}
-this instructions won’t fix issue completely, but at least make editor performance suitable to work with.
+This instructions won’t fix issue completely, but at least make editor performance suitable to work with.
 {:.h-note}
 
 So let’s start:

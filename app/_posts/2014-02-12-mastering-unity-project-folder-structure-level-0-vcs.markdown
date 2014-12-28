@@ -42,16 +42,14 @@ You’ll find that there are quite a lot of files and folders, good news that **
 
 `testproject.userprefs` and `testproject-csharp.userprefs` – configuration files where MonoDevelop stores current opened files, breakpoints, watches etc.
 
-**Note 1:**{:.h-title}
-all files listed above except `.userprefs` are re-generated each time you select Assets → Sync MonoDevelop Project in Unity Editor menu.
+All files listed above except `.userprefs` are re-generated each time you select Assets → Sync MonoDevelop Project in Unity Editor menu.
 {:.h-note}
 
-**Note 2:**{:.h-title}
-read why there are so many project files generated from [Unity documentation](https://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html).
+
+Read why there are so many project files generated from [Unity documentation](https://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html).
 {:.h-note}
 
-**Tip:**{:.h-title}
-after syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice less project files and no errors related to JS.
+After syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice less project files and no errors related to JS.
 ![image]({{site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-settings.png) <!-- Unity Project Folder Structure. Tip 1 -->
 {:.h-tip}
 

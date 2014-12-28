@@ -76,30 +76,40 @@
         text-align: right;
     }
 }
-.h-title {
-    display: block;
-}
 .h-light {
     margin: 25px 15px;
     padding: 20px;
     display: block !important;
     border-left-width: 5px;
     border-left-style: solid;
+    &:before {
+        display: block;
+        font-weight: $bold;
+    }
 }
 .h-note {
     @extend .h-light;
     border-left-color: $note-color;
     background: rgba($note-color, .05);
+    &:before {
+        content: 'Note:';
+    }
 }
 .h-warning {
     @extend .h-light;
     border-left-color: $warning-color;
     background: rgba($warning-color, .05);
+    &:before {
+        content: 'Warning:';
+    }
 }
 .h-tip {
     @extend .h-light;
     border-left-color: $tip-color;
     background: rgba($tip-color, .05);
+    &:before {
+        content: 'Tip:';
+    }
 }
 .article-header {
     margin-bottom: 40px;
@@ -154,6 +164,31 @@
         display: inline-block;
         line-height: 100%;
     }
+}
+.post-switcher {
+    margin-top: 40px;
+}
+.switcher-item {
+    a {
+        padding: 20px;
+        display: table;
+        width: 100%;
+        background: rgba($text-color, 0.03);
+        color: $text-color;
+        transition: background $transition-duration $transition-animation;
+        &:hover {
+            background: rgba($text-color, 0.06);
+        }
+    }
+    .arrow {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 24px;
+    }
+}
+.switcher-content {
+    display: table-cell;
+    padding: 10px;
 }
 .comments {
     margin-top: 50px;

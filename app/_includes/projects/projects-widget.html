@@ -1,12 +1,12 @@
 <div class="projects-widget col-md-5 col-md-offset-1">
-    <h5 class="widget-title">Featured projects</h5>
+    <span class="widget-title">Featured projects</span>
     <ul>
         {% for item in site.data.projects reversed %}
             {% if item.featured %}
                 <li class="project-item">
                     <a href="{{ item.projectPage }}">
                         <h6 class="project-title">{{ item.title }}</h6>
-                        <p class="project-details">{{ item.description | truncate: 50 }}</p>     
+                        <p class="project-details">{{ item.description | truncate: 50 }}</p>
                     </a>
                 </li>
             {% endif %}

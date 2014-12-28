@@ -7,7 +7,11 @@
             {% for nav in site.data.personal.navigation %}
                 <li>
                     {% assign navlink = nav.permalink | prepend: site.baseurl %}
-                    <a class="nav-link {% if nav.permalink == page.permalink %}current{% endif %}" href="{{ navlink }}" {% if nav.link %}target="_blank"{% endif %}>{{ nav.text }}</a>
+                    {% if nav.permalink == page.permalink or (nav.permalink == "/" and page.permalink == null) %}
+                        {% assign current = true %}
+                    {% endif %}
+                    <a class="nav-link {% if current %}current{% endif %}" href="{{ navlink }}" {% if nav.link %}target="_blank"{% endif %}>{{ nav.text }}</a>
+                    {% assign current = false %}
                 </li>
             {% endfor %}
         </ul>

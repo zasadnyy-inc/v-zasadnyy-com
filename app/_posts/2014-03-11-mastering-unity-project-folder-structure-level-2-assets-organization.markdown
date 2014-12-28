@@ -51,10 +51,8 @@ When we started restructuring we had two simple goals: root folder should be as 
 `/StaticAssets/Effects` – folder for models, materials, textures, prefabs, etc. used for particle systems.
 
 
-WARNING
 **Don’t use spaces in file and folder names**. We faced with this problem during project build setup on CI server, as we found Unity3D [command line tools][comand-line-tools] can’t automatically process paths with spaces.
 {:.h-warning}
-
 
 
 #### Naming conventions

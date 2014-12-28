@@ -18,6 +18,7 @@ b, strong {
 }
 a {
     @include linkColor($main-color);
+    transition: $color-animation;
     &:hover, &:active, &:focus {
         text-decoration: none;
     }

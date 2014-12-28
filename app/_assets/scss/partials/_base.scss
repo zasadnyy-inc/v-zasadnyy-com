@@ -33,6 +33,12 @@ $note-color: #03A9F4;
 $warning-color: $main-color;
 $tip-color: #4CAF50;
 
+// Animations
+$transition-duration: 0.2s;
+$transition-animation: ease-in-out;
+$color-animation: color $transition-duration $transition-animation;
+$opacity-animation: opacity $transition-duration $transition-animation;
+$box-shadow-animation: box-shadow $transition-duration $transition-animation;
 
 // Path
 $image-dir: "../img";

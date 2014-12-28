@@ -42,7 +42,7 @@ Scripts inside an Editor folder will not be included in your game’s build. The
 You can have multiple `Editor` folders throughout your project.
 
 
-Note: an `Editor` folder which is not located in another special folder can be placed/nested anywhere in the project. However, if it’s in `Standard Assets`, `Pro Standard Assets`, or `Plugins`, it must be a direct child of these folders. Otherwise, it will not get processed. For example, it’s ok to have a path like `My Extension/Scripts/Editor`, but if placed in a special folder, it must always be `Standard Assets/Editor/My Extension/Scripts`, or `Pro Standard Assets/Editor/My Extension/Scripts`, or `Plugins/Editor/My Extension/Scripts`.
+An `Editor` folder which is not located in another special folder can be placed/nested anywhere in the project. However, if it’s in `Standard Assets`, `Pro Standard Assets`, or `Plugins`, it must be a direct child of these folders. Otherwise, it will not get processed. For example, it’s ok to have a path like `My Extension/Scripts/Editor`, but if placed in a special folder, it must always be `Standard Assets/Editor/My Extension/Scripts`, or `Pro Standard Assets/Editor/My Extension/Scripts`, or `Plugins/Editor/My Extension/Scripts`.
 {:.h-note}
 
 More about custom editors on the Unity [documentation](http://docs.unity3d.com/Documentation/Components/ExtendingTheEditor.html).

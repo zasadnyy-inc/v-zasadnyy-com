@@ -13,9 +13,9 @@ include: ['.htaccess']
 future: true
 show_drafts: true
 
-permalink: pretty
+permalink: '/:categories/:title'
 paginate: 5
-paginate_path: 'page:num'
+paginate_path: '/page:num'
 
 # Markdown library
 markdown: kramdown
