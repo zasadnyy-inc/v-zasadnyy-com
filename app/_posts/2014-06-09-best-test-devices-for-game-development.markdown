@@ -64,10 +64,9 @@ Test devices table
 
 ![result table]({{ site.baseurl }}/img/posts/best-test-devices-for-game-development-table.png)
 
-<div markdown="1" class="note">
-**NOTE**
+<div markdown="1" class="h-note">
 
-[Kindle Fire][kindle] and [Nvidia Shield][shield] are in the table, but not in statistics data.
+ [Kindle Fire][kindle] and [Nvidia Shield][shield] are in the table, but not in statistics data.
 
  First one was selected to list because of it’s almost square screen that allows you to test your UI layouts on non-standard proportions. On the other hand it’s good to have Amazon device if you’ll decide to publish game to their store.
 
