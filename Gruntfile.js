@@ -229,6 +229,33 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     check: 'gzip'
+                },
+                files: [{
+                    expand: true,
+                    cwd: '.tmp/<%= yeoman.baseurl %>/css',
+                    src: ['*.css'],
+                    dest: '.tmp/<%= yeoman.baseurl %>/css'
+                }]
+            }
+        },
+        uncss: {
+            dist: {
+                options: {
+                    stylesheets: ['.tmp/<%= yeoman.baseurl %>/css/blog.css'],
+                    report: 'min'
+                },
+                files: {
+                    '<%= yeoman.dist %>/<%= yeoman.baseurl %>/css/tidy.css': ['<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html']
+                }
+            }
+        },
+        cmq: {
+            options: {
+                log: true
+            },
+            dist: {
+                files: {
+                    '.tmp/<%= yeoman.baseurl %>/css/blog.css': ['.tmp/<%= yeoman.baseurl %>/css/*.css']
                 }
             }
         },
@@ -320,11 +347,13 @@ module.exports = function(grunt) {
         'sass:dist',
         'autoprefixer:dist',
         'useminPrepare',
-        'cssmin',
         // 'uglify:dist',
         'imagemin',
         'svgmin',
+        'cmq',
         'usemin',
+        'cssmin',
+        // 'uncss',
         'htmlmin'
     ]);
 
