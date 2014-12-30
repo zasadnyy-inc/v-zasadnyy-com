@@ -9,16 +9,15 @@ name: Vitaliy
 surname: Zasadnyy
 
 # Social resharing
-twitter_image: ""
-google_plus_image: ""
-facebook_image: ""
+twitter_image: "/img/photo.jpg"
+google_plus_image: "/img/photo.jpg"
+facebook_image: "/img/photo.jpg"
 
 # Navigation
 navigation:
  - {permalink: "/", text: "Blog"}
  - {permalink: "/slides/", text: "Slides"}
  - {permalink: "/projects/", text: "Projects"}
- # - {permalink: "/about/", text: "About me", sub-navigation: ""}
 
 # Blog
 images_folder: "/img/posts/"

@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         yeoman: {
             app: 'app',
             dist: 'dist',
-            baseurl: 'vzasadnyy'
+            baseurl: 'v-zasadnyy-com'
         },
         watch: {
             sass: {
