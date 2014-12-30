@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>http://zasadnyy-inc.github.io/vzasadnyy/</link>
+    <atom:link href="http://zasadnyy-inc.github.io/vzasadnyy/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 30 Dec 2014 23:53:47 +0200</pubDate>
+    <lastBuildDate>Tue, 30 Dec 2014 23:53:47 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Best test devices for game development</title>
+        <description>&lt;p&gt;Recently I had a task to select what Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most part of possible hardware configurations (screen size, GPU vendor, etc) taking into account that mainly we make games using Unity 3D.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-is-it-important-to-test-on-devices-with-different-gpus&quot;&gt;Why is it important to test on devices with different GPUs?&lt;/h4&gt;
+
+&lt;p&gt;If we’re talking about iOS, this question doesn’t make sense because all iPhones and iPads use PowerVR GPUs. But Android devices can be powered by &lt;a href=&quot;http://en.wikipedia.org/wiki/Imageon&quot;&gt;Adreno&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Tegra&quot;&gt;Tegra&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Mali_(GPU)&quot;&gt;Mali&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/PowerVR&quot;&gt;PowerVR&lt;/a&gt; GPUs. These differ in texture formats and how alpha is handled, and of course they all have different drivers and shader compilers. Unity documentation recommends using ETC texture compression, which is supported by all Android devices, is ‘safe’ and this is basically true, but in some cases ETC could not work the best or it’s possible to achieve better performance using other compression format adopted for certain GPU.&lt;/p&gt;
+
+&lt;h4 id=&quot;market-research-results&quot;&gt;Market research results&lt;/h4&gt;
+
+&lt;p&gt;According to statistics from &lt;a href=&quot;http://www.appbrain.com/stats/stats-index&quot;&gt;AppBrain&lt;/a&gt; for today the most popular Android phones are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Samsung Galaxy S3: 7.5 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy S4: 6.2 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy S2: 3.8 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy Note 2: 2.9 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy S3 Mini: 2.5 %&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Top device models according to &lt;a href=&quot;http://stats.unity3d.com/mobile/device-android.html&quot;&gt;Unity Hardware Stats&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Galaxy M: 4.1%&lt;/li&gt;
+  &lt;li&gt;Galaxy S4: 4.0%&lt;/li&gt;
+  &lt;li&gt;Galaxy Tab 3 7.0: 3.9%&lt;/li&gt;
+  &lt;li&gt;MI-2: 3.4%&lt;/li&gt;
+  &lt;li&gt;Galaxy Note 3: 3.2%&lt;/li&gt;
+  &lt;li&gt;Galaxy Note II: 3.1%&lt;/li&gt;
+  &lt;li&gt;Galaxy S2: 3.1%&lt;/li&gt;
+  &lt;li&gt;Galaxy S3: 3.0%&lt;/li&gt;
+  &lt;li&gt;Galaxy S3 Mini: 2.2%&lt;/li&gt;
+  &lt;li&gt;Galaxy S4 LTE: 2.0%&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Most popular GPU models according to &lt;a href=&quot;http://stats.unity3d.com/mobile/device-android.html&quot;&gt;Unity Hardware Stats&lt;/a&gt; data:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mali 400 MP: 26.8%&lt;/li&gt;
+  &lt;li&gt;PowerVR SGX544: 10.1%&lt;/li&gt;
+  &lt;li&gt;Adreno 320: 8.5%&lt;/li&gt;
+  &lt;li&gt;PowerVR SGX531: 7.1%&lt;/li&gt;
+  &lt;li&gt;Adreno 330: 5.9%&lt;/li&gt;
+  &lt;li&gt;Adreno 200: 5.7%&lt;/li&gt;
+  &lt;li&gt;Videocore IV: 5.4%&lt;/li&gt;
+  &lt;li&gt;PowerVR SGX540: 5.4%&lt;/li&gt;
+  &lt;li&gt;Adreno 203: 4.7%&lt;/li&gt;
+  &lt;li&gt;Adreno 305: 4.6%&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After merging all statistical data and requirements together we’ve got table that shows what devices to buy to fulfill the most popular gpu/screen size combinations:
+Test devices table&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/best-test-devices-for-game-development-table.png&quot; alt=&quot;result table&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;h-note&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://www.amazon.com/kindle-fire-hdx-student-gaming-tablet/dp/B00BWYQ9YE&quot;&gt;Kindle Fire&lt;/a&gt; and &lt;a href=&quot;http://shield.nvidia.com/&quot;&gt;Nvidia Shield&lt;/a&gt; are in the table, but not in statistics data.&lt;/p&gt;
+
+  &lt;p&gt;First one was selected to list because of it’s almost square screen that allows you to test your UI layouts on non-standard proportions. On the other hand it’s good to have Amazon device if you’ll decide to publish game to their store.&lt;/p&gt;
+
+  &lt;p&gt;According Nvidia Shield, it is the perfect device to test user interaction using mobile game controller.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Do you use other devices for game testing? Share you list in the comments.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Jun 2014 23:20:38 +0300</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/best-test-devices-for-game-development</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/best-test-devices-for-game-development</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>Mastering Unity Project Folder Structure. Level 2 – Assets Organization</title>
+        <description>&lt;p&gt;Have you ever faced a problem that it was hard to find assets in your project? If you’re new to Unity and make game more complex than &lt;a href=&quot;https://www.google.com/search?q=Space+Invaders&amp;amp;oq=Space+Invaders&quot;&gt;Space Invaders&lt;/a&gt;, the answer is probably yes. That’s exactly what happened with our team, we are working on a big 3D MMO game and three months ago we decided that our project requires restructuring. In this post I’ll show folder structure that we use, explain how it is connected with art production pipeline and describe some naming conventions that help us a lot.&lt;/p&gt;
+
+&lt;p&gt;After a few hours of googling I found several topics about project structure best practices:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.glenstevens.ca/unity3d-best-practices/&quot;&gt;http://www.glenstevens.ca/unity3d-best-practices/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://team3dadiu.wikispaces.com/Unity+Project+Structure&quot;&gt;http://team3dadiu.wikispaces.com/Unity+Project+Structure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&quot;&gt;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All these posts describe very simple cases (suitable for small games) and some basic rules of assets organization. So we decided to create our own set of rules and now, after several iterations of folder restructuring we are ready to share them.&lt;/p&gt;
+
+&lt;h4 id=&quot;assets-folder-structure&quot;&gt;Assets Folder Structure&lt;/h4&gt;
+
+&lt;p&gt;When we started restructuring we had two simple goals: root folder should be as clean as possible and prepare folder structure to use Asset Bundles. Below you can find a screenshot from our project window and explanations to some folders.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/mastering-unity-project-folder-structure-level-2-folder-structure.png&quot; alt=&quot;Assets folder structure&quot; class=&quot;pull-left&quot; style=&quot;margin: 10px 30px 30px 0px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/DynamicAssets/[asset bundle id]/Resources&lt;/code&gt; – place to put assets dynamically loaded via &lt;code&gt;Resources.Load(...)&lt;/code&gt; method. Common folder contains only base resources packed with game, resources from other folders are compiled into Asset Bundles and loaded from our servers on demand. Note, if you’re not using asset bundles you can only have one &lt;code&gt;Resources&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/Extensions/[extension name]&lt;/code&gt; – by default, all third party extensions like NGUI are unpacked to the &lt;code&gt;Assets&lt;/code&gt; folder root, but after fifth extension you’ll get mess in the project, so we have decided to create a separate folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/StaticAssets&lt;/code&gt; – when we’ve just started our game we used folder structure described &lt;a href=&quot;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&quot;&gt;here&lt;/a&gt;, after four months of development we realized that it’s total mess in the root, so we moved all static resources (referenced directly from scenes) to separate folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/StaticAssets/Animations&lt;/code&gt; – in order to better understand hierarchy related to animations I’d like to describe a part of our art pipeline (note, we use &lt;a href=&quot;https://docs.unity3d.com/Documentation/Manual/MecanimAnimationSystem.html&quot;&gt;Mecanim&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;animator imports animations into Unity in &lt;code&gt;.fbx&lt;/code&gt; format and puts them under &lt;code&gt;/StaticAssets/Animations/Sources/[model name]&lt;/code&gt; folder&lt;/li&gt;
+  &lt;li&gt;animator duplicates all the &lt;code&gt;.anim&lt;/code&gt; files from &lt;code&gt;.fbx&lt;/code&gt;, configures them and moves to &lt;code&gt;/StaticAssets/Animations/[model name]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;animator creates mecanim animator controller for specific model, puts it under &lt;code&gt;/StaticAssets/Animators&lt;/code&gt;, configures mechanim state machine using &lt;code&gt;.anim&lt;/code&gt; files from &lt;code&gt;/StaticAssets/Animations/[model name]&lt;/code&gt; folder.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;/StaticAssets/Effects&lt;/code&gt; – folder for models, materials, textures, prefabs, etc. used for particle systems.&lt;/p&gt;
+
+&lt;p class=&quot;h-warning&quot;&gt;&lt;strong&gt;Don’t use spaces in file and folder names&lt;/strong&gt;. We faced with this problem during project build setup on CI server, as we found Unity3D [command line tools][comand-line-tools] can’t automatically process paths with spaces.&lt;/p&gt;
+
+&lt;h4 id=&quot;naming-conventions&quot;&gt;Naming conventions&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Append prefixes to differentiate asset types, e.g. &lt;code&gt;pref_&lt;/code&gt; for prefabs, &lt;code&gt;scn_&lt;/code&gt; – for scenes. We started to use prefixes when we discovered that it is easy to confuse prefab with model. Another advantage of this approach is instead of typing &lt;code&gt;t:Prefab Bear&lt;/code&gt; in search field you type &lt;code&gt;pref_Bear&lt;/code&gt;, which is shorter&lt;/li&gt;
+  &lt;li&gt;Folder structure under &lt;code&gt;/DynamicAssets/[asset bundle id]/Resources&lt;/code&gt; is exactly the same and almost the same as under &lt;code&gt;/StaticAssets&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More naming conventions you can find in this &lt;a href=&quot;http://www.glenstevens.ca/unity3d-best-practices/&quot;&gt;post&lt;/a&gt; under &lt;em&gt;“Naming Standards and Folder Structure”&lt;/em&gt; section.&lt;/p&gt;
+
+&lt;p&gt;More posts from Mastering Unity Project Folder Structure series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/vzasadnyy/blog/mastering-unity-project-folder-structure-level-0-vcs/&quot;&gt;Level 0 - Folders required for version control systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/vzasadnyy/blog/mastering-unity-project-folder-structure-level-1-reserved-folders/&quot;&gt;Level 1 – Reserved Folders&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 11 Mar 2014 15:31:43 +0200</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-2-assets-organization</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-2-assets-organization</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>Mastering Unity Project Folder Structure. Level 1 – Reserved Folders</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg&quot; alt=&quot;Reserved&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In previous post I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever sub folders you want, but there are some reserved folder names for special needs.&lt;/p&gt;
+
+&lt;p class=&quot;quote&quot;&gt;I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some additional info from our team experience, original version available on &lt;a href=&quot;http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;standard-assets&quot;&gt;Standard Assets&lt;/h5&gt;
+
+&lt;p&gt;Scripts in here are always compiled first. Scripts are output to either &lt;code&gt;Assembly-CSharp-firstpass&lt;/code&gt;, &lt;code&gt;Assembly-UnityScript-firstpass&lt;/code&gt;, or &lt;code&gt;Assembly-Boo-firstpass&lt;/code&gt; project, depending on the language. More information about script compilation order in &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Scripts inside the Standard Assets folder will be compiled earlier than your other scripts. So, placing scripts in Standard Assets is one way for C# scripts to be able to access .js scripts or vice-versa.&lt;/p&gt;
+
+&lt;h5 id=&quot;pro-standard-assets&quot;&gt;Pro Standard Assets&lt;/h5&gt;
+
+&lt;p&gt;Same with &lt;code&gt;Standard Assets&lt;/code&gt;, only files here are meant for the Pro version. This means assets here make use of Pro-only features like render textures and screen-space effects. Again, scripts here are compiled earlier, allowing them to be accessed by other scripts (of any language) that are outside the &lt;code&gt;Pro Standard Assets&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;h5 id=&quot;editor&quot;&gt;Editor&lt;/h5&gt;
+
+&lt;p&gt;The &lt;code&gt;Editor&lt;/code&gt; folder name is a special name which allows your scripts to access to the Unity Editor Scripting API. If your script uses any classes or functionality from the UnityEditor namespace, it has to be placed in a folder called Editor.&lt;/p&gt;
+
+&lt;p&gt;Scripts inside an Editor folder will not be included in your game’s build. They are only used in the Unity Editor.&lt;/p&gt;
+
+&lt;p&gt;You can have multiple &lt;code&gt;Editor&lt;/code&gt; folders throughout your project.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;An &lt;code&gt;Editor&lt;/code&gt; folder which is not located in another special folder can be placed/nested anywhere in the project. However, if it’s in &lt;code&gt;Standard Assets&lt;/code&gt;, &lt;code&gt;Pro Standard Assets&lt;/code&gt;, or &lt;code&gt;Plugins&lt;/code&gt;, it must be a direct child of these folders. Otherwise, it will not get processed. For example, it’s ok to have a path like &lt;code&gt;My Extension/Scripts/Editor&lt;/code&gt;, but if placed in a special folder, it must always be &lt;code&gt;Standard Assets/Editor/My Extension/Scripts&lt;/code&gt;, or &lt;code&gt;Pro Standard Assets/Editor/My Extension/Scripts&lt;/code&gt;, or &lt;code&gt;Plugins/Editor/My Extension/Scripts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;More about custom editors on the Unity &lt;a href=&quot;http://docs.unity3d.com/Documentation/Components/ExtendingTheEditor.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;plugins&quot;&gt;Plugins&lt;/h5&gt;
+
+&lt;p&gt;The &lt;code&gt;Plugins&lt;/code&gt; folder is where you must put any native plugins, which you want to be accessible by your scripts. They will also be automatically included in your build. Take note that this folder may not be in any subfolder (it has to reside within the top-level &lt;code&gt;Assets&lt;/code&gt; folder).&lt;/p&gt;
+
+&lt;p&gt;In Windows, native plugins exist as &lt;code&gt;.dll&lt;/code&gt; files, in Mac OS X, they are &lt;code&gt;.bundle&lt;/code&gt; files, and in Linux, they are &lt;code&gt;.so&lt;/code&gt; files.&lt;/p&gt;
+
+&lt;p&gt;Like the &lt;code&gt;Standard Assets&lt;/code&gt; folder, any scripts in here are compiled earlier, allowing them to be accessed by other scripts (of any language) that are outside the &lt;code&gt;Plugins&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;More information about creating &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/PluginsForAndroid.html&quot;&gt;native Android&lt;/a&gt; and &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/PluginsForIOS.html&quot;&gt;iOS plugins&lt;/a&gt; in Unity.&lt;/p&gt;
+
+&lt;h5 id=&quot;resources&quot;&gt;Resources&lt;/h5&gt;
+
+&lt;p&gt;The &lt;code&gt;Resources&lt;/code&gt; folder is a special folder which allows you to access assets by file path and name in your scripts, rather than by the usual (and recommended) method of direct references (as variables in scripts via drag-and-drop in the Unity Editor).&lt;/p&gt;
+
+&lt;p&gt;For this reason, caution is advised when using it. All assets you put in the &lt;code&gt;Resources&lt;/code&gt; folder are always included in your build (even unused ones), because Unity has no way of determining which Resources-based assets are used or not.&lt;/p&gt;
+
+&lt;p&gt;You can have multiple &lt;code&gt;Resources&lt;/code&gt; folders throughout your project, so it is not recommended to have an asset in one &lt;code&gt;Resources&lt;/code&gt; folder and have another asset with that same name in another &lt;code&gt;Resources&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;Once your game is built, all assets in all &lt;code&gt;Resources&lt;/code&gt; folders get packed into the game’s archive for assets.&lt;/p&gt;
+
+&lt;p&gt;Also see &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html&quot;&gt;Loading Resources at Runtime&lt;/a&gt; topic from documentation.&lt;/p&gt;
+
+&lt;h5 id=&quot;gizmos&quot;&gt;Gizmos&lt;/h5&gt;
+
+&lt;p&gt;The gizmos folder holds all the texture/icon assets for use with &lt;code&gt;Gizmos.DrawIcon()&lt;/code&gt;. Texture assets placed inside this folder can be called by name, and drawn on-screen as a gizmo in the editor.&lt;/p&gt;
+
+&lt;h5 id=&quot;webplayertemplates&quot;&gt;WebPlayerTemplates&lt;/h5&gt;
+
+&lt;p&gt;Used to replace the default web page used for web builds. Any scripts placed here will not be compiled at all. This folder has to be just under &lt;code&gt;Assets&lt;/code&gt; folder &lt;code&gt;Assets/WebPlayerTemplates/&lt;/code&gt;. &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/UsingWebPlayertemplates.html&quot;&gt;More information&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;streaming-assets&quot;&gt;Streaming Assets&lt;/h5&gt;
+
+&lt;p&gt;Any files in here are copied to the build folder as is, without any changes (except for mobile and web builds, where they get embedded into the final build file). The path where they are can vary per platform but is accessible via &lt;code&gt;Application.streamingAssetsPath&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;See documentation about &lt;a href=&quot;http://docs.unity3d.com/Documentation/ScriptReference/Application-streamingAssetsPath.html&quot;&gt;Application.streamingAssetsPath&lt;/a&gt; and &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/StreamingAssets.html&quot;&gt;Streaming Assets&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;More posts from Mastering Unity Project Folder Structure series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/vzasadnyy/blog/mastering-unity-project-folder-structure-level-0-vcs/&quot;&gt;Level 0 - Folders required for version control systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/vzasadnyy/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 13 Feb 2014 15:14:41 +0200</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>Mastering Unity Project Folder Structure. Level 0 – Folders required for version control systems</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this series of posts I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.&lt;/p&gt;
+
+&lt;p class=&quot;quote&quot;&gt;Disclaimer.
+Before gamedev I used to be an Android developer and I really liked predefined and consistent folder structure across all projects, so I was a bit confused when we started first Unity game.&lt;/p&gt;
+
+&lt;h4 id=&quot;mastering-level-0-folders-required-for-version-control-systems&quot;&gt;Mastering Level 0. Folders required for version control systems.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/mastering-unity-project-folder-structure-level-0-vcs/folder-structure.png&quot; alt=&quot;Test Unity Project Folder StructureLets&quot; class=&quot;pull-left&quot; style=&quot;margin: 10px 30px 30px 0px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lets create new Unity project called “testproject”, import “Standard Assets (Mobile)” package, create new &lt;code&gt;Test.cs&lt;/code&gt; script attached to camera and check our folder structure.&lt;/p&gt;
+
+&lt;p&gt;You’ll find that there are quite a lot of files and folders, good news that &lt;strong&gt;only two folders should be kept under source control: &lt;code&gt;Assets&lt;/code&gt; and &lt;code&gt;ProjectSettings&lt;/code&gt;&lt;/strong&gt;. Other are generated from this two.&lt;/p&gt;
+
+&lt;h5 id=&quot;here-is-a-quick-overview-of-all-files-and-folders&quot;&gt;Here is a quick overview of all files and folders.&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;Assembly-CSharp-vs.csproj&lt;/code&gt; and &lt;code&gt;Assembly-CSharp.csproj&lt;/code&gt; – Visual Studio (with &lt;code&gt;-vs&lt;/code&gt; suffix) and MonoDevelop project files generated for your C# scripts.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Assembly-UnityScript-vs.unityproj&lt;/code&gt; and &lt;code&gt;Assembly-UnityScript.unityproj&lt;/code&gt; – the same project files but for JavaScript scripts.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;testproject.sln&lt;/code&gt; and &lt;code&gt;testproject-csharp.sln&lt;/code&gt; – solution files for IDEs, first one includes all C#, JavaScript and Boo projects, while the second one – only C# projects and is designed to be opened in Visual Studio, because VS doesn’t know to handle JavaScript and Boo projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;testproject.userprefs&lt;/code&gt; and &lt;code&gt;testproject-csharp.userprefs&lt;/code&gt; – configuration files where MonoDevelop stores current opened files, breakpoints, watches etc.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;All files listed above except &lt;code&gt;.userprefs&lt;/code&gt; are re-generated each time you select Assets → Sync MonoDevelop Project in Unity Editor menu.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;Read why there are so many project files generated from &lt;a href=&quot;https://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html&quot;&gt;Unity documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;h-tip&quot;&gt;After syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice less project files and no errors related to JS.
+&lt;img src=&quot;/vzasadnyy/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-settings.png&quot; alt=&quot;image&quot; /&gt; &lt;!-- Unity Project Folder Structure. Tip 1 --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Assets&lt;/code&gt; – folder where all game resources are stored, including scripts, textures, sound, custom editors etc. Definitely the most important folder in your project.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ProjectSettings&lt;/code&gt; – in this folder Unity stores all project settings like Physics, Tags, Player settings etc. In other words everything you setup from Edit → Project Settings set of menus goes into this folder.
+&lt;img src=&quot;/vzasadnyy/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-tip1.png&quot; alt=&quot;image&quot; /&gt; &lt;!-- Unity Project Folder Structure. Project Settings --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Library&lt;/code&gt; – local cache for imported assets, when using external version control system should be completely ignored.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;obj&lt;/code&gt; and &lt;code&gt;Temp&lt;/code&gt; – folders for temporary files generated during build, first one used by MonoDevelop, second – by Unity.&lt;/p&gt;
+
+&lt;h4 id=&quot;version-control-system-setup&quot;&gt;Version Control System setup&lt;/h4&gt;
+
+&lt;p&gt;There are several options how we can keep track of versions. Traditionally Unity encourages developers to use &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/AssetServer.html&quot;&gt;Unity Asset Server&lt;/a&gt;. Our team tried to use it for one month after what we agreed that Asset Server can’t handle everything we need, it doesn’t have branches, locks, it’s paid (requires Team Licence, +500$) and looks more like simplified SVN. So we have decided to switch to GIT.&lt;/p&gt;
+
+&lt;h5 id=&quot;here-is-a-short-setup-guide-for-unity-43&quot;&gt;Here is a short setup guide for Unity 4.3&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enable External option in Unity → Preferences → Packages → Repository&lt;/li&gt;
+  &lt;li&gt;Switch to Hidden Meta Files in Editor → Project Settings → Editor → Version Control Mode&lt;/li&gt;
+  &lt;li&gt;Switch to Force Text in Editor → Project Settings → Editor → Asset Serialization Mode&lt;/li&gt;
+  &lt;li&gt;Save scene and project from File menu&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now you are ready to use your favorite version control system. Don’t forget to add everything except Assets and ProjectSettings folders to your ignore list. Here is &lt;code&gt;.gitignore&lt;/code&gt; we use in our project:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# =============== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# Unity generated #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# =============== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Temp/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Library/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ===================================== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# Visual Studio / MonoDevelop generated #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ===================================== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;ExportedObj/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;obj/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.svd
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;13&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.userprefs
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;14&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/*.csproj
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;15&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.pidb
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;16&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.suo
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;17&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/*.sln
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;18&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.user
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;19&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.unityproj
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;20&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.booproj
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;21&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;22&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ============ #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;23&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# OS generated #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;24&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ============ #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;25&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.DS_Store
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;26&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.DS_Store?
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;27&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;._*
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;28&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.Spotlight-V100
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;29&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.Trashes
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;30&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;ehthumbs.db
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;31&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Thumbs.db&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;For more detailed instructions how to setup version control checkout this posts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/ExternalVersionControlSystemSupport.html&quot;&gt;SVN setup instruction from Unity documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://3dgep.com/?p=5105&quot;&gt;More detailed SVN setup instruction with a lot of explanations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/AssetServer.html&quot;&gt;Just in case you’ll decide to use Unity Asset Server – official setup guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the second post I’ll describe what predefined folder does Unity use and what for.&lt;/p&gt;
+
+&lt;p&gt;More posts from Mastering Unity Project Folder Structure series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/vzasadnyy/blog/mastering-unity-project-folder-structure-level-1-reserved-folders/&quot;&gt;Level 1 – Reserved Folders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/vzasadnyy/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 12 Feb 2014 14:42:57 +0200</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-0-vcs</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-0-vcs</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>How to make Unity work better on Maverik</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/how-to-make-unity-work-better-on-maverick/Unity-Issue-Tracker-2014-01-18-15-32-21.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://issuetracker.unity3d.com/issues/maverick-and-unity-performance-issues&quot;&gt;Maverick performance issue&lt;/a&gt; was opened just after Maverick release and now is the most voted on Unity bug tracker. Unfortunately or not, Apple has made new version of their Mac OS free and big part of users updated to the latest version without doubts and all of them got affected by this issue.&lt;/p&gt;
+
+&lt;p&gt;But today we’ll talk not about how “bad” or “good” Apple is, but how to improve Unity editor performance on Maverick.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;This instructions won’t fix issue completely, but at least make editor performance suitable to work with.&lt;/p&gt;
+
+&lt;p&gt;So let’s start:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Enable “Prevent App Nap”&lt;/strong&gt; for Unity and MonoDevelop. Locate Unity.app and MonoDevelop.app → right click → Get info → Prevent App Nap. This setting helps with app freezes when switching between applications. Btw App Nap don’t play well also with &lt;a href=&quot;http://www.zdnet.com/mac-mavericks-app-nap-power-nap-dont-always-play-well-with-others-7000024792/&quot;&gt;other applications&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Turn off “Displays have separate spaces”&lt;/strong&gt; in Mission Control settings. Go System Preferences → Mission Control → Displays have separate spaces.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Disable “Automatic graphics switching”&lt;/strong&gt; in Power Saver settings. Go System Preferences → Do one of the following: if you see Graphics options, select Higher Performance. You need to log out and then log in again for the change to take effect. If you see the “Automatic graphics switching” option, deselect it. Your Mac will always use high-performance graphics.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Early this week Thomas Petersen, QA Director in Unity Technologies wrote that they found the problem, let’s hope they’ll release fix for it soon:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We have identified this as a leak in Maverick’s OpenGL ARB VBO implementation which is causing these issues. A build with a workaround has proven to work, but it is not the best solution. We have notified Apple about the problem. What exactly will happen has not yet been decided, so until there is a solution to the problem, it is best to not run on Mavericks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Update (29.01.14):&lt;/strong&gt; Unity releases version 4.3.4, where issue should be fixed. Download it &lt;a href=&quot;http://unity3d.com/unity/whats-new/unity-4.3.4&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2014 23:16:46 +0200</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/how-to-make-unity-work-better-on-maverick</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/how-to-make-unity-work-better-on-maverick</guid>
+        
+        
+        <category>unity3d</category>
+        
+        <category>productivity</category>
+        
+      </item>
+    
+      <item>
+        <title>Android form validation - the right way</title>
+        <description>&lt;p&gt;After quite a long pause, I’m getting back with new series of posts. And we’ll start with Android &lt;code&gt;EditText&lt;/code&gt; form validations.&lt;/p&gt;
+
+&lt;p&gt;At first lets define that Android form - it is set of EditText ‘s whose data should be processed. There are two main steps to make processing successful: data input and data validation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/android-form-validation-right-way/z-validations-valid-form.png&quot; alt=&quot;image&quot; /&gt;
+Chuck Noris is always valid&lt;/p&gt;
+
+&lt;h4 id=&quot;data-input&quot;&gt;Data input&lt;/h4&gt;
+
+&lt;p&gt;In order to make user input easy and comfortable we need to configure &lt;code&gt;EditText&lt;/code&gt; properly, here is some tips on it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;put constraints by specifying the type of keyboard you want for your &lt;code&gt;EditText&lt;/code&gt; with &lt;code&gt;android:inputType&lt;/code&gt; attribute. For example, if you want the user to input only digits write &lt;code&gt;android:inputType=&quot;number&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;besides specifying keyboard type using &lt;code&gt;android:inputType&lt;/code&gt; attribute you can define other behaviors such as, whether to capitalize all new words or use features like auto-complete and spelling suggestions, e. g.  &lt;code&gt;android:inputType=&quot;textCapWords|textNoSuggestions&quot;&lt;/code&gt;, note that you can put several markers using bitwise operator&lt;/li&gt;
+  &lt;li&gt;probably you’ll want to disable fullscreen keyboard on landscape mode, you can do this using &lt;code&gt;android:imeOptions=&quot;flagNoExtractUi&quot;&lt;/code&gt; attribute&lt;/li&gt;
+  &lt;li&gt;pre-fill form data and provide auto complete if possible, for example in email registration form you can get user email from &lt;code&gt;AccountManager&lt;/code&gt;, &lt;a href=&quot;http://stackoverflow.com/a/2175688/731775&quot;&gt;example from Roman Nurik on stackoverflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;validate and submit form when user press enter on last EditText field, here code snippet I use:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mTextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnEditorActionListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OnEditorActionListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onEditorAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actionId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditorInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;IME_ACTION_DONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;validateAndSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&amp;#x7d;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here is code snippet from layout file with described above attributes:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;EditText&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/postal_address&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:inputType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textPostalAddress|textCapWords&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:autoText=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:editable=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:selectAllOnFocus=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:singleLine=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:imeOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;flagNoExtractUi&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:hint=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter postal address&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;data-validation&quot;&gt;Data validation&lt;/h4&gt;
+
+&lt;p&gt;Actually question is not how to validate, but &lt;strong&gt;how to show validation errors in a user friendly way&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)&quot;&gt;Android API&lt;/a&gt; provide &lt;code&gt;public void setError(CharSequence error, Drawable icon)&lt;/code&gt; method on EditText instance to display errors.&lt;/p&gt;
+
+&lt;p&gt;As form validation is quite commom task there are several third party libraries for that, e.g.:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/throrin19/Android-Validator&quot;&gt;Android-Validator by Benjamin Besse&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ragunathjawahar/android-saripaar&quot;&gt;Android Saripaar by Ragunath Jawahar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both of this libraries use default API to display errors, personally I don’t like it because when there are a lot of validation rules neglectful user can get screen like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/android-form-validation-right-way/z-validations-bad-example.png&quot; alt=&quot;image&quot; /&gt;
+Too much errors on one screen&lt;/p&gt;
+
+&lt;p&gt;So what is &lt;em&gt;“the right way”&lt;/em&gt;? Main idea is to help user &lt;strong&gt;solve errors one by one&lt;/strong&gt;. There are several things to do when validation error happens:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;find first text view where validation failed&lt;/li&gt;
+  &lt;li&gt;request focus for it: &lt;code&gt;mTextView.requestFocus()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;show error message, I prefer using Crouton library: &lt;code&gt;Crouton.makeText(mActivity, message, Style.ALERT).show()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;open keyboard so user can start typing instantly:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;InputMethodManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InputMethodManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSystemService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;INPUT_METHOD_SERVICE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;// only will trigger it if no physical keyboard is open&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;showSoftInput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mTextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;I’ve created small library with sample project where you can find all examples from this post, check it out on &lt;a href=&quot;https://github.com/zasadnyy/z-validations&quot;&gt;GitHub&lt;/a&gt; or install &lt;a href=&quot;https://play.google.com/store/apps/details?id=ua.org.zasadnyy.sample.zvalidations&quot;&gt;Demo app from Google Play&lt;/a&gt;. Sample code of creating validation form:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NotEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NotEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mAge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InRange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isValid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Form is valid&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/android-form-validation-right-way/z-validations-not-in-range.png&quot; alt=&quot;image&quot; /&gt;
+Failed InRange validation&lt;/p&gt;
+
+&lt;h5 id=&quot;useful-links&quot;&gt;Useful links&lt;/h5&gt;
+
+&lt;p&gt;&lt;em&gt;(I’ll update lists every time I find related topics)&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://developer.android.com/guide/topics/ui/controls/text.html&quot;&gt;Post about text input on d.android.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 04 Aug 2013 01:14:17 +0300</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/android-form-validation-right-way</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/android-form-validation-right-way</guid>
+        
+        
+        <category>android</category>
+        
+        <category>best practices</category>
+        
+      </item>
+    
+      <item>
+        <title>Cyrillic app name incorrectly encoded during porting Android app to Blackberry</title>
+        <description>&lt;p&gt;Hi all, today I’ll describe bug in latest version of &lt;code&gt;apk2bar&lt;/code&gt; (version 1.5.0) tool provided by Blackberry for converting Android apk apps to bar.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If debugging is the process of removing software bugs, then programming must be the process of putting them in.”
+Edsger Dijkstra&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I had small problem with displaying cyrillic app name on PlayBook and BB10 simulator. App names was incorrectly encoded from russian after converting using apk2bar tool. Problem appeared after updating bb eclipse plugin from version 1.3 to 1.5, with plugin v.1.3 it worked just ok (the same issue was with command line tools).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/app-name-incorrectly-encoded/blackberry-10-screenshot.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When I got problems with encodding with bb eclipse plugin, I decided to do the same thing with comandline tools.&lt;/p&gt;
+
+&lt;p&gt;After tools setup (sing keys, debug tokens, etc), I’ve tried to repackage my apk file with this command (source apk file was in apk/ folder and destination for bar file was bar/ folder)&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;./apk2bar apk/ -d bbplaybookdebugtoken.bar -t bar/ -a &lt;span class=&quot;s2&quot;&gt;&quot;zasadnyy&quot;&lt;/span&gt; -cg&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;When I’ve got .bar file, I’ve installed it with command:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/batchbar-deploy bar/ 192.168.1.35 mysecretpass&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Unfortunatelly result was unsuccsessful, app name was incorrectly encoded again. After first fail I’ve read documentation a bit more and tried to use &lt;a href=&quot;http://developer.blackberry.com/android/documentation/creating_a_custom_manifest_file_2016828_11.htm&quot;&gt;approach described on developer.blackberry.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I unzipped bar file and opened &lt;code&gt;MANIFEST.MS&lt;/code&gt; - I’ve found this line:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Application-Name: –ì–µ—Ä–æ–∏&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;According to documentation solution should be quite strait-forward:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Rename &lt;code&gt;MANIFEST.MS&lt;/code&gt; to &lt;code&gt;&amp;lt;you apk name&amp;gt;.mf&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Update incorrect properties, in my case I’ve changed line from above to &lt;code&gt;&quot;Application-Name: Герои&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Put edited manifest file in the same folder as &lt;code&gt;&amp;lt;your apk name&amp;gt;.apk&lt;/code&gt; and rerun &lt;code&gt;apk2bar&lt;/code&gt; tool with &lt;code&gt;-m&lt;/code&gt; parameter, e.g.:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;./apk2bar apk/ -d bbplaybookdebugtoken.bar -t bar/ -a &lt;span class=&quot;s2&quot;&gt;&quot;zasadnyy&quot;&lt;/span&gt; -m -cg&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Repackage, deploy, run and ….. and again &lt;strong&gt;FAIL&lt;/strong&gt;. Application name was “–ì–µ—Ä–æ–∏”.&lt;/p&gt;
+
+&lt;p&gt;After second fail, I decided to make dirty hack, I’ve edited &lt;code&gt;MANIFEST.MF&lt;/code&gt; directly in repackaged bar file (Unzip → edit manifest → zip → change file extension to .bar).&lt;/p&gt;
+
+&lt;p&gt;Deploy updated .bar file to playbook and …. &lt;strong&gt;YEAH&lt;/strong&gt;, we’ve got cyrilic app name!&lt;/p&gt;
+
+&lt;h5 id=&quot;conclusion-and-fix&quot;&gt;Conclusion and FIX:&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;Looks like in 1.5 release if apk2bar tool manifest encoding is misconfigured (in ver. 1.3 it worked just ok)&lt;/li&gt;
+  &lt;li&gt;In oder to FIX issue: unzip unsigned bar file → edit manifest → zip → change file extension back to .bar&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 27 Jan 2013 23:16:46 +0200</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/cyrillic-app-name-incorrectly-encoded</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/cyrillic-app-name-incorrectly-encoded</guid>
+        
+        
+        <category>blackberry</category>
+        
+        <category>bug</category>
+        
+      </item>
+    
+      <item>
+        <title>Action Bar Sherlock, Maven, eclipse integration</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/eclipse-maven-abs.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hello, today I’d like to describe process of integration commonly used library for emulation action bar in old Android versions - &lt;a href=&quot;http://actionbarsherlock.com/&quot;&gt;ActionBarSherlock&lt;/a&gt; into maven - eclipse project.
+In a result we’ll get project with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;support of Action Bar Sherlock&lt;/li&gt;
+  &lt;li&gt;support of integration tests as a separate project&lt;/li&gt;
+  &lt;li&gt;configured maven build and release targets&lt;/li&gt;
+  &lt;li&gt;configured eclipse for develop and debug&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is my first post, so don’t be too critical :)&lt;/p&gt;
+
+&lt;p&gt;At first lets create empty Android mvn project. In order to compleate this steap we’ll need:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk7u9-downloads-1859576.html&quot;&gt;JDK 1.6+&lt;/a&gt; installed as required for Android development&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://developer.android.com/intl/ru/sdk/index.html&quot;&gt;Android SDK&lt;/a&gt; installed r17+ , preferably with all platforms&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://maven.apache.org/download.html&quot;&gt;Maven 3.0.3+&lt;/a&gt; installed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you’ll use eclipse for a development, you’ll also need:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;eclipse with &lt;a href=&quot;http://eclipse.org/m2e/&quot;&gt;m2e&lt;/a&gt; plugin installed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At first lets create android project using akquinet &lt;a href=&quot;https://github.com/akquinet/android-archetypes&quot;&gt;android-archetypes&lt;/a&gt;. In result we’ll get sample project with configured release targets and integration tests project. Copy to terminal following code, replacing highligted lines with your values:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn archetype:generate &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DarchetypeArtifactId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;android-release &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DarchetypeGroupId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;de.akquinet.android.archetypes &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DarchetypeVersion&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.0.8 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DgroupId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;com.foo.bar &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DartifactId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;my-android-project &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -Dpackage&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;com.foo.bar.test &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -Dplatform&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;16&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Once generated, the application is ready to be built and tested. Start an android emulator, or plug an Android dev phone, and execute:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-android-project
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn clean install&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Besides your application this commands will also install and execute integrations tests application.&lt;/p&gt;
+
+&lt;p&gt;Generated project goes with test keystore that could be used for test, but not for deploying to market, execute this command to get signed apk:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn clean install -Prelease &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.keystore&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;PATH_OF_THE_PROJECT/my-android-project/test-key.keystore &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.alias&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;mykey &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.storepass&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;testtest &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.keypass&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;testtest&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now we need to download and add to our project dependencies &lt;a href=&quot;http://actionbarsherlock.com/&quot;&gt;ActionbarBarSherlock&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Latest version of the library always is available in project &lt;a href=&quot;http://actionbarsherlock.com/download.html&quot;&gt;download page&lt;/a&gt;. When it’s ready, unzip archive, copy &lt;code&gt;library&lt;/code&gt; folder to your project root and rename it to &lt;code&gt;actionbarsherlock&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/my-android-project-1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As it is stated on &lt;a href=&quot;http://actionbarsherlock.com/usage.html&quot;&gt;abs usage page&lt;/a&gt; the only thing we need - is to add this lines to &lt;code&gt;my-android-project/my-android-project/pom.xml&lt;/code&gt; :&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;4.2.0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;apklib&lt;span class=&quot;nt&quot;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Also you need to extend &lt;code&gt;HelloAndroidActivity&lt;/code&gt; from &lt;code&gt;com.actionbarsherlock.app.SherlockActivity&lt;/code&gt; instead of &lt;code&gt;android.app.Activity&lt;/code&gt; and change activity theme in &lt;code&gt;AndroidManifest.xml&lt;/code&gt; to &lt;code&gt;android:theme=&quot;@style/Theme.Sherlock&quot;&lt;/code&gt;. Checkout &lt;a href=&quot;/vzasadnyy/files/posts/abs-maven-eclipse-integration/patch.diff&quot;&gt;git patch file&lt;/a&gt; for details. Try to build app. From parent project folder execute:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn clean install&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;You’ll get following error:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] UNEXPECTED TOP-LEVEL EXCEPTION:
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] java.lang.IllegalArgumentException: already added: Landroid/support/v4/app/Watson&lt;span class=&quot;nv&quot;&gt;$OnCreateOptionsMenuListener&lt;/span&gt;;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.dex.file.ClassDefsSection.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassDefsSection.java:123&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.dex.file.DexFile.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DexFile.java:163&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processClass&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:486&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processFileBytes&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:455&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.access&lt;span class=&quot;nv&quot;&gt;$400&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:67&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.processFileBytes&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:394&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.cf.direct.ClassPathOpener.processArchive&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassPathOpener.java:245&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.cf.direct.ClassPathOpener.processOne&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassPathOpener.java:131&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.cf.direct.ClassPathOpener.process&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassPathOpener.java:109&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processOne&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:418&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;13&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processAllFiles&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:329&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;14&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.run&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:206&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;15&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.main&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:174&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;16&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.Main.main&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:91&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;17&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] 1 error; aborting
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;18&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;19&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Reactor Summary:
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;20&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;21&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] my-android-project - Parent ....................... SUCCESS &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0.394s]
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;22&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] my-android-project - Application .................. SUCCESS &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;14.880s]
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;23&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] my-android-project-it - Integration tests ......... FAILURE &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9.501s]
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;24&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;25&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] BUILD FAILURE
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;26&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;27&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Total &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;: 21.255s
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;28&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Finished at: Sun Nov 04 12:50:51 GMT+02:00 2012
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;29&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Final Memory: 15M/81M
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;30&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;31&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ERROR] Failed to execute goal com.jayway.maven.plugins.android.generation2:android-maven-plugin:3.1.1:dex &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;default-dex&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; on project my-android-project-it: MojoExecutionException: ANDROID-040-001: Could not execute: Command &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /bin/sh -c &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java -Xmx1024M -jar /Users/vitaliyzasadnyy/Development/SDKs/android-sdk-macosx/platform-tools/lib/dx.jar --dex --output&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex /Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes /Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar /Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar, Result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1 -&amp;gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Help 1]&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you carefully take a look to the last error you’ll notice that problem is with &lt;code&gt;generation2&lt;/code&gt; goal, it uses dex tool from Android SDK to generate class files for Dalvik, during execution it include &lt;code&gt;actionbarsherlock&lt;/code&gt; and &lt;code&gt;support-v4-r7&lt;/code&gt; dependencies two times (second time like transitive dependency from our application project), checkout  it &lt;code&gt;--output&lt;/code&gt; parameter values (here is a bit formatted text from maven error):&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java -Xmx1024M -jar /Users/vitaliyzasadnyy/Development/SDKs/android-sdk-macosx/platform-tools/lib/dx.jar --dex --output&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  /Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  /Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  /Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;We can fix this error by adding &lt;code&gt;actionbarsherlock&lt;/code&gt; and &lt;code&gt;support-v4-r7&lt;/code&gt; dependencies with scope provided to &lt;code&gt;my-android-project-it/pom.xml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.google.android&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;support-v4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;r7&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;scope&amp;gt;&lt;/span&gt;provided&lt;span class=&quot;nt&quot;&gt;&amp;lt;/scope&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;   &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;   &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;   &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;4.2.0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;   &lt;span class=&quot;nt&quot;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;apklib&lt;span class=&quot;nt&quot;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;13&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;   &lt;span class=&quot;nt&quot;&gt;&amp;lt;scope&amp;gt;&lt;/span&gt;provided&lt;span class=&quot;nt&quot;&gt;&amp;lt;/scope&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;14&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now project should build successfully.&lt;/p&gt;
+
+&lt;p&gt;Next steep is to configurate eclipse. Rename parent folder of a project from &lt;code&gt;my-android-project&lt;/code&gt; to &lt;code&gt;my-android-project-parent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/my-android-project-2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open eclipse, import &lt;code&gt;my-android-project-parent&lt;/code&gt; using existing maven project wizard. As &lt;code&gt;actionbarsherlock&lt;/code&gt; is not part of our parent maven project you’ll also need to import it as existing maven project (&lt;u&gt;don&#39;t&lt;/u&gt; import it as android library project!). After this steeps you should have following project structure:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/eclipse-project-1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s fix build path problems that we have.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;code&gt;my-android-project&lt;/code&gt; properties&lt;/li&gt;
+  &lt;li&gt;Open Android section&lt;/li&gt;
+  &lt;li&gt;Add &lt;code&gt;actionbarsherlock&lt;/code&gt; as library by pressing Add button&lt;/li&gt;
+  &lt;li&gt;Now you should see &lt;code&gt;actionbarsherlock&lt;/code&gt; in library section&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/eclipse-project-2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we are using separate project for integration test, we should remove &lt;code&gt;src/test/java&lt;/code&gt; folder from &lt;code&gt;my-android-project&lt;/code&gt; and &lt;code&gt;my-android-project-it&lt;/code&gt; build path:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;code&gt;my-android-project&lt;/code&gt; (or &lt;code&gt;my-android-project-it&lt;/code&gt;) properties&lt;/li&gt;
+  &lt;li&gt;Open Java Build Path section&lt;/li&gt;
+  &lt;li&gt;Under Sources tab select &lt;code&gt;src/test/java&lt;/code&gt; folder&lt;/li&gt;
+  &lt;li&gt;Press remove button&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/eclipse-project-3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now all errors form eclipse markers view should disappear and we can run our project. Select &lt;code&gt;my-android-project&lt;/code&gt; and run it as android application…but you’ll get:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/eclipse-project-3-error.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In console view you’ll find error like this one:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:22:26 - my-android-project] Conversion to Dalvik format failed with error 1
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:23:55 - my-android-project] Dx
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;UNEXPECTED TOP-LEVEL EXCEPTION:
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;java.lang.IllegalArgumentException: already added: Lorg/hamcrest/BaseDescription;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:23:55 - my-android-project] Dx  at com.android.dx.dex.file.ClassDefsSection.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassDefsSection.java:123&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:23:55 - my-android-project] Dx  at com.android.dx.dex.file.DexFile.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DexFile.java:163&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remember our problem with maven configuration? Here we have quite the same issue with double inclusion. In order to fix it remove libs folder with &lt;code&gt;android-support-v4.jar&lt;/code&gt; from &lt;code&gt;actionbarsherlock&lt;/code&gt; project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/eclipse-project-4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, clean all projects and run &lt;code&gt;my-android-project&lt;/code&gt;. We’ve got working application:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vzasadnyy/img/posts/abs-maven-eclipse-integration/app-screenshot.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sample project from post you can &lt;a href=&quot;/vzasadnyy/files/posts/abs-maven-eclipse-integration/my-android-project-parent.zip&quot;&gt;download here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hope this post was useful, if you have any notes or propositions how it can be improved, please write a comment.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Nov 2012 02:01:00 +0200</pubDate>
+        <link>http://zasadnyy-inc.github.io/vzasadnyy/blog/abs-maven-eclipse-integration</link>
+        <guid isPermaLink="true">http://zasadnyy-inc.github.io/vzasadnyy/blog/abs-maven-eclipse-integration</guid>
+        
+        
+        <category>android</category>
+        
+        <category>maven</category>
+        
+        <category>eclipse</category>
+        
+      </item>
+    
+  </channel>
+</rss>
