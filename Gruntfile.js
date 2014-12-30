@@ -242,7 +242,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     // csspath: '../../.tmp',
-                    stylesheets: ['../../../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
+                    stylesheets: ['../../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
                     // htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
                     // report: 'min'
                 },
@@ -292,7 +292,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-                    remote: 'git@github.com:zasadnyy-inc/personal-site-yo.git',
+                    remote: 'git@github.com:zasadnyy-inc/v-zasadnyy-com.git',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
