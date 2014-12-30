@@ -3,7 +3,7 @@
         {% for item in site.data.projects reversed %}
             {% assign check = forloop.index | modulo:2 %}
             <li class="project-item col-md-5 {% if check == 0 %}col-md-offset-1{% endif %}">
-                <a href="{{ item.projectPage }}">
+                <a href="{{ item.project_page }}">
                     <h6 class="project-title">{{ item.title }}</h6>
                     <p class="project-details">{{ item.description }}</p>
                     <span class="project-tags">

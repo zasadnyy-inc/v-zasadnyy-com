@@ -4,7 +4,7 @@
         {% for item in site.data.projects reversed %}
             {% if item.featured %}
                 <li class="project-item">
-                    <a href="{{ item.projectPage }}">
+                    <a href="{{ item.project_page }}">
                         <h6 class="project-title">{{ item.title }}</h6>
                         <p class="project-details">{{ item.description | truncate: 50 }}</p>
                     </a>

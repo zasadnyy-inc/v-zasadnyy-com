@@ -2,9 +2,10 @@
     <ul class="row">
         {% for item in site.data.slides reversed %}
             <li class="slide-item col-lg-3 col-md-4 col-xs-6">
-                <a href="{{ item.url }}" target="_blank">
-                    <div class="thumb flow-img" style="background-image: url({{ item.image | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>
+                <a href="{{ item.slides_url }}" target="_blank">
+                    <div class="thumb flow-img" style="background-image: url({{ item.thumbnail | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>
                     <h6 class="slide-title">{{ item.title }}</h6>
+                    <span class="slide-date">{{ item.date | date: '%B %d, %Y' }}</span>
                 </a>
             </li>
             {% assign check4 = forloop.index | modulo:4 %}

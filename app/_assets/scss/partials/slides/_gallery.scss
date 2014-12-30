@@ -26,4 +26,10 @@
     color: $text-color;
     font-size: 18px;
     transition: $color-animation;
+    margin-bottom: 0px;
+}
+.slide-date {
+    color: $sub-text-color;
+    font-size: 14px;
+    transition: $color-animation;   
 }

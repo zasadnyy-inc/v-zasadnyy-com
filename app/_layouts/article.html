@@ -81,7 +81,7 @@
                     <div class="switcher-item col-md-6">
                         {% if page.next.url %}
                             <a href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}">
-                                <span class="arrow">&lt;</span>
+                                <span class="arrow">←</span>
                                 <p class="switcher-content">{{ page.next.title }}</p>
                             </a>
                         {% endif %}
@@ -90,7 +90,7 @@
                         {% if page.previous.url %}
                             <a class="text-right" href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">
                                 <p class="switcher-content">{{ page.previous.title }}</p>
-                                <span class="arrow">&gt;</span>
+                                <span class="arrow">→</span>
                             </a>
                         {% endif %}
                     </div>
