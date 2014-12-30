@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/best-test-devices-for-game-development</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/best-test-devices-for-game-development</loc>
     <lastmod>2014-06-09T23:20:38+03:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-2-assets-organization</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</loc>
     <lastmod>2014-03-11T15:31:43+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</loc>
     <lastmod>2014-02-13T15:14:41+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/mastering-unity-project-folder-structure-level-0-vcs</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/mastering-unity-project-folder-structure-level-0-vcs</loc>
     <lastmod>2014-02-12T14:42:57+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/how-to-make-unity-work-better-on-maverick</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/how-to-make-unity-work-better-on-maverick</loc>
     <lastmod>2014-01-19T23:16:46+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/android-form-validation-right-way</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/android-form-validation-right-way</loc>
     <lastmod>2013-08-04T01:14:17+03:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/cyrillic-app-name-incorrectly-encoded</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/cyrillic-app-name-incorrectly-encoded</loc>
     <lastmod>2013-01-27T23:16:46+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/blog/abs-maven-eclipse-integration</loc>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/blog/abs-maven-eclipse-integration</loc>
     <lastmod>2012-11-04T02:01:00+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/</loc>
-    <lastmod>2014-12-30T23:53:47+02:00</lastmod>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/</loc>
+    <lastmod>2014-12-30T23:56:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/projects/</loc>
-    <lastmod>2014-12-30T23:53:47+02:00</lastmod>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/projects/</loc>
+    <lastmod>2014-12-30T23:56:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://zasadnyy-inc.github.io/vzasadnyy/slides/</loc>
-    <lastmod>2014-12-30T23:53:47+02:00</lastmod>
+    <loc>http://zasadnyy-inc.github.io/v-zasadnyy-com/slides/</loc>
+    <lastmod>2014-12-30T23:56:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
