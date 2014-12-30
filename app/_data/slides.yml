@@ -72,7 +72,7 @@
   date: 2014-05-16
 -
   title: "New Hardware at Google I/O‘14"
-  description: ""
+  description: "All about Android Auto, Wear, TV and of cource Cardboard"
   thumbnail: "thumb_new_hardware_at_google_io.png"
   details_url: ""
   slides_url: "https://docs.google.com/presentation/d/1Gmtfb-0VhGSL43K5-QWkIaWfWsJG_pQzsX6cO-bcNsc/pub?start=false&loop=false&delayms=3000"
@@ -81,7 +81,7 @@
   date: 2014-07-26
 -
   title: "Extending your apps to wearables"
-  description: ""
+  description: "Learn how to take advantage from wearables? In this talk and learn how easily add support for Android Wear and Sony Smart Extension devices to your existing application. Besides that we'll talk about UI/UX on small screen, project structure best practices and finally decide what platform is more perspective an easier to work with from developer point of view."
   thumbnail: "thumb_extending_your_apps_to_wearables.png"
   details_url: ""
   slides_url: "https://docs.google.com/presentation/d/1M5fz8kxK5hjR2SJBfwOyud_jjO53fwRN6cx4gqorvGA/pub?start=false&loop=false&delayms=3000"
@@ -90,7 +90,7 @@
   date: 2014-09-06
 -
   title: "Wearables Architectures or how to ping your watch"
-  description: ""
+  description: "We’re on the begging on the new era of computing devices. Wearables, probably, are one of the hottest topic now, with launch of Android Wear, Apple Watch and huge success of activity trackers like Nike Fuel or Jawbone everyone talks how cool or not they are. During this presentation we'll get back to early 2000 and check wearables evolution from totally geek devices to must have accessory for each hipster."
   thumbnail: "thumb_wearable_architectures.png"
   details_url: ""
   slides_url: "https://docs.google.com/presentation/d/1RcpXrtx-8GfMMO-uT2UAyJZeAQecAkIkBxfdfF5N-P0/pub?start=false&loop=false&delayms=3000"

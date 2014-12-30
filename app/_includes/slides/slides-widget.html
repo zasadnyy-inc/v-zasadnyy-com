@@ -1,0 +1,18 @@
+<div class="projects-widget col-md-5 col-md-offset-1">
+    <span class="widget-title">Recent slides</span>
+    <ul>
+        {% assign itemsToShow = 3 %}
+        {% assign slides = site.data.slides %}
+        {% for i in (1..itemsToShow) %}
+            {% assign index = slides.size | minus: i %}
+            {% assign item = slides[index] %}
+            <li class="project-item">
+                <a href="{{ item.slides_url }}">
+                    <h6 class="project-title">{{ item.title }}</h6>
+                    <p class="project-details">{{ item.description | truncate: 50 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a class="side-link" href="{{ "/slides/" || prepend: site.baseurl }}">See all</a>
+</div>
