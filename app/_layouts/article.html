@@ -39,25 +39,33 @@
                         <li>
                             <span class="name">Share with:</span> {% assign articleUrl = page.url | prepend: site.baseurl | prepend: site.url %}
                             <span class="value">
-                            <a href="#" onclick="window.open('https://plus.google.com/share?url={{ articleUrl }}', 'newwindow', 'width=600, height=500'); return false;">Google+</a>
-                        </span>
+                                <a href="#" onclick="window.open('https://plus.google.com/share?url={{ articleUrl }}', 'newwindow', 'width=600, height=500'); return false;">Google+</a>
+                            </span>
                             <span>&#8226;</span>
                             <span class="value">
-                            <a href="#" onclick="window.open('https://twitter.com/home?status={{ articleUrl }}', 'newwindow', 'width=600, height=250'); return false;">Twitter</a>
-                        </span>
+                                <a href="#" onclick="window.open('https://twitter.com/home?status={{ articleUrl }}', 'newwindow', 'width=600, height=250'); return false;">Twitter</a>
+                            </span>
                             <span>&#8226;</span>
                             <span class="value">
-                            <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ articleUrl }}', 'newwindow', 'width=600, height=500'); return false;">Facebook</a>
-                        </span>
+                                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ articleUrl }}', 'newwindow', 'width=600, height=500'); return false;">Facebook</a>
+                            </span>
                         </li>
                         <li>
                             <span class="name">Tags:</span>
                             <span class="value">
-                            {% for category in page.categories %}
-                            #{{ category }}{% if forloop.index < forloop.length %}, {% endif %}
-                            {% endfor %}
-                        </span>
+                                {% for category in page.categories %}
+                                    #{{ category }}{% if forloop.index < forloop.length %}, {% endif %}
+                                {% endfor %}
+                            </span>
                         </li>
+                        {% if page.external %}
+                        <li>
+                            <span class="name">Originaly published at:</span>
+                            <span class="value">
+                                <a href="{{ page.sourceUrl }}" target="_blank">{{ page.sourceName }}</a>
+                            </span>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
                 {{ content }}
