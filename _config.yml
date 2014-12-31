@@ -35,8 +35,8 @@ markdown: kramdown
 highlighter: false
 
 # Site settings
-baseurl: "/v-zasadnyy-com"
-url: "http://zasadnyy-inc.github.io"
+baseurl: ""
+url: "http://v.zasadnyy.com"
 
 
 # Analytics
