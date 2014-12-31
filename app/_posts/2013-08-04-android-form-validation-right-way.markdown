@@ -7,6 +7,8 @@ date: 2013-08-04T00:14:17+02:00
 estimate: "5 mins"
 categories: [android, best practices]
 post: true
+redirect_from:
+  - /2013/08/android-form-validation-right-way.html
 ---
 
 After quite a long pause, I'm getting back with new series of posts. And we'll start with Android `EditText` form validations.

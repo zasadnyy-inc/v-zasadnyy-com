@@ -2,6 +2,7 @@
 gems:
 - jekyll-sitemap
 - octopress-codefence
+- jekyll-redirect-from
 
 # Grunt handles images and assets.
 # exclude: ['img', 'css', 'js', 'fonts',

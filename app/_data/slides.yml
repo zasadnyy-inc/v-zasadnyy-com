@@ -8,6 +8,15 @@
   recording: ""
   date: 2013-02-12
 -
+  title: "Oh!Mobile! S1E2. Android intro"
+  description: "On March 14, recently created community from Lviv called Oh!Mobile! had their first tech meeting. It was not quite standart event I'd say it was 'holywar' battle. There were three speakers each one  defended separate mobile platform. Oleksander Krakovets'kiy (DevRain Solutions CEO, Microsoft MVP & RD) was on Windows Phone side, Sasha Kozachuk (iOS developer) tried to prove that iOS is the best and I - Vitaliy Zasadnyy (GDG Lviv co-founder) protected 'Green Robot' rights."
+  thumbnail: "thumb_android_intro.png"
+  details_url: ""
+  slides_url: "https://prezi.com/3hjd5nibtklp/android-intro/"
+  slides_provider: prezi
+  recording: "https://www.youtube.com/watch?v=-MiqGitp92g&list=PLJf2EuD0BrxjCS90No30-P55LIhQ06BMn"
+  date: 2013-03-15
+-
   title: "What is community and how to manage it"
   description: "Non technical presentation about community management."
   thumbnail: "thumb_what_is_community.png"
