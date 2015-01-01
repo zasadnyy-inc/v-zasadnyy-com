@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         yeoman: {
             app: 'app',
             dist: 'dist',
-            baseurl: 'v-zasadnyy-com'
+            baseurl: ''
         },
         watch: {
             sass: {
@@ -242,7 +242,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     // csspath: '../../.tmp',
-                    stylesheets: ['../../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
+                    stylesheets: ['../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
                     // htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
                     // report: 'min'
                 },
@@ -252,15 +252,23 @@ module.exports = function(grunt) {
             }
         },
         imagemin: {
-            dist: {
-                options: {
-                    progressive: true
-                },
+            options: {
+                progressive: true
+            },
+            posts: {
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/vitaliy/posts',
-                    src: '**/*.{jpg,jpeg,png}',
-                    dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/vitaliy/posts'
+                    cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts',
+                    src: '**/*.{jpg,jpeg,png,gif}',
+                    dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts'
+                }]
+            },
+            slides: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/slides',
+                    src: '**/*.{jpg,jpeg,png,gif}',
+                    dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/slides'
                 }]
             }
         },
@@ -268,9 +276,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/vitaliy',
+                    cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts',
                     src: '**/*.svg',
-                    dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/vitaliy'
+                    dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts'
                 }]
             }
         },
@@ -319,7 +327,7 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean:server',
             'sass:server',
-            'concurrent:server',
+            'jekyll:server',
             'autoprefixer:server',
             // 'uglify:server',
             'connect:livereload',
@@ -337,13 +345,13 @@ module.exports = function(grunt) {
         'clean',
         'jekyll:dist',
         'sass:dist',
+        'uncss',
         'autoprefixer:dist',
         'useminPrepare',
         // 'uglify:dist',
         'imagemin',
         'svgmin',
         // 'copy',
-        'uncss',
         'usemin',
         'cssmin',
         'htmlmin'

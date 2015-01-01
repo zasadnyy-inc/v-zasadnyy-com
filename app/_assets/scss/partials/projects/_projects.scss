@@ -1,3 +1,11 @@
+.projects-list {
+    ul {
+        padding: 0;
+    }
+    h4 {
+        padding-left: 15px;
+    }
+}
 .project-item {
     margin: 16px 0px 24px 0px;
     list-style: none;
@@ -31,11 +39,6 @@
     font-size: $base-font-size;
     color: $main-color-second;
     transition: $color-animation;
-}
-.projects-list {
-    ul {
-        padding: 0;
-    }
 }
 .projects-widget {
     margin-bottom: 50px;
