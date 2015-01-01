@@ -1,6 +1,8 @@
 <div class="projects-list col-md-12">
+    {% for group in site.data.projects %}
     <ul class="row">
-        {% for item in site.data.projects reversed %}
+        <h4>{{ group.group }}</h4>
+        {% for item in group.elements reversed %}
             {% assign check = forloop.index | modulo:2 %}
             <li class="project-item col-md-5 {% if check == 0 %}col-md-offset-1{% endif %}">
                 <a href="{{ item.project_page }}">
@@ -10,9 +12,10 @@
                         {% for tag in item.tags %}
                             #{{ tag }}{% if forloop.index < forloop.length %}, {% endif %}
                         {% endfor %}
-                    </span>                  
+                    </span>
                 </a>
             </li>
         {% endfor %}
     </ul>
+    {% endfor %}
 </div>
