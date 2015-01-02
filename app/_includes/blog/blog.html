@@ -25,11 +25,11 @@
 
     {% if paginator.total_pages > 1 %}
         <div class="pagination">
-            
+
             {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">←Prev</a>
             {% endif %}
-            
+
             {% for page in (1..paginator.total_pages) %}
                 {% if page == paginator.page %}
                     <span>{{ page }}</span>
@@ -38,7 +38,7 @@
                     <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                 {% endif %}
             {% endfor %}
-           
+
             {% if paginator.next_page %}
                 <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next→</a>
             {% endif %}
@@ -47,5 +47,7 @@
     {% endif %}
 </div>
 
-<hr class="visible-xs"> {% include projects/projects-widget.html %}
-<hr class="visible-xs"> {% include slides/slides-widget.html %}
+<hr class="visible-sm">
+{% include projects/projects-widget.html %}
+
+{% include slides/slides-widget.html %}

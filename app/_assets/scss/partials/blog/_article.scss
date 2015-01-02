@@ -70,6 +70,9 @@
         margin: 30px auto;
         border-radius: 3px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+        &.medium-width {
+            max-width: 400px;
+        }
     }
     .quote {
         margin: 25px 15px;
@@ -170,16 +173,19 @@
 }
 .post-switcher {
     margin-top: 40px;
+    overflow: hidden;
 }
 .switcher-item {
     a {
+        margin-bottom: -99999px;
         padding: 20px;
+        padding-bottom: 99999px + 20;
         display: table;
         width: 100%;
         background: rgba($text-color, 0.03);
         color: $text-color;
         transition: background $transition-duration $transition-animation;
-        &:hover {
+        &:hover, &:active, &:focus {
             background: rgba($text-color, 0.06);
         }
     }

@@ -15,7 +15,7 @@ After quite a long pause, I'm getting back with new series of posts. And we'll s
 
 At first lets define that Android form - it is set of EditText 's whose data should be processed. There are two main steps to make processing successful: data input and data validation.
 
-![image]({{site.baseurl}}/img/posts/android-form-validation-right-way/z-validations-valid-form.png)
+![image]({{site.baseurl}}/img/posts/android-form-validation-right-way/z-validations-valid-form.png){:.medium-width}
 Chuck Noris is always valid
 
 
@@ -73,7 +73,7 @@ As form validation is quite commom task there are several third party libraries 
 Both of this libraries use default API to display errors, personally I don't like it because when there are a lot of validation rules neglectful user can get screen like this:
 
 
-![image]({{site.baseurl}}/img/posts/android-form-validation-right-way/z-validations-bad-example.png)
+![image]({{site.baseurl}}/img/posts/android-form-validation-right-way/z-validations-bad-example.png){:.medium-width}
 Too much errors on one screen
 
 
@@ -106,7 +106,7 @@ private void submit() {
 }
 ```
 
-![image]({{site.baseurl}}/img/posts/android-form-validation-right-way/z-validations-not-in-range.png)
+![image]({{site.baseurl}}/img/posts/android-form-validation-right-way/z-validations-not-in-range.png){:.medium-width}
 Failed InRange validation
 
 

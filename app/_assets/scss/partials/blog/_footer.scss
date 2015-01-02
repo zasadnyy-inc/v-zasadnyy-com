@@ -2,7 +2,7 @@
     background: $header-color;
     margin-top: 120px;
     padding: 0;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         margin-top: 60px;
     }
 }
@@ -10,14 +10,14 @@
     padding: 70px 15px 30px;
     font-size: $base-font-size * 0.85;
     color: #ffffff;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         padding: 50px 15px 15px;
     }
     h4 {
         text-transform: uppercase;
     }
     .get-in-touch {
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
             margin-top: 40px;
         }
     }
@@ -40,7 +40,7 @@
     height: 140px;
     float: left;
     shape-outside: circle();
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         width: 120px;
         height: 120px;
     }
