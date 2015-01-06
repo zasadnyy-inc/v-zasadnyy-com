@@ -5,8 +5,8 @@
     <description></description>
     <link>http://v.zasadnyy.com/</link>
     <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 03 Jan 2015 00:42:52 +0200</pubDate>
-    <lastBuildDate>Sat, 03 Jan 2015 00:42:52 +0200</lastBuildDate>
+    <pubDate>Wed, 07 Jan 2015 00:14:11 +0200</pubDate>
+    <lastBuildDate>Wed, 07 Jan 2015 00:14:11 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -151,7 +151,7 @@ Test devices table&lt;/p&gt;
     
       <item>
         <title>Mastering Unity Project Folder Structure. Level 1 – Reserved Folders</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg&quot; alt=&quot;Reserved&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg&quot; alt=&quot;Reserved&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In previous post I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever sub folders you want, but there are some reserved folder names for special needs.&lt;/p&gt;
 
@@ -233,12 +233,11 @@ Test devices table&lt;/p&gt;
     
       <item>
         <title>Mastering Unity Project Folder Structure. Level 0 – Folders required for version control systems</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this series of posts I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.&lt;/p&gt;
 
-&lt;p class=&quot;quote&quot;&gt;Disclaimer.
-Before gamedev I used to be an Android developer and I really liked predefined and consistent folder structure across all projects, so I was a bit confused when we started first Unity game.&lt;/p&gt;
+&lt;p class=&quot;h-disclaimer&quot;&gt;Before gamedev I used to be an Android developer and I really liked predefined and consistent folder structure across all projects, so I was a bit confused when we started first Unity game.&lt;/p&gt;
 
 &lt;h4 id=&quot;mastering-level-0-folders-required-for-version-control-systems&quot;&gt;Mastering Level 0. Folders required for version control systems.&lt;/h4&gt;
 
