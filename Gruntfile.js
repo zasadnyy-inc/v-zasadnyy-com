@@ -64,7 +64,8 @@ module.exports = function(grunt) {
                     },
                     base: [
                         '.jekyll',
-                        '.tmp'
+                        '.tmp',
+                        '<%= yeoman.app %>'
                     ]
                 }
             },
@@ -138,15 +139,7 @@ module.exports = function(grunt) {
             options: {
                 browsers: ['last 3 versions']
             },
-            server: {
-                files: [{
-                    expand: true,
-                    cwd: '.tmp/<%= yeoman.baseurl %>/css',
-                    src: '**/*.css',
-                    dest: '.tmp/<%= yeoman.baseurl %>/css'
-                }]
-            },
-            dist: {
+            default: {
                 files: [{
                     expand: true,
                     cwd: '.tmp/<%= yeoman.baseurl %>/css',
@@ -225,9 +218,25 @@ module.exports = function(grunt) {
             }
         },
         // Usemin adds files to cssmin
+        critical: {
+            dist: {
+                options: {
+                    base: './',
+                    css: [
+                        '.tmp/<%= yeoman.baseurl %>/css/blog.css'
+                    ],
+                    minify: true,
+                    width: 320,
+                    height: 480
+                },
+                src: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/index.html',
+                dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/index.html'
+            }
+        },
         cssmin: {
             dist: {
                 options: {
+                    keepSpecialComments: 0,
                     check: 'gzip'
                 },
                 files: [{
@@ -244,7 +253,7 @@ module.exports = function(grunt) {
                     // csspath: '../../.tmp',
                     stylesheets: ['../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
                     // htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-                    // report: 'min'
+                    report: 'min'
                 },
                 files: {
                     '.tmp/<%= yeoman.baseurl %>/css/blog.css': ['<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html']
@@ -294,7 +303,7 @@ module.exports = function(grunt) {
                     ],
                     dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
                 }]
-            },
+            }
         },
         buildcontrol: {
             dist: {
@@ -328,7 +337,7 @@ module.exports = function(grunt) {
             'clean:server',
             'sass:server',
             'jekyll:server',
-            'autoprefixer:server',
+            'autoprefixer',
             // 'uglify:server',
             'connect:livereload',
             'watch'
@@ -349,9 +358,9 @@ module.exports = function(grunt) {
         // 'uglify:dist',
         'sass:dist',
         'uncss',
-        'autoprefixer:dist',
+        'autoprefixer',
+        'critical:dist',
         'useminPrepare',
-        // 'copy',
         'usemin',
         'cssmin',
         'htmlmin'

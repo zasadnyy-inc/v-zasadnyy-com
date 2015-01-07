@@ -13,7 +13,7 @@ sourceName: "Nravo Developers"
 sourceUrl: "http://developers.nravo.com/mastering-unity-project-folder-structure-level-1-reserved-folders"
 ---
 
-![Reserved]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg)
+![Reserved]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg){:.medium-width}
 
 In previous post I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever sub folders you want, but there are some reserved folder names for special needs.
 

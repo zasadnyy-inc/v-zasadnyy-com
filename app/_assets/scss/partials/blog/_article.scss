@@ -31,15 +31,15 @@
     }
     p {
         margin-bottom: 1em;
-        display: table;
+        // display: table;
     }
     ol, ul {
         margin: 0 0 15px 30px;
+        @media (max-width: 767px) {
+            margin-left: 0;
+        }
         ol ul {
             margin-bottom: 0;
-        }
-        p {
-            display: block;
         }
     }
     li {
@@ -71,26 +71,24 @@
         border-radius: 3px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
         &.medium-width {
-            max-width: 400px;
+            @media (min-width: 768px) {
+                max-width: 400px;
+            }
         }
-    }
-    .quote {
-        margin: 25px 15px;
-        padding: 10px 20px;
-        border-right: 5px solid $sub-text-color;
-        font-style: italic;
-        text-align: right;
     }
 }
 .h-light {
     margin: 25px 15px;
     padding: 20px;
-    display: block !important;
+    overflow: hidden;
     border-left-width: 5px;
     border-left-style: solid;
     &:before {
         display: block;
         font-weight: $bold;
+    }
+    @media (max-width: 767px) {
+        margin: 25px 0;
     }
 }
 .h-note {
@@ -98,7 +96,7 @@
     border-left-color: $note-color;
     background: rgba($note-color, .05);
     &:before {
-        content: 'Note:';
+        content: 'Note';
     }
 }
 .h-warning {
@@ -106,7 +104,7 @@
     border-left-color: $warning-color;
     background: rgba($warning-color, .05);
     &:before {
-        content: 'Warning:';
+        content: 'Warning';
     }
 }
 .h-tip {
@@ -114,7 +112,15 @@
     border-left-color: $tip-color;
     background: rgba($tip-color, .05);
     &:before {
-        content: 'Tip:';
+        content: 'Tip';
+    }
+}
+.h-disclaimer {
+    @extend .h-light;
+    border-left-color: $disclaimer-color;
+    background: rgba($disclaimer-color, .05);
+    &:before {
+        content: 'Disclaimer';
     }
 }
 .article-header {
@@ -138,9 +144,7 @@
     z-index: 1;
     @media (max-width: 767px) {
         float: left;
-    }
-    @media (min-width: 992px) {
-        margin-right: -25%;
+        font-size: $base-font-size * 0.8;
     }
     ul {
         margin: 50px 0 30px 30px;
@@ -177,9 +181,7 @@
 }
 .switcher-item {
     a {
-        margin-bottom: -99999px;
         padding: 20px;
-        padding-bottom: 99999px + 20;
         display: table;
         width: 100%;
         background: rgba($text-color, 0.03);
@@ -187,6 +189,10 @@
         transition: background $transition-duration $transition-animation;
         &:hover, &:active, &:focus {
             background: rgba($text-color, 0.06);
+        }
+        @media (min-width: 768px) {
+            margin-bottom: -99999px;
+            padding-bottom: 99999px + 20;
         }
     }
     .arrow {

@@ -4,7 +4,7 @@
     {% else %}
         {% assign pageTitle = site.data.personal.title %}
     {% endif %}
-    
+
     {% if page.description %}
         {% assign pageDescription = page.description %}
     {% else %}
@@ -18,7 +18,6 @@
     <meta name="theme-color" content="#FF9900">
 
     <meta name="author" content="{{ page.author }}">
-    <meta itemprop="name" content="{{ pageTitle }}">
     <meta name="description" itemprop="description" content="{{ pageDescription }}">
     <meta name="keywords" content="{{ site.data.personal.keywords }}">
 

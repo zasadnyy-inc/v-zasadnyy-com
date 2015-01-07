@@ -42,6 +42,9 @@
 }
 .projects-widget {
     margin-bottom: 50px;
+    &:last-child {
+        margin-bottom: 0;
+    }
     ul {
         padding: 0;
     }

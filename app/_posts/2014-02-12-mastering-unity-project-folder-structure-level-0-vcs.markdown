@@ -13,14 +13,13 @@ sourceName: "Nravo Developers"
 sourceUrl: "http://developers.nravo.com/mastering-unity-project-folder-structure-level-0-vcs"
 ---
 
-![image]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg)
+![image]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg){:.medium-width}
 
 In this series of posts I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.
 
 
-Disclaimer.
 Before gamedev I used to be an Android developer and I really liked predefined and consistent folder structure across all projects, so I was a bit confused when we started first Unity game.
-{:.quote}
+{:.h-disclaimer}
 
 
 #### Mastering Level 0. Folders required for version control systems.

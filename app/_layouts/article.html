@@ -22,8 +22,7 @@
 
     <div class="container">
         <div class="row">
-            <article class="article col-md-9" itemprop="articleBody">
-                <div class="article-meta col-md-7 col-xs-12">
+        <div class="article-meta col-md-5 col-xs-12">
                     <ul>
                         <li>
                             {% if page.updated %}
@@ -68,6 +67,8 @@
                         {% endif %}
                     </ul>
                 </div>
+            <article class="article col-md-9" itemprop="articleBody">
+
                 {{ content }}
 
                 <hr> Share with:
@@ -86,7 +87,7 @@
 
             <div class="post-switcher col-md-9">
                 <div class="row">
-                    <div class="switcher-item col-md-6">
+                    <div class="switcher-item col-sm-6">
                         {% if page.next.url %}
                             <a href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}">
                                 <span class="arrow">←</span>
@@ -94,7 +95,7 @@
                             </a>
                         {% endif %}
                     </div>
-                    <div class="switcher-item col-md-6">
+                    <div class="switcher-item col-sm-6">
                         {% if page.previous.url %}
                             <a class="text-right" href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">
                                 <p class="switcher-content">{{ page.previous.title }}</p>
