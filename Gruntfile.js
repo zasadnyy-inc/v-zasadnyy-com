@@ -229,8 +229,12 @@ module.exports = function(grunt) {
                     width: 320,
                     height: 480
                 },
-                src: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/index.html',
-                dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/index.html'
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
+                    src: ['**/*.html'],
+                    dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
+                }]
             }
         },
         cssmin: {
@@ -247,17 +251,26 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        // uncss: {
+        //     dist: {
+        //         options: {
+        //             // csspath: '../../.tmp',
+        //             stylesheets: ['../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
+        //             // htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
+        //             report: 'min'
+        //         },
+        //         files: {
+        //             '.tmp/<%= yeoman.baseurl %>/css/blog.css': ['<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html']
+        //         }
+        //     }
+        // },
         uncss: {
+            options: {
+                htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
+            },
             dist: {
-                options: {
-                    // csspath: '../../.tmp',
-                    stylesheets: ['../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
-                    // htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-                    report: 'min'
-                },
-                files: {
-                    '.tmp/<%= yeoman.baseurl %>/css/blog.css': ['<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html']
-                }
+                src: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html',
+                dest: '.tmp/<%= yeoman.baseurl %>/css/blog.css'
             }
         },
         imagemin: {
