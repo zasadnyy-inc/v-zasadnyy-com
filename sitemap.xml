@@ -37,30 +37,30 @@
   </url>
   <url>
     <loc>http://v.zasadnyy.com/blog/abs-maven-eclipse-integration</loc>
-    <lastmod>2012-11-04T02:01:00+02:00</lastmod>
+    <lastmod>2012-11-04T00:01:00+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://v.zasadnyy.com/404.html</loc>
-    <lastmod>2015-01-07T20:35:25+02:00</lastmod>
+    <lastmod>2015-01-10T15:54:34+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://v.zasadnyy.com/</loc>
-    <lastmod>2015-01-07T20:35:25+02:00</lastmod>
+    <lastmod>2015-01-10T15:54:34+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://v.zasadnyy.com/projects/</loc>
-    <lastmod>2015-01-07T20:35:25+02:00</lastmod>
+    <lastmod>2015-01-10T15:54:34+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://v.zasadnyy.com/slides/</loc>
-    <lastmod>2015-01-07T20:35:25+02:00</lastmod>
+    <lastmod>2015-01-10T15:54:34+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
