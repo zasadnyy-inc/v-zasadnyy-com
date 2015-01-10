@@ -1,13 +1,11 @@
 ---
 layout: article
 title: "Best test devices for game development"
-author: "Vitaliy Zasadnyy"
-description: ""
+headline: ""
 date: 2014-06-09T22:20:38+02:00
 estimate: "4 mins"
 categories: [unity3d]
 post: true
-image: ""
 external: true
 sourceName: "Nravo Developers"
 sourceUrl: "http://developers.nravo.com/best-test-devices-for-game-development"

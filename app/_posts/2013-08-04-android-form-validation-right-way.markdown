@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "Android form validation - the right way"
-author: "Vitaliy Zasadnyy"
-description: ""
+headline: ""
 date: 2013-08-04T00:14:17+02:00
 estimate: "5 mins"
 categories: [android, best practices]

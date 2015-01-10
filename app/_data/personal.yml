@@ -9,9 +9,9 @@ name: Vitaliy
 surname: Zasadnyy
 
 # Social resharing
-twitter_image: "/img/photo.jpg"
-google_plus_image: "/img/photo.jpg"
-facebook_image: "/img/photo.jpg"
+twitter_image: "/img/seo/sharing-twitter.png"
+google_plus_image: "/img/seo/sharing-google-plus.png"
+facebook_image: "/img/seo/sharing-facebook.png"
 
 # Navigation
 navigation:
@@ -24,6 +24,3 @@ images_folder: "/img/posts/"
 discus_short_name: "vzasadnyy"
 about_me: "Hi, my name is Vitaliy, I'm mobile developer and Google Developers Group Lviv co-founder. I'm interested in GameDev, Android, iOS, wearables and community management. Used to work for enterprise giants like EPAM as well as for product companies such as NRavo."
 get_in_touch: "You can find me on <a href='https://www.google.com/+VitalikZasadnyy' target='_blank'>Google+</a>, <a href='http://twitter.com/zasadnyy' target='_blank'>Twitter</a> or <a href='https://www.linkedin.com/in/zasadnyy' target='_blank'>LinkedIn</a>. If you want get me directly, please send me an <a href='mailto:vitaliy@zasadnyy.com' target='_blank'>email</a>."
-
-# Images folders
-favicon_folder: "/img/favicons/"

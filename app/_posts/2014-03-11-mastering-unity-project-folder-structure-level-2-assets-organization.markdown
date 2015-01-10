@@ -1,13 +1,11 @@
 ---
 layout: article
 title: "Mastering Unity Project Folder Structure. Level 2 – Assets Organization"
-author: "Vitaliy Zasadnyy"
-description: ""
+headline: ""
 date: 2014-03-11T15:31:43+02:00
 estimate: "6 mins"
 categories: [unity3d]
 post: true
-image: ""
 external: true
 sourceName: "Nravo Developers"
 sourceUrl: "http://developers.nravo.com/mastering-unity-project-folder-structure-level-2-assets-organization"

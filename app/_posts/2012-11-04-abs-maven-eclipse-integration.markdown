@@ -1,13 +1,12 @@
 ---
 layout: article
 title: "Action Bar Sherlock, Maven, eclipse integration"
-author: "Vitaliy Zasadnyy"
-description: "Step by step guide"
-date: 2012-11-04 00:01:00
+headline: "Step by step guide"
+date: 2012-11-04T00:01:00+02:00
 estimate: "10 mins"
 categories: [android, maven, eclipse]
 post: true
-image: ""
+image: "http://v.zasadnyy.com/img/posts/abs-maven-eclipse-integration/eclipse-maven-abs.png"
 redirect_from:
   - /2012/10/action-bar-sherlok-maven-eclipse.html
 ---
@@ -82,10 +81,10 @@ As it is stated on [abs usage page](http://actionbarsherlock.com/usage.html) the
 
 ```xml
 <dependency>
-  <groupId>com.actionbarsherlock</groupId>
-  <artifactId>actionbarsherlock</artifactId>
-  <version>4.2.0</version>
-  <type>apklib</type>
+	<groupId>com.actionbarsherlock</groupId>
+	<artifactId>actionbarsherlock</artifactId>
+	<version>4.2.0</version>
+	<type>apklib</type>
 </dependency>
 ```
 
@@ -136,12 +135,12 @@ If you carefully take a look to the last error you'll notice that problem is wit
 
 ```shell mark:3,7
 /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java -Xmx1024M -jar /Users/vitaliyzasadnyy/Development/SDKs/android-sdk-macosx/platform-tools/lib/dx.jar --dex --output=
-  /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex
-  /Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib
-  /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar
-  /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes
-  /Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar
-  /Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar
+	/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex
+	/Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib
+	/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar
+	/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes
+	/Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar
+	/Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar
 ```
 
 
@@ -149,18 +148,18 @@ We can fix this error by adding `actionbarsherlock` and `support-v4-r7` dependen
 
 ```xml mark:5,13
 <dependency>
-  <groupId>com.google.android</groupId>
-  <artifactId>support-v4</artifactId>
-  <version>r7</version>
-  <scope>provided</scope>
+	<groupId>com.google.android</groupId>
+	<artifactId>support-v4</artifactId>
+	<version>r7</version>
+	<scope>provided</scope>
 </dependency>
 
  <dependency>
-   <groupId>com.actionbarsherlock</groupId>
-   <artifactId>actionbarsherlock</artifactId>
-   <version>4.2.0</version>
-   <type>apklib</type>
-   <scope>provided</scope>
+	 <groupId>com.actionbarsherlock</groupId>
+	 <artifactId>actionbarsherlock</artifactId>
+	 <version>4.2.0</version>
+	 <type>apklib</type>
+	 <scope>provided</scope>
 </dependency>
 ```
 

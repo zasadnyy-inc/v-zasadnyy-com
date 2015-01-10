@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "Cyrillic app name incorrectly encoded during porting Android app to Blackberry"
-author: "Vitaliy Zasadnyy"
-description: ""
+headline: ""
 date: 2013-01-27T23:16:46+02:00
 estimate: "4 mins"
 categories: [blackberry, bug]
