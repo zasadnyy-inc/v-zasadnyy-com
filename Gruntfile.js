@@ -12,7 +12,9 @@ module.exports = function(grunt) {
 	// Show elapsed time after tasks run
 	require('time-grunt')(grunt);
 	// Load all Grunt tasks
-	require('jit-grunt')(grunt);
+	require('jit-grunt')(grunt, {
+		useminPrepare: 'grunt-usemin'
+	});
 
 	grunt.initConfig({
 		// Configurable paths
@@ -360,7 +362,6 @@ module.exports = function(grunt) {
 		grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
 		grunt.task.run(['serve']);
 	});
-
 
 	grunt.registerTask('build', [
 		'clean',
