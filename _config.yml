@@ -17,6 +17,8 @@ show_drafts: true
 permalink: '/blog/:title'
 paginate: 5
 paginate_path: '/page:num'
+category_title_prefix: 'Tag: #'
+category_dir: '/blog/tag/'
 
 # Markdown library
 markdown: kramdown

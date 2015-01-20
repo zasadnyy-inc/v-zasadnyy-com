@@ -86,6 +86,13 @@ Any files in here are copied to the build folder as is, without any changes (exc
 
 See documentation about [Application.streamingAssetsPath](http://docs.unity3d.com/Documentation/ScriptReference/Application-streamingAssetsPath.html) and [Streaming Assets](http://docs.unity3d.com/Documentation/Manual/StreamingAssets.html).
 
+<div class="h-tip" markdown="1">
+During Android biuld all files from `Assets/StreamingAssets/` are copied to `assets/` folder uncompressed, so you can load them from java code, e.g.
+
+``` java
+InputStream bitmap = getAssets().open("icon.png");
+```
+</div>
 
 More posts from Mastering Unity Project Folder Structure series:
 

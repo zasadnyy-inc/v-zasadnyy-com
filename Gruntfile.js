@@ -13,7 +13,8 @@ module.exports = function(grunt) {
 	require('time-grunt')(grunt);
 	// Load all Grunt tasks
 	require('jit-grunt')(grunt, {
-		useminPrepare: 'grunt-usemin'
+		useminPrepare: 'grunt-usemin',
+		buildcontrol: 'grunt-build-control'
 	});
 
 	grunt.initConfig({
