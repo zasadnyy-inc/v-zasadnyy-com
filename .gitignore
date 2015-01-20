@@ -11,7 +11,6 @@ Icon?
 Thumbs.db
 
 # Always-ignore files and folders #
-*.diff
 *.err
 *.log
 *.orig

@@ -88,7 +88,7 @@ As it is stated on [abs usage page](http://actionbarsherlock.com/usage.html) the
 </dependency>
 ```
 
-Also you need to extend `HelloAndroidActivity` from `com.actionbarsherlock.app.SherlockActivity` instead of `android.app.Activity` and change activity theme in `AndroidManifest.xml` to `android:theme="@style/Theme.Sherlock"`. Checkout [git patch file]({{site.baseurl}}/files/posts/abs-maven-eclipse-integration/patch.diff) for details. Try to build app. From parent project folder execute:
+Also you need to extend `HelloAndroidActivity` from `com.actionbarsherlock.app.SherlockActivity` instead of `android.app.Activity` and change activity theme in `AndroidManifest.xml` to `android:theme="@style/Theme.Sherlock"`. Checkout [git patch file]({{site.baseurl}}/files/posts/patch.diff) for details. Try to build app. From parent project folder execute:
 
 ```shell
 mvn clean install
