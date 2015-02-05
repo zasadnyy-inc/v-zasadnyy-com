@@ -45,4 +45,4 @@ $box-shadow-animation: box-shadow $transition-duration $transition-animation;
 $image-dir: "../img";
 $sprites-dir: $image-dir + "/sprites";
 
-@import "modules/utility";
+@import "../modules/utility";

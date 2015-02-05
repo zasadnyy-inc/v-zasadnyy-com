@@ -1,17 +1,9 @@
 .article {
     float: none;
     line-height: 1.6em;
-    h1, h2, h3, h4, h5, h6 {
-        margin-bottom: 14px;
+    h3, h4, h5, h6 {
+        margin: 50px 0 14px;
         line-height: 1.3em;
-    }
-    h1 {
-        font-size: 2.2em;
-        letter-spacing: -1px;
-    }
-    h2 {
-        font-size: 1.9em;
-        letter-spacing: -0.7px;
     }
     h3 {
         font-size: 1.6em;
@@ -31,7 +23,6 @@
     }
     p {
         margin-bottom: 1em;
-        // display: table;
     }
     ol, ul {
         margin: 0 0 15px 30px;
@@ -123,6 +114,12 @@
         content: 'Disclaimer';
     }
 }
+.req {
+    margin-top: -20px;
+    font-size: .7em;
+    font-style: italic;
+    color: $sub-text-color;
+}
 .article-header {
     margin-bottom: 40px;
     padding: 40px 0 50px;
@@ -163,6 +160,10 @@
     }
     a {
         color: #ffffff;
+        &:hover {
+            color: rgba(255, 255, 255, .8);
+
+        }
     }
     .name {
         color: $sub-text-color;

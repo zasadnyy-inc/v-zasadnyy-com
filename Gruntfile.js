@@ -1,392 +1,326 @@
-// Generated on 2014-12-20 using generator-jekyllrb 1.2.1
 'use strict';
 
-// Directory reference:
-//   css: css
-//   sass: _assets\scss
-//   javascript: js
-//   images: img
-//   fonts: fonts
-
 module.exports = function(grunt) {
-	// Show elapsed time after tasks run
-	require('time-grunt')(grunt);
-	// Load all Grunt tasks
-	require('jit-grunt')(grunt, {
-		useminPrepare: 'grunt-usemin',
+    // Show elapsed time after tasks run
+    require('time-grunt')(grunt);
+    // Load all Grunt tasks
+    require('jit-grunt')(grunt, {
+    	critical: 'grunt-critical',
 		buildcontrol: 'grunt-build-control'
 	});
 
-	grunt.initConfig({
-		// Configurable paths
-		yeoman: {
-			app: 'app',
-			dist: 'dist',
-			baseurl: ''
-		},
-		watch: {
-			sass: {
-				files: ['<%= yeoman.app %>/_assets/scss/**/*.{scss,sass}'],
-				tasks: ['sass:server', 'autoprefixer:server']
-			},
-			scripts: {
-				files: ['<%= yeoman.app %>/_assets/js/**/*.{js}'],
-				tasks: ['uglify:server']
-			},
-			jekyll: {
-				files: [
-					'<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-					'<%= yeoman.app %>/*.{html,yml,md,mkd,markdown}',
-					'!<%= yeoman.app %>/_bower_components/**/*'
-				],
-				tasks: ['jekyll:server']
-			},
-			livereload: {
-				options: {
-					livereload: '<%= connect.options.livereload %>'
-				},
-				files: [
-					'.jekyll/**/*.{html,yml,md,mkd,markdown}',
-					'.tmp/<%= yeoman.baseurl %>/css/*.css',
-					'.tmp/<%= yeoman.baseurl %>/js/*.js',
-					'<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
-				]
-			}
-		},
-		connect: {
-			options: {
-				port: 9000,
-				livereload: 35729,
-				// change this to '0.0.0.0' to access the server from outside
-				hostname: 'localhost'
-			},
-			livereload: {
-				options: {
-					open: {
-						target: 'http://localhost:9000/<%= yeoman.baseurl %>'
-					},
-					base: [
-						'.jekyll',
-						'.tmp',
-						'<%= yeoman.app %>'
-					]
-				}
-			},
-			dist: {
-				options: {
-					open: {
-						target: 'http://localhost:9000/<%= yeoman.baseurl %>'
-					},
-					base: [
-						'<%= yeoman.dist %>',
-						'.tmp'
-					]
-				}
-			}
-		},
-		clean: {
-			server: [
-				'.jekyll',
-				'.tmp'
-			],
-			dist: {
-				files: [{
-					dot: true,
-					src: [
-						'.tmp',
-						'<%= yeoman.dist %>/*',
-						'!<%= yeoman.dist %>/.git*'
-					]
-				}]
-			}
-		},
-		sass: {
-			options: {
-				includePaths: ['<%= yeoman.app %>/_assets/scss']
-			},
-			server: {
-				options: {
-					sourceMap: true
-				},
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.app %>/_assets/scss',
-					src: '**/*.{scss,sass}',
-					dest: '.tmp/<%= yeoman.baseurl %>/css',
-					ext: '.css'
-				}]
-			},
-			dist: {
-				options: {
-					outputStyle: 'compressed'
-				},
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.app %>/_assets/scss',
-					src: '**/*.{scss,sass}',
-					dest: '.tmp/<%= yeoman.baseurl %>/css',
-					ext: '.css'
-				}]
-			}
-		},
-		autoprefixer: {
-			options: {
-				browsers: ['last 3 versions']
-			},
-			default: {
-				files: [{
-					expand: true,
-					cwd: '.tmp/<%= yeoman.baseurl %>/css',
-					src: '**/*.css',
-					dest: '.tmp/<%= yeoman.baseurl %>/css'
-				}]
-			}
-		},
-		jekyll: {
-			options: {
-				// bundleExec: true,
-				config: '_config.yml,_config.build.yml',
-				src: '<%= yeoman.app %>'
-			},
-			dist: {
-				options: {
-					dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-				}
-			},
-			server: {
-				options: {
-					config: '_config.yml',
-					dest: '.jekyll/<%= yeoman.baseurl %>'
-				}
-			},
-			check: {
-				options: {
-					doctor: true
-				}
-			}
-		},
-		useminPrepare: {
-			options: {
-				dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-			},
-			html: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/index.html'
-		},
-		usemin: {
-			options: {
-				assetsDirs: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-			},
-			html: ['<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html'],
-			css: ['<%= yeoman.dist %>/<%= yeoman.baseurl %>/css/**/*.css']
-		},
-		htmlmin: {
-			dist: {
-				options: {
-					removeComments: true,
-					collapseWhitespace: true,
-					collapseBooleanAttributes: true,
-					removeAttributeQuotes: true,
-					removeRedundantAttributes: true,
-					removeEmptyAttributes: true,
-					minifyJS: true,
-					minifyCSS: true
-				},
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-					src: '**/*.html',
-					dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-				}]
-			}
-		},
-		// Usemin adds files to uglify
-		uglify: {
-			server: {
-				files: {
-					'.tmp/<%= yeoman.baseurl %>/js/scripts.js': ['<%= yeoman.app %>/_assets/js/vendor/jquery.appear.min.js', '<%= yeoman.app %>/_assets/js/scripts.js']
-				}
-			},
-			dist: {
-				files: {
-					'.tmp/<%= yeoman.baseurl %>/js/scripts.js': ['<%= yeoman.app %>/_assets/js/vendor/jquery.appear.min.js', '<%= yeoman.app %>/_assets/js/scripts.js']
-				}
-			}
-		},
-		// Usemin adds files to cssmin
-		critical: {
-			dist: {
-				options: {
-					base: './',
-					css: [
-						'.tmp/<%= yeoman.baseurl %>/css/blog.css'
-					],
-					minify: true,
-					width: 320,
-					height: 480
-				},
-				// files: [{
-				// 	expand: true,
-				// 	cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-				// 	src: ['index.html'],
-				// 	dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-				// }]
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-					src: ['**/*.html'],
-					dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-				}]
-			}
-		},
-		cssmin: {
-			dist: {
-				options: {
-					keepSpecialComments: 0,
-					check: 'gzip'
-				},
-				files: [{
-					expand: true,
-					cwd: '.tmp/<%= yeoman.baseurl %>/css',
-					src: ['*.css'],
-					dest: '.tmp/<%= yeoman.baseurl %>/css'
-				}]
-			}
-		},
-		uncss: {
-		    dist: {
-		        options: {
-		            // csspath: '../../.tmp',
-		            stylesheets: ['../../../.tmp/<%= yeoman.baseurl %>/css/blog.css'],
-		            // htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-		            report: 'min'
-		        },
-		        files: {
-		            '.tmp/<%= yeoman.baseurl %>/css/blog.css': ['<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html']
-		        }
-		    }
-		},
-		// uncss: {
-		// 	options: {
-		// 		stylesheets: ['.tmp/<%= yeoman.baseurl %>/css/blog.css'],
-		// 		// htmlroot: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-		// 		report: 'min'
-		// 	},
-		// 	dist: {
-		// 		src: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/**/*.html',
-		// 		dest: '.tmp/<%= yeoman.baseurl %>/css/blog-tidy.css'
-		// 	}
-		// },
-		imagemin: {
-			options: {
-				progressive: true
-			},
-			posts: {
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts',
-					src: '**/*.{jpg,jpeg,png,gif}',
-					dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts'
-				}]
-			},
-			slides: {
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/slides',
-					src: '**/*.{jpg,jpeg,png,gif}',
-					dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/slides'
-				}]
-			}
-		},
-		svgmin: {
-			dist: {
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts',
-					src: '**/*.svg',
-					dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>/img/posts'
-				}]
-			}
-		},
-		copy: {
-			dist: {
-				files: [{
-					expand: true,
-					dot: true,
-					cwd: '.tmp/<%= yeoman.baseurl %>',
-					src: [
-						'css/**/*',
-						'js/**/*'
-					],
-					dest: '<%= yeoman.dist %>/<%= yeoman.baseurl %>'
-				}]
-			}
-		},
-		buildcontrol: {
-			dist: {
-				options: {
-					dir: '<%= yeoman.dist %>/<%= yeoman.baseurl %>',
-					remote: 'git@github.com:zasadnyy-inc/v-zasadnyy-com.git',
-					branch: 'gh-pages',
-					commit: true,
-					push: true,
-					connectCommits: false
-				}
-			}
-		},
-		concurrent: {
-			server: [
-				'jekyll:server'
-			],
-			dist: [
-				'copy:dist'
-			]
-		}
-	});
+    grunt.initConfig({
+        app: {
+            source: 'app',
+            dist: 'dist',
+            baseurl: ''
+        },
+        watch: {
+            sass: {
+                files: ['<%= app.source %>/_assets/scss/**/*.{scss,sass}'],
+                tasks: ['sass:server', 'autoprefixer']
+            },
+            scripts: {
+                files: ['<%= app.source %>/_assets/js/**/*.{js}'],
+                tasks: ['uglify']
+            },
+            jekyll: {
+                files: [
+                    '<%= app.source %>/**/*.{html,yml,md,mkd,markdown}'
+                ],
+                tasks: ['jekyll:server']
+            },
+            livereload: {
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                },
+                files: [
+                    '.jekyll/**/*.{html,yml,md,mkd,markdown}',
+                    '.tmp/<%= app.baseurl %>/css/*.css',
+                    '.tmp/<%= app.baseurl %>/js/*.js',
+                    '<%= app.source %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+                ]
+            }
+        },
+        connect: {
+            options: {
+                port: 9000,
+                livereload: 35729,
+                // change this to '0.0.0.0' to access the server from outside
+                hostname: 'localhost'
+            },
+            livereload: {
+                options: {
+                    open: {
+                        target: 'http://localhost:9000/<%= app.baseurl %>'
+                    },
+                    base: [
+                        '.jekyll',
+                        '.tmp',
+                        '<%= app.source %>'
+                    ]
+                }
+            },
+            dist: {
+                options: {
+                    open: {
+                        target: 'http://localhost:9000/<%= app.baseurl %>'
+                    },
+                    base: [
+                        '<%= app.dist %>',
+                        '.tmp'
+                    ]
+                }
+            }
+        },
+        clean: {
+            server: [
+                '.jekyll',
+                '.tmp'
+            ],
+            dist: {
+                files: [{
+                    dot: true,
+                    src: [
+                        '.tmp',
+                        '<%= app.dist %>/*',
+                        '!<%= app.dist %>/.git*'
+                    ]
+                }]
+            }
+        },
+        jekyll: {
+            options: {
+                config: '_config.yml,_config.build.yml',
+                src: '<%= app.source %>'
+            },
+            dist: {
+                options: {
+                    dest: '<%= app.dist %>/<%= app.baseurl %>',
+                }
+            },
+            server: {
+                options: {
+                    config: '_config.yml',
+                    dest: '.jekyll/<%= app.baseurl %>'
+                }
+            }
+        },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    collapseBooleanAttributes: true,
+                    removeAttributeQuotes: true,
+                    removeRedundantAttributes: true,
+                    removeEmptyAttributes: true,
+                    minifyJS: true,
+                    minifyCSS: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>',
+                    src: '**/*.html',
+                    dest: '<%= app.dist %>/<%= app.baseurl %>'
+                }]
+            }
+        },
+        uglify: {
+            options: {
+                preserveComments: false
+            },
+            dist: {
+                files: {
+                    '.tmp/<%= app.baseurl %>/js/scripts.js': ['<%= app.source %>/_assets/js/**/*.js']
+                }
+            }
+        },
+        sass: {
+        	options: {
+        		includePaths: ['bower_components/bootstrap-sass/assets/stylesheets']
+        	},
+            server: {
+                options: {
+                    sourceMap: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= app.source %>/_assets/scss',
+                    src: '**/*.{scss,sass}',
+                    dest: '.tmp/<%= app.baseurl %>/css',
+                    ext: '.css'
+                }]
+            },
+            dist: {
+                options: {
+                    outputStyle: 'compressed'
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= app.source %>/_assets/scss',
+                    src: '**/*.{scss,sass}',
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/css',
+                    ext: '.css'
+                }]
+            }
+        },
+        uncss: {
+            options: {
+                htmlroot: '<%= app.dist %>/<%= app.baseurl %>',
+                report: 'gzip'
+            },
+            dist: {
+                src: '<%= app.dist %>/<%= app.baseurl %>/**/*.html',
+                dest: '.tmp/<%= app.baseurl %>/css/blog.css'
+            }
+        },
+        autoprefixer: {
+            options: {
+                browsers: ['last 3 versions']
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '.tmp/<%= app.baseurl %>/css',
+                    src: '**/*.css',
+                    dest: '.tmp/<%= app.baseurl %>/css'
+                }]
+            }
+        },
+        critical: {
+            dist: {
+                options: {
+                    base: './',
+                    css: [
+                        '.tmp/<%= app.baseurl %>/css/blog.css'
+                    ],
+                    minify: true,
+                    width: 320,
+                    height: 480
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>',
+                    src: ['**/*.html'],
+                    dest: '<%= app.dist %>/<%= app.baseurl %>'
+                }]
+            }
+        },
+        cssmin: {
+            dist: {
+                options: {
+                    keepSpecialComments: 0,
+                    check: 'gzip'
+                },
+                files: [{
+                    expand: true,
+                    cwd: '.tmp/<%= app.baseurl %>/css',
+                    src: ['*.css'],
+                    dest: '.tmp/<%= app.baseurl %>/css'
+                }]
+            }
+        },
+        imagemin: {
+            options: {
+                progressive: true
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img/posts',
+                    src: '**/*.{jpg,jpeg,png,gif}',
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/img/posts'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img/slides',
+                    src: '**/*.{jpg,jpeg,png,gif}',
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/img/slides'
+                }]
+            }
+        },
+        svgmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img/posts',
+                    src: '**/*.svg',
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/img/posts'
+                }]
+            }
+        },
+        copy: {
+            dist: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '.tmp/<%= app.baseurl %>',
+                    src: [
+                        'css/**/*',
+                        'js/**/*'
+                    ],
+                    dest: '<%= app.dist %>/<%= app.baseurl %>'
+                }]
+            }
+        },
+        buildcontrol: {
+            dist: {
+                options: {
+                    dir: '<%= app.dist %>/<%= app.baseurl %>',
+                    remote: 'git@github.com:zasadnyy-inc/o-zasadnyy-com.git',
+                    branch: 'gh-pages',
+                    commit: true,
+                    push: true,
+                    connectCommits: false
+                }
+            }
+        }
+    });
 
-	// Define Tasks
-	grunt.registerTask('serve', function(target) {
-		if (target === 'dist') {
-			return grunt.task.run(['build', 'connect:dist:keepalive']);
-		}
+    // Define Tasks
+    grunt.registerTask('serve', function(target) {
+        if (target === 'dist') {
+            return grunt.task.run(['build', 'connect:dist:keepalive']);
+        }
 
-		grunt.task.run([
-			'clean:server',
-			'sass:server',
-			'jekyll:server',
-			'autoprefixer',
-			// 'uglify:server',
-			'connect:livereload',
-			'watch'
-		]);
-	});
+        grunt.task.run([
+            'clean:server',
+            'jekyll:server',
+            'sass:server',
+            'autoprefixer',
+            // 'uglify',
+            'connect:livereload',
+            'watch'
+        ]);
+    });
 
-	grunt.registerTask('server', function() {
-		grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-		grunt.task.run(['serve']);
-	});
+    grunt.registerTask('server', function() {
+        grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
+        grunt.task.run(['serve']);
+    });
 
-	grunt.registerTask('build', [
-		'clean',
-		'jekyll:dist',
-		'imagemin',
-		'svgmin',
-		// 'uglify:dist',
-		'sass:dist',
-		'uncss',
-		'autoprefixer',
-		'critical:dist',
-		'useminPrepare',
-		'usemin',
-		'cssmin',
-		'htmlmin'
-	]);
+    grunt.registerTask('build', [
+        'clean:dist',
+        'jekyll:dist',
+        'imagemin',
+        'svgmin',
+        'sass:dist',
+        'uncss',
+        'autoprefixer',
+        'critical',
+        'cssmin',
+        // 'uglify',
+        'htmlmin'
+    ]);
 
-	grunt.registerTask('deploy', [
-		'build',
-		'concurrent:dist',
-		'buildcontrol'
-	]);
+    grunt.registerTask('deploy', [
+        'build',
+        'copy',
+        'buildcontrol'
+    ]);
 
-	grunt.registerTask('default', [
-		'serve'
-	]);
+    grunt.registerTask('default', [
+        'serve'
+    ]);
 };

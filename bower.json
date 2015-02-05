@@ -1,6 +1,7 @@
 {
-  "name": "vzasadnyy",
-  "version": "0.0.0",
-  "dependencies": {
-  }
+    "name": "vzasadnyy",
+    "version": "0.0.1",
+    "dependencies": {
+        "bootstrap-sass": "3.3.3"
+    }
 }
