@@ -106,3 +106,12 @@
   slides_provider: google_docs
   recording: ""
   date: 2014-12-06
+-
+  title: "Building an MMO RPG Game. The Wrong Way"
+  description: "Building an MMO RPG game is a complex and long-lasting project, especially for an inexperienced team. This talk is about mistakes we've made, problems we've faced and how we solved them."
+  thumbnail: "thumb_building_an_mmo_game.png"
+  details_url: ""
+  slides_url: "https://docs.google.com/presentation/d/14Buq_jjXlKHgYzvLJJL9ALelcJwqs7E8gMoac-czy8k/pub?start=false&loop=false&delayms=3000"
+  slides_provider: google_docs
+  recording: ""
+  date: 2015-02-04

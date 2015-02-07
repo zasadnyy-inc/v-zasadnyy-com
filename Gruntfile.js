@@ -268,7 +268,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: 'git@github.com:zasadnyy-inc/o-zasadnyy-com.git',
+                    remote: 'git@github.com:zasadnyy-inc/v-zasadnyy-com.git',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
