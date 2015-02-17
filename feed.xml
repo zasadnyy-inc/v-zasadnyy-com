@@ -5,8 +5,8 @@
     <description></description>
     <link>http://v.zasadnyy.com/</link>
     <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 17 Feb 2015 13:10:19 +0100</pubDate>
-    <lastBuildDate>Tue, 17 Feb 2015 13:10:19 +0100</lastBuildDate>
+    <pubDate>Tue, 17 Feb 2015 21:01:09 +0100</pubDate>
+    <lastBuildDate>Tue, 17 Feb 2015 21:01:09 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -17,29 +17,29 @@
 
 &lt;h3 id=&quot;actually-an-issue&quot;&gt;Actually an issue&lt;/h3&gt;
 
-&lt;p&gt;Recently I found that &lt;strong&gt;non-java resources&lt;/strong&gt; (e.g. images, properties, xml configurations) &lt;strong&gt;from included jar libraries are not copied to the final apk&lt;/strong&gt; during Unity Android build. As a result as soon as we try to load them from java side - application crashes with &lt;code&gt;I/WindowState﹕ WIN DEATH: Window...&lt;/code&gt; exception.&lt;/p&gt;
+&lt;p&gt;Recently I found that &lt;strong&gt;non-java resources&lt;/strong&gt; (e.g. images, properties, xml configurations) &lt;strong&gt;from included jar libraries are not copied to the final apk&lt;/strong&gt; during Unity Android build. As a result as soon as we try to load them from a java side - application crashes with &lt;code&gt;I/WindowState﹕ WIN DEATH: Window...&lt;/code&gt; exception.&lt;/p&gt;
 
-&lt;p&gt;During native Android SDK development we had similar issue but it was easily solved by additional gradle configuration. In case of Unity &lt;strong&gt;there is no easy way to modify apk build process&lt;/strong&gt;. For sure you can make some magic with apk decompilation, modifing and packaging back, but that’s not the solution we’re looking for.&lt;/p&gt;
+&lt;p&gt;During native Android SDK development, we had the similar issue but it was easily solved by additional gradle configuration. In case of Unity &lt;strong&gt;there is no easy way to modify apk build process&lt;/strong&gt;. For sure you can make some magic with apk decompilation, modifying and packaging back, but that’s not the solution we’re looking for.&lt;/p&gt;
 
-&lt;p&gt;Here is simplified diagram for Android apk build process:
+&lt;p&gt;Here is a simplified diagram for Android apk build process:
 &lt;img src=&quot;/img/posts/unity-issue-android-build-process.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;temporary-solution&quot;&gt;Temporary solution&lt;/h3&gt;
 
-&lt;p&gt;For a temporary solution there are two approaches:&lt;/p&gt;
+&lt;p&gt;For a temporary solution, there are two approaches:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Magic with Adnroid SDK. Create a wrapper for &lt;code&gt;apkbuilder&lt;/code&gt; tool and add misssign resources on this step. This could be the only way if you don’t have access to library source code.&lt;/p&gt;
+    &lt;p&gt;Magic with Android SDK. Create a wrapper for &lt;code&gt;apkbuilder&lt;/code&gt; tool and add missing resources in this step. This could be the only way if you don’t have access to library source code.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Hassle with source code. If you’re missing configuration files and have access to source code it’s possible to hardcode values direclty to java code to remove all references to resources.&lt;/p&gt;
+    &lt;p&gt;Hassle with source code. If you’re missing configuration files and have access to source code it’s possible to hardcode values directly to java code to remove all references to resources.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;demo&quot;&gt;Demo&lt;/h3&gt;
 
-&lt;p&gt;I’ve created small demo to show-off the problem. It consist from 2 parts:&lt;/p&gt;
+&lt;p&gt;I’ve created a small demo to show-off the problem. It consists of 2 parts:&lt;/p&gt;
 
 &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;figcaption class=&quot;code-highlight-caption&quot;&gt;&lt;span class=&quot;code-highlight-caption-title&quot;&gt;Main.java from demo.jar&lt;/span&gt;&lt;/figcaption&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loadPropertiesAndPrintValues&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
@@ -76,7 +76,7 @@
 &lt;p&gt;Donwload demo Unity project from &lt;a href=&quot;/files/posts/unity-issue-non-class-resources-are-not-copied-to-final-apk-demo.zip&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 17 Feb 2015 13:20:38 +0100</pubDate>
+        <pubDate>Tue, 17 Feb 2015 03:20:38 +0100</pubDate>
         <link>http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</guid>
         
@@ -87,11 +87,11 @@
     
       <item>
         <title>Best test devices for game development</title>
-        <description>&lt;p&gt;Recently I had a task to select what Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most part of possible hardware configurations (screen size, GPU vendor, etc) taking into account that mainly we make games using Unity 3D.&lt;/p&gt;
+        <description>&lt;p&gt;Recently I had a task to select Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most part of possible hardware configurations (screen size, GPU vendor, etc) taking into account that mainly we make games using Unity 3D.&lt;/p&gt;
 
 &lt;h4 id=&quot;why-is-it-important-to-test-on-devices-with-different-gpus&quot;&gt;Why is it important to test on devices with different GPUs?&lt;/h4&gt;
 
-&lt;p&gt;If we’re talking about iOS, this question doesn’t make sense because all iPhones and iPads use PowerVR GPUs. But Android devices can be powered by &lt;a href=&quot;http://en.wikipedia.org/wiki/Imageon&quot;&gt;Adreno&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Tegra&quot;&gt;Tegra&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Mali_(GPU)&quot;&gt;Mali&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/PowerVR&quot;&gt;PowerVR&lt;/a&gt; GPUs. These differ in texture formats and how alpha is handled, and of course they all have different drivers and shader compilers. Unity documentation recommends using ETC texture compression, which is supported by all Android devices, is ‘safe’ and this is basically true, but in some cases ETC could not work the best or it’s possible to achieve better performance using other compression format adopted for certain GPU.&lt;/p&gt;
+&lt;p&gt;If we’re talking about iOS, this question doesn’t make sense because all iPhones and iPads use PowerVR GPUs. But Android devices can be powered by &lt;a href=&quot;http://en.wikipedia.org/wiki/Imageon&quot;&gt;Adreno&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Tegra&quot;&gt;Tegra&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Mali_(GPU)&quot;&gt;Mali&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/PowerVR&quot;&gt;PowerVR&lt;/a&gt; GPUs. These differ in texture formats and how alpha is handled. Moreover they all have different drivers and shader compilers. Unity documentation recommends using ETC texture compression, which is supported by all Android devices. But in some cases it’s possible to achieve better performance using other compression format adopted for certain GPU.&lt;/p&gt;
 
 &lt;h4 id=&quot;market-research-results&quot;&gt;Market research results&lt;/h4&gt;
 
@@ -135,18 +135,18 @@
   &lt;li&gt;Adreno 305: 4.6%&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;After merging all statistical data and requirements together we’ve got table that shows what devices to buy to fulfill the most popular gpu/screen size combinations:
+&lt;p&gt;After merging all statistical data and requirements together we’ve got a table that shows what devices to buy to fulfill the most popular gpu/screen size combinations:
 Test devices table&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/best-test-devices-for-game-development-table.png&quot; alt=&quot;result table&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;h-note&quot;&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.amazon.com/kindle-fire-hdx-student-gaming-tablet/dp/B00BWYQ9YE&quot;&gt;Kindle Fire&lt;/a&gt; and &lt;a href=&quot;http://shield.nvidia.com/&quot;&gt;Nvidia Shield&lt;/a&gt; are in the table, but not in statistics data.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;http://www.amazon.com/kindle-fire-hdx-student-gaming-tablet/dp/B00BWYQ9YE&quot;&gt;Kindle Fire&lt;/a&gt; and &lt;a href=&quot;http://shield.nvidia.com/&quot;&gt;Nvidia Shield&lt;/a&gt; are on the table, but not in statistics data.&lt;/p&gt;
 
-  &lt;p&gt;First one was selected to list because of it’s almost square screen that allows you to test your UI layouts on non-standard proportions. On the other hand it’s good to have Amazon device if you’ll decide to publish game to their store.&lt;/p&gt;
+  &lt;p&gt;First one was selected to list because of almost square screen that allows to test your UI on non-standard proportions. Also, it’s good to have Amazon device if you’ll decide to publish a game to their store.&lt;/p&gt;
 
-  &lt;p&gt;According Nvidia Shield, it is the perfect device to test user interaction using mobile game controller.&lt;/p&gt;
+  &lt;p&gt;According Nvidia Shield, it is the perfect device to test user interaction with game controller.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Do you use other devices for game testing? Share you list in the comments.&lt;/p&gt;
@@ -163,7 +163,7 @@ Test devices table&lt;/p&gt;
     
       <item>
         <title>Mastering Unity Project Folder Structure. Level 2 – Assets Organization</title>
-        <description>&lt;p&gt;Have you ever faced a problem that it was hard to find assets in your project? If you’re new to Unity and make game more complex than &lt;a href=&quot;https://www.google.com/search?q=Space+Invaders&amp;amp;oq=Space+Invaders&quot;&gt;Space Invaders&lt;/a&gt;, the answer is probably yes. That’s exactly what happened with our team, we are working on a big 3D MMO game and three months ago we decided that our project requires restructuring. In this post I’ll show folder structure that we use, explain how it is connected with art production pipeline and describe some naming conventions that help us a lot.&lt;/p&gt;
+        <description>&lt;p&gt;Have you ever faced a problem that it was hard to find assets in your project? If you’re new to Unity and make a game more complex than &lt;a href=&quot;https://www.google.com/search?q=Space+Invaders&amp;amp;oq=Space+Invaders&quot;&gt;Space Invaders&lt;/a&gt;, the answer is probably yes. That’s exactly what happened with our team. We are working on a big 3D MMO game and three months ago we decided that our project requires restructuring. In this post, I’ll show a folder structure that we use, explain how it is connected with an art production pipeline and describe some naming conventions that help us a lot.&lt;/p&gt;
 
 &lt;p&gt;After a few hours of googling I found several topics about project structure best practices:&lt;/p&gt;
 
@@ -173,31 +173,31 @@ Test devices table&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&quot;&gt;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;All these posts describe very simple cases (suitable for small games) and some basic rules of assets organization. So we decided to create our own set of rules and now, after several iterations of folder restructuring we are ready to share them.&lt;/p&gt;
+&lt;p&gt;All these posts describe very simple cases (suitable for small games) and some basic rules of assets organisation. So we decided to create our own set of rules. Now, after several iterations of folder restructuring we are ready to share them.&lt;/p&gt;
 
 &lt;h4 id=&quot;assets-folder-structure&quot;&gt;Assets Folder Structure&lt;/h4&gt;
 
-&lt;p&gt;When we started restructuring we had two simple goals: root folder should be as clean as possible and prepare folder structure to use Asset Bundles. Below you can find a screenshot from our project window and explanations to some folders.&lt;/p&gt;
+&lt;p&gt;When we started restructuring we had two simple goals: root folder should be as clean as possible and folder structure should be ready for Asset Bundles. Below you can find a screenshot of our project window and explanations to some folders.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-2-folder-structure.png&quot; alt=&quot;Assets folder structure&quot; class=&quot;pull-left&quot; style=&quot;margin: 10px 30px 30px 0px;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;/DynamicAssets/[asset bundle id]/Resources&lt;/code&gt; – place to put assets dynamically loaded via &lt;code&gt;Resources.Load(...)&lt;/code&gt; method. Common folder contains only base resources packed with game, resources from other folders are compiled into Asset Bundles and loaded from our servers on demand. Note, if you’re not using asset bundles you can only have one &lt;code&gt;Resources&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/DynamicAssets/[asset bundle id]/Resources&lt;/code&gt; – a place to put assets dynamically loaded via &lt;code&gt;Resources.Load(...)&lt;/code&gt; method. Common folder contains only base resources packed with game. Resources from other folders are compiled into Asset Bundles and loaded from our servers on demand. Note, if you’re not using asset bundles you can only have one &lt;code&gt;Resources&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;/Extensions/[extension name]&lt;/code&gt; – by default, all third party extensions like NGUI are unpacked to the &lt;code&gt;Assets&lt;/code&gt; folder root, but after fifth extension you’ll get mess in the project, so we have decided to create a separate folder.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/Extensions/[extension name]&lt;/code&gt; – by default, all third party extensions like NGUI are unpacked to the &lt;code&gt;Assets&lt;/code&gt; folder root. But after fifth extension you’ll get mess in the project, so we have decided to create a separate folder.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;/StaticAssets&lt;/code&gt; – when we’ve just started our game we used folder structure described &lt;a href=&quot;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&quot;&gt;here&lt;/a&gt;, after four months of development we realized that it’s total mess in the root, so we moved all static resources (referenced directly from scenes) to separate folder.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/StaticAssets&lt;/code&gt; – when we’ve just started our game we used folder structure described &lt;a href=&quot;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&quot;&gt;here&lt;/a&gt;. After four months of development we realised that it’s total mess in the root, so we moved all static resources (referenced directly from scenes) to separate folder.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;/StaticAssets/Animations&lt;/code&gt; – in order to better understand hierarchy related to animations I’d like to describe a part of our art pipeline (note, we use &lt;a href=&quot;https://docs.unity3d.com/Documentation/Manual/MecanimAnimationSystem.html&quot;&gt;Mecanim&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/StaticAssets/Animations&lt;/code&gt; – to understand hierarchy related to animations better I’d like to describe a part of our art pipeline (note, we use &lt;a href=&quot;https://docs.unity3d.com/Documentation/Manual/MecanimAnimationSystem.html&quot;&gt;Mecanim&lt;/a&gt;):&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;animator imports animations into Unity in &lt;code&gt;.fbx&lt;/code&gt; format and puts them under &lt;code&gt;/StaticAssets/Animations/Sources/[model name]&lt;/code&gt; folder&lt;/li&gt;
   &lt;li&gt;animator duplicates all the &lt;code&gt;.anim&lt;/code&gt; files from &lt;code&gt;.fbx&lt;/code&gt;, configures them and moves to &lt;code&gt;/StaticAssets/Animations/[model name]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;animator creates mecanim animator controller for specific model, puts it under &lt;code&gt;/StaticAssets/Animators&lt;/code&gt;, configures mechanim state machine using &lt;code&gt;.anim&lt;/code&gt; files from &lt;code&gt;/StaticAssets/Animations/[model name]&lt;/code&gt; folder.&lt;/li&gt;
+  &lt;li&gt;animator creates mecanim animator controller for specific model, puts it under &lt;code&gt;/StaticAssets/Animators&lt;/code&gt;, configures mecanim state machine using &lt;code&gt;.anim&lt;/code&gt; files from &lt;code&gt;/StaticAssets/Animations/[model name]&lt;/code&gt; folder.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;code&gt;/StaticAssets/Effects&lt;/code&gt; – folder for models, materials, textures, prefabs, etc. used for particle systems.&lt;/p&gt;
 
-&lt;p class=&quot;h-warning&quot;&gt;&lt;strong&gt;Don’t use spaces in file and folder names&lt;/strong&gt;. We faced with this problem during project build setup on CI server, as we found Unity3D [command line tools][comand-line-tools] can’t automatically process paths with spaces.&lt;/p&gt;
+&lt;p class=&quot;h-warning&quot;&gt;&lt;strong&gt;Don’t use spaces in file and folder names&lt;/strong&gt;. We faced with this problem during a project build setup on CI server, as we found Unity3D [command line tools][comand-line-tools] can’t automatically process paths with spaces.&lt;/p&gt;
 
 &lt;h4 id=&quot;naming-conventions&quot;&gt;Naming conventions&lt;/h4&gt;
 
@@ -229,13 +229,13 @@ Test devices table&lt;/p&gt;
         <title>Mastering Unity Project Folder Structure. Level 1 – Reserved Folders</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg&quot; alt=&quot;Reserved&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In previous post I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever sub folders you want, but there are some reserved folder names for special needs.&lt;/p&gt;
+&lt;p&gt;In the previous post, I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever subfolders you want. But there are some reserved folder names for special needs.&lt;/p&gt;
 
-&lt;p class=&quot;quote&quot;&gt;I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some additional info from our team experience, original version available on &lt;a href=&quot;http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;quote&quot;&gt;I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some extra info from our team experience. The original version available on &lt;a href=&quot;http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h5 id=&quot;standard-assets&quot;&gt;Standard Assets&lt;/h5&gt;
 
-&lt;p&gt;Scripts in here are always compiled first. Scripts are output to either &lt;code&gt;Assembly-CSharp-firstpass&lt;/code&gt;, &lt;code&gt;Assembly-UnityScript-firstpass&lt;/code&gt;, or &lt;code&gt;Assembly-Boo-firstpass&lt;/code&gt; project, depending on the language. More information about script compilation order in &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Scripts in here are always compiled first. Scripts are output to either &lt;code&gt;Assembly-CSharp-firstpass&lt;/code&gt;, &lt;code&gt;Assembly-UnityScript-firstpass&lt;/code&gt; or &lt;code&gt;Assembly-Boo-firstpass&lt;/code&gt; project, depending on the language. More information about script compilation order in &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Scripts inside the Standard Assets folder will be compiled earlier than your other scripts. So, placing scripts in Standard Assets is one way for C# scripts to be able to access .js scripts or vice-versa.&lt;/p&gt;
 
@@ -257,7 +257,7 @@ Test devices table&lt;/p&gt;
 
 &lt;h5 id=&quot;plugins&quot;&gt;Plugins&lt;/h5&gt;
 
-&lt;p&gt;The &lt;code&gt;Plugins&lt;/code&gt; folder is where you must put any native plugins, which you want to be accessible by your scripts. They will also be automatically included in your build. Take note that this folder may not be in any subfolder (it has to reside within the top-level &lt;code&gt;Assets&lt;/code&gt; folder).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Plugins&lt;/code&gt; folder is where you must put any native plugins, which you want to be accessible to your scripts. They will also be automatically included in your build. Take note that this folder may not be in any subfolder (it has to reside within the top-level &lt;code&gt;Assets&lt;/code&gt; folder).&lt;/p&gt;
 
 &lt;p&gt;In Windows, native plugins exist as &lt;code&gt;.dll&lt;/code&gt; files, in Mac OS X, they are &lt;code&gt;.bundle&lt;/code&gt; files, and in Linux, they are &lt;code&gt;.so&lt;/code&gt; files.&lt;/p&gt;
 
@@ -275,7 +275,7 @@ Test devices table&lt;/p&gt;
 
 &lt;p&gt;Once your game is built, all assets in all &lt;code&gt;Resources&lt;/code&gt; folders get packed into the game’s archive for assets.&lt;/p&gt;
 
-&lt;p&gt;Also see &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html&quot;&gt;Loading Resources at Runtime&lt;/a&gt; topic from documentation.&lt;/p&gt;
+&lt;p&gt;Also, see &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html&quot;&gt;Loading Resources at Runtime&lt;/a&gt; topic from documentation.&lt;/p&gt;
 
 &lt;h5 id=&quot;gizmos&quot;&gt;Gizmos&lt;/h5&gt;
 
@@ -287,12 +287,12 @@ Test devices table&lt;/p&gt;
 
 &lt;h5 id=&quot;streaming-assets&quot;&gt;Streaming Assets&lt;/h5&gt;
 
-&lt;p&gt;Any files in here are copied to the build folder as is, without any changes (except for mobile and web builds, where they get embedded into the final build file). The path where they are can vary per platform but is accessible via &lt;code&gt;Application.streamingAssetsPath&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Any files in here are copied to the build folder as is, without any changes (except for mobile and web builds, where they get embedded into the final build file). The path, where they are, can vary per platform but is accessible via &lt;code&gt;Application.streamingAssetsPath&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;See documentation about &lt;a href=&quot;http://docs.unity3d.com/Documentation/ScriptReference/Application-streamingAssetsPath.html&quot;&gt;Application.streamingAssetsPath&lt;/a&gt; and &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/StreamingAssets.html&quot;&gt;Streaming Assets&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;h-tip&quot;&gt;
-  &lt;p&gt;During Android biuld all files from &lt;code&gt;Assets/StreamingAssets/&lt;/code&gt; are copied to &lt;code&gt;assets/&lt;/code&gt; folder uncompressed, so you can load them from java code, e.g.&lt;/p&gt;
+  &lt;p&gt;During Android build all files from &lt;code&gt;Assets/StreamingAssets/&lt;/code&gt; are copied to &lt;code&gt;assets/&lt;/code&gt; folder uncompressed, so you can load them with java code, e.g.&lt;/p&gt;
 
   &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;InputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bitmap&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getAssets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon.png&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
 
@@ -318,15 +318,15 @@ Test devices table&lt;/p&gt;
         <title>Mastering Unity Project Folder Structure. Level 0 – Folders required for version control systems</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In this series of posts I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.&lt;/p&gt;
+&lt;p&gt;In this series of posts, I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.&lt;/p&gt;
 
-&lt;p class=&quot;h-disclaimer&quot;&gt;Before gamedev I used to be an Android developer and I really liked predefined and consistent folder structure across all projects, so I was a bit confused when we started first Unity game.&lt;/p&gt;
+&lt;p class=&quot;h-disclaimer&quot;&gt;Before gamedev, I used to be an Android developer and I really liked predefined and consistent folder structure across all projects. So I was a bit confused when we started first Unity game.&lt;/p&gt;
 
 &lt;h4 id=&quot;mastering-level-0-folders-required-for-version-control-systems&quot;&gt;Mastering Level 0. Folders required for version control systems.&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/folder-structure.png&quot; alt=&quot;Test Unity Project Folder StructureLets&quot; class=&quot;pull-left&quot; style=&quot;margin: 10px 30px 30px 0px;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Lets create new Unity project called “testproject”, import “Standard Assets (Mobile)” package, create new &lt;code&gt;Test.cs&lt;/code&gt; script attached to camera and check our folder structure.&lt;/p&gt;
+&lt;p&gt;Let’s create new Unity project called “testproject”, import “Standard Assets (Mobile)” package, create new &lt;code&gt;Test.cs&lt;/code&gt; script attached to a camera and check our folder structure.&lt;/p&gt;
 
 &lt;p&gt;You’ll find that there are quite a lot of files and folders, good news that &lt;strong&gt;only two folders should be kept under source control: &lt;code&gt;Assets&lt;/code&gt; and &lt;code&gt;ProjectSettings&lt;/code&gt;&lt;/strong&gt;. Other are generated from this two.&lt;/p&gt;
 
@@ -344,7 +344,7 @@ Test devices table&lt;/p&gt;
 
 &lt;p class=&quot;h-note&quot;&gt;Read why there are so many project files generated from &lt;a href=&quot;https://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html&quot;&gt;Unity documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;h-tip&quot;&gt;After syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice less project files and no errors related to JS.
+&lt;p class=&quot;h-tip&quot;&gt;After syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice fewer project files and no errors related to JS.
 &lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-settings.png&quot; alt=&quot;image&quot; /&gt; &lt;!-- Unity Project Folder Structure. Tip 1 --&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;Assets&lt;/code&gt; – folder where all game resources are stored, including scripts, textures, sound, custom editors etc. Definitely the most important folder in your project.&lt;/p&gt;
@@ -354,7 +354,7 @@ Test devices table&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;Library&lt;/code&gt; – local cache for imported assets, when using external version control system should be completely ignored.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;obj&lt;/code&gt; and &lt;code&gt;Temp&lt;/code&gt; – folders for temporary files generated during build, first one used by MonoDevelop, second – by Unity.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;obj&lt;/code&gt; and &lt;code&gt;Temp&lt;/code&gt; – folders for temporary files generated during a build, first one used by MonoDevelop, second – by Unity.&lt;/p&gt;
 
 &lt;h4 id=&quot;version-control-system-setup&quot;&gt;Version Control System setup&lt;/h4&gt;
 
