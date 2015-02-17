@@ -80,7 +80,7 @@ public class TryToLoadJavaProperties : MonoBehaviour
 }
 ```
 
-Donwload demo Unity project from [here][demo].
+Download demo Unity project from [here][demo].
 
 
 [getsocial]: https://www.getsocial.im/
