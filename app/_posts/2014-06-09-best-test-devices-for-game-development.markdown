@@ -3,7 +3,7 @@ layout: article
 title: "Best test devices for game development"
 headline: ""
 date: 2014-06-09T22:20:38+02:00
-estimate: "4 mins"
+estimate: "2 mins"
 categories: [unity3d]
 post: true
 external: true
@@ -11,12 +11,12 @@ sourceName: "Nravo Developers"
 sourceUrl: "http://developers.nravo.com/best-test-devices-for-game-development"
 ---
 
-Recently I had a task to select what Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most part of possible hardware configurations (screen size, GPU vendor, etc) taking into account that mainly we make games using Unity 3D.
+Recently I had a task to select Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most part of possible hardware configurations (screen size, GPU vendor, etc) taking into account that mainly we make games using Unity 3D.
 
 
 #### Why is it important to test on devices with different GPUs?
 
-If we’re talking about iOS, this question doesn’t make sense because all iPhones and iPads use PowerVR GPUs. But Android devices can be powered by [Adreno][adreno], [Tegra][tegra], [Mali][mali] or [PowerVR][povervr] GPUs. These differ in texture formats and how alpha is handled, and of course they all have different drivers and shader compilers. Unity documentation recommends using ETC texture compression, which is supported by all Android devices, is ‘safe’ and this is basically true, but in some cases ETC could not work the best or it’s possible to achieve better performance using other compression format adopted for certain GPU.
+If we’re talking about iOS, this question doesn’t make sense because all iPhones and iPads use PowerVR GPUs. But Android devices can be powered by [Adreno][adreno], [Tegra][tegra], [Mali][mali] or [PowerVR][povervr] GPUs. These differ in texture formats and how alpha is handled. Moreover they all have different drivers and shader compilers. Unity documentation recommends using ETC texture compression, which is supported by all Android devices. But in some cases it’s possible to achieve better performance using other compression format adopted for certain GPU.
 
 
 #### Market research results
@@ -57,23 +57,22 @@ Most popular GPU models according to [Unity Hardware Stats][unity-stats] data:
 9. Adreno 203: 4.7%
 10. Adreno 305: 4.6%
 
-After merging all statistical data and requirements together we’ve got table that shows what devices to buy to fulfill the most popular gpu/screen size combinations:
+After merging all statistical data and requirements together we’ve got a table that shows what devices to buy to fulfill the most popular gpu/screen size combinations:
 Test devices table
 
 ![result table]({{ site.baseurl }}/img/posts/best-test-devices-for-game-development-table.png)
 
 <div markdown="1" class="h-note">
 
- [Kindle Fire][kindle] and [Nvidia Shield][shield] are in the table, but not in statistics data.
+ [Kindle Fire][kindle] and [Nvidia Shield][shield] are on the table, but not in statistics data.
 
- First one was selected to list because of it’s almost square screen that allows you to test your UI layouts on non-standard proportions. On the other hand it’s good to have Amazon device if you’ll decide to publish game to their store.
+ First one was selected to list because of almost square screen that allows to test your UI on non-standard proportions. Also, it’s good to have Amazon device if you’ll decide to publish a game to their store.
 
- According Nvidia Shield, it is the perfect device to test user interaction using mobile game controller.
+ According Nvidia Shield, it is the perfect device to test user interaction with game controller.
 </div>
 
 
 Do you use other devices for game testing? Share you list in the comments.
-
 
 [adreno]: http://en.wikipedia.org/wiki/Imageon
 [tegra]: http://en.wikipedia.org/wiki/Tegra

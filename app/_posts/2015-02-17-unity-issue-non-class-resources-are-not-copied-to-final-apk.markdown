@@ -3,7 +3,7 @@ layout: article
 title: "Unity issue: non-class resources are not included in final apk"
 headline: ""
 date: 2015-02-17T04:20:38+02:00
-estimate: "4 mins"
+estimate: "2 mins"
 categories: [unity3d]
 post: true
 external: false

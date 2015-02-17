@@ -3,7 +3,7 @@ layout: article
 title: "Mastering Unity Project Folder Structure. Level 1 – Reserved Folders"
 headline: ""
 date: 2014-02-13T15:14:41+02:00
-estimate: "7 mins"
+estimate: "5 mins"
 categories: [unity3d]
 post: true
 external: true
@@ -13,15 +13,15 @@ sourceUrl: "http://developers.nravo.com/mastering-unity-project-folder-structure
 
 ![Reserved]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg){:.medium-width}
 
-In previous post I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever sub folders you want, but there are some reserved folder names for special needs.
+In the previous post, I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever subfolders you want. But there are some reserved folder names for special needs.
 
-I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some additional info from our team experience, original version available on [wiki](http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder).
+I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some extra info from our team experience. The original version available on [wiki](http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder).
 {:.quote}
 
 
 ##### Standard Assets
 
-Scripts in here are always compiled first. Scripts are output to either `Assembly-CSharp-firstpass`, `Assembly-UnityScript-firstpass`, or `Assembly-Boo-firstpass` project, depending on the language. More information about script compilation order in [documentation](http://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html).
+Scripts in here are always compiled first. Scripts are output to either `Assembly-CSharp-firstpass`, `Assembly-UnityScript-firstpass` or `Assembly-Boo-firstpass` project, depending on the language. More information about script compilation order in [documentation](http://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html).
 
 Scripts inside the Standard Assets folder will be compiled earlier than your other scripts. So, placing scripts in Standard Assets is one way for C# scripts to be able to access .js scripts or vice-versa.
 
@@ -48,7 +48,7 @@ More about custom editors on the Unity [documentation](http://docs.unity3d.com/D
 
 ##### Plugins
 
-The `Plugins` folder is where you must put any native plugins, which you want to be accessible by your scripts. They will also be automatically included in your build. Take note that this folder may not be in any subfolder (it has to reside within the top-level `Assets` folder).
+The `Plugins` folder is where you must put any native plugins, which you want to be accessible to your scripts. They will also be automatically included in your build. Take note that this folder may not be in any subfolder (it has to reside within the top-level `Assets` folder).
 
 In Windows, native plugins exist as `.dll` files, in Mac OS X, they are `.bundle` files, and in Linux, they are `.so` files.
 
@@ -67,7 +67,7 @@ You can have multiple `Resources` folders throughout your project, so it is not 
 
 Once your game is built, all assets in all `Resources` folders get packed into the game’s archive for assets.
 
-Also see [Loading Resources at Runtime](http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html) topic from documentation.
+Also, see [Loading Resources at Runtime](http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html) topic from documentation.
 
 
 ##### Gizmos
@@ -82,12 +82,12 @@ Used to replace the default web page used for web builds. Any scripts placed her
 
 ##### Streaming Assets
 
-Any files in here are copied to the build folder as is, without any changes (except for mobile and web builds, where they get embedded into the final build file). The path where they are can vary per platform but is accessible via `Application.streamingAssetsPath`.
+Any files in here are copied to the build folder as is, without any changes (except for mobile and web builds, where they get embedded into the final build file). The path, where they are, can vary per platform but is accessible via `Application.streamingAssetsPath`.
 
 See documentation about [Application.streamingAssetsPath](http://docs.unity3d.com/Documentation/ScriptReference/Application-streamingAssetsPath.html) and [Streaming Assets](http://docs.unity3d.com/Documentation/Manual/StreamingAssets.html).
 
 <div class="h-tip" markdown="1">
-During Android biuld all files from `Assets/StreamingAssets/` are copied to `assets/` folder uncompressed, so you can load them from java code, e.g.
+During Android build all files from `Assets/StreamingAssets/` are copied to `assets/` folder uncompressed, so you can load them with java code, e.g.
 
 ``` java
 InputStream bitmap = getAssets().open("icon.png");

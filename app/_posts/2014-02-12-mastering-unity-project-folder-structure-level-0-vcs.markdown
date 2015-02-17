@@ -13,10 +13,10 @@ sourceUrl: "http://developers.nravo.com/mastering-unity-project-folder-structure
 
 ![image]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg){:.medium-width}
 
-In this series of posts I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.
+In this series of posts, I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.
 
 
-Before gamedev I used to be an Android developer and I really liked predefined and consistent folder structure across all projects, so I was a bit confused when we started first Unity game.
+Before gamedev, I used to be an Android developer and I really liked predefined and consistent folder structure across all projects. So I was a bit confused when we started first Unity game.
 {:.h-disclaimer}
 
 
@@ -24,7 +24,7 @@ Before gamedev I used to be an Android developer and I really liked predefined a
 
 ![Test Unity Project Folder StructureLets]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/folder-structure.png){:.pull-left style="margin: 10px 30px 30px 0px;"}
 
-Lets create new Unity project called “testproject”, import “Standard Assets (Mobile)” package, create new `Test.cs` script attached to camera and check our folder structure.
+Let's create new Unity project called “testproject”, import “Standard Assets (Mobile)” package, create new `Test.cs` script attached to a camera and check our folder structure.
 
 You’ll find that there are quite a lot of files and folders, good news that **only two folders should be kept under source control: `Assets` and `ProjectSettings`**. Other are generated from this two.
 
@@ -46,7 +46,7 @@ All files listed above except `.userprefs` are re-generated each time you select
 Read why there are so many project files generated from [Unity documentation](https://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html).
 {:.h-note}
 
-After syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice less project files and no errors related to JS.
+After syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice fewer project files and no errors related to JS.
 ![image]({{site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-settings.png) <!-- Unity Project Folder Structure. Tip 1 -->
 {:.h-tip}
 
@@ -57,7 +57,7 @@ After syncing project MonoDevelop will open testproject.sln with all projects bu
 
 `Library` – local cache for imported assets, when using external version control system should be completely ignored.
 
-`obj` and `Temp` – folders for temporary files generated during build, first one used by MonoDevelop, second – by Unity.
+`obj` and `Temp` – folders for temporary files generated during a build, first one used by MonoDevelop, second – by Unity.
 
 
 #### Version Control System setup
