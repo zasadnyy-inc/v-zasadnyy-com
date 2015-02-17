@@ -2,7 +2,7 @@
 layout: article
 title: "Unity issue: non-class resources are not included in final apk"
 headline: ""
-date: 2015-02-17T14:20:38+02:00
+date: 2015-02-17T04:20:38+02:00
 estimate: "4 mins"
 categories: [unity3d]
 post: true
@@ -16,26 +16,27 @@ Starting from January I'm working for a company called [GetSocial][getsocial]. W
 
 ### Actually an issue
 
-Recently I found that **non-java resources** (e.g. images, properties, xml configurations) **from included jar libraries are not copied to the final apk** during Unity Android build. As a result as soon as we try to load them from java side - application crashes with `I/WindowState﹕ WIN DEATH: Window...` exception.
+Recently I found that **non-java resources** (e.g. images, properties, xml configurations) **from included jar libraries are not copied to the final apk** during Unity Android build. As a result as soon as we try to load them from a java side - application crashes with `I/WindowState﹕ WIN DEATH: Window...` exception.
 
-During native Android SDK development we had similar issue but it was easily solved by additional gradle configuration. In case of Unity **there is no easy way to modify apk build process**. For sure you can make some magic with apk decompilation, modifing and packaging back, but that's not the solution we're looking for.
+During native Android SDK development, we had the similar issue but it was easily solved by additional gradle configuration. In case of Unity **there is no easy way to modify apk build process**. For sure you can make some magic with apk decompilation, modifying and packaging back, but that's not the solution we're looking for.
 
-Here is simplified diagram for Android apk build process:
+Here is a simplified diagram for Android apk build process:
 ![image]({{ site.baseurl }}/img/posts/unity-issue-android-build-process.png)
 
 
 ### Temporary solution
 
-For a temporary solution there are two approaches:
+For a temporary solution, there are two approaches:
 
-1. Magic with Adnroid SDK. Create a wrapper for `apkbuilder` tool and add misssign resources on this step. This could be the only way if you don't have access to library source code.
+1. Magic with Android SDK. Create a wrapper for `apkbuilder` tool and add missing resources in this step. This could be the only way if you don't have access to library source code.
 
-2. Hassle with source code. If you're missing configuration files and have access to source code it's possible to hardcode values direclty to java code to remove all references to resources.
+2. Hassle with source code. If you're missing configuration files and have access to source code it's possible to hardcode values directly to java code to remove all references to resources.
 
 
 ### Demo
 
-I've created small demo to show-off the problem. It consist from 2 parts:
+I've created a small demo to show-off the problem. It consists of 2 parts:
+
 
 ``` java title:"Main.java from demo.jar"
 public class Main {
