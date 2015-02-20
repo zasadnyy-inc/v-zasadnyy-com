@@ -104,7 +104,7 @@
   details_url: ""
   slides_url: "https://docs.google.com/presentation/d/1RcpXrtx-8GfMMO-uT2UAyJZeAQecAkIkBxfdfF5N-P0/pub?start=false&loop=false&delayms=3000"
   slides_provider: google_docs
-  recording: ""
+  recording: "https://www.youtube.com/watch?v=YOZ77QxyO4E"
   date: 2014-12-06
 -
   title: "Building an MMO RPG Game. The Wrong Way"
