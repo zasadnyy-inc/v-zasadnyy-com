@@ -11,7 +11,7 @@ sourceName: "Nravo Developers"
 sourceUrl: "http://developers.nravo.com/best-test-devices-for-game-development"
 ---
 
-Recently I had a task to select Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most part of possible hardware configurations (screen size, GPU vendor, etc) taking into account that mainly we make games using Unity 3D.
+Recently I had a task to select Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most of the possible hardware configurations (screen size, GPU vendor, etc.). Taking into account that mainly we make games using Unity 3D.
 
 
 #### Why is it important to test on devices with different GPUs?
@@ -72,7 +72,7 @@ Test devices table
 </div>
 
 
-Do you use other devices for game testing? Share you list in the comments.
+Do you use other devices for game testing? Share your list in the comments.
 
 [adreno]: http://en.wikipedia.org/wiki/Imageon
 [tegra]: http://en.wikipedia.org/wiki/Tegra
@@ -82,4 +82,3 @@ Do you use other devices for game testing? Share you list in the comments.
 [unity-stats]: http://stats.unity3d.com/mobile/device-android.html
 [kindle]: http://www.amazon.com/kindle-fire-hdx-student-gaming-tablet/dp/B00BWYQ9YE
 [shield]: http://shield.nvidia.com/
-

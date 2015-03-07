@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Action Bar Sherlock, Maven, eclipse integration"
+title: "Action Bar Sherlock, Maven, Eclipse integration"
 headline: "Step by step guide"
 date: 2012-11-04T00:01:00+02:00
 estimate: "10 mins"
@@ -13,30 +13,30 @@ redirect_from:
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/eclipse-maven-abs.png)
 
-Hello, today I'd like to describe process of integration commonly used library for emulation action bar in old Android versions - [ActionBarSherlock](http://actionbarsherlock.com/) into maven - eclipse project.
-In a result we'll get project with:
+Hello, today I'd like to describe a process of integration commonly used library for emulation action bar in old Android versions - [ActionBarSherlock](http://actionbarsherlock.com/) into maven - Eclipse project.
+In a result we'll get a project with:
 
 - support of Action Bar Sherlock
 - support of integration tests as a separate project
-- configured maven build and release targets
-- configured eclipse for develop and debug
+- configured Maven build and release targets
+- configured Eclipse for develop and debug
 
 This is my first post, so don't be too critical :)
 
 
-At first lets create empty Android mvn project. In order to compleate this steap we'll need:
+At first let's create empty Android mvn project. In order to complete this step we'll need:
 
 - [JDK 1.6+](http://www.oracle.com/technetwork/java/javase/downloads/jdk7u9-downloads-1859576.html) installed as required for Android development
 - [Android SDK](http://developer.android.com/intl/ru/sdk/index.html) installed r17+ , preferably with all platforms
 - [Maven 3.0.3+](http://maven.apache.org/download.html) installed
 
 
-If you'll use eclipse for a development, you'll also need:
+If you use Eclipse for development, you'll also need:
 
-- eclipse with [m2e](http://eclipse.org/m2e/) plugin installed
+- Eclipse with [m2e](http://eclipse.org/m2e/) plugin installed
 
 
-At first lets create android project using akquinet [android-archetypes](https://github.com/akquinet/android-archetypes). In result we'll get sample project with configured release targets and integration tests project. Copy to terminal following code, replacing highligted lines with your values:
+At first let's create Android project using akquinet [android-archetypes](https://github.com/akquinet/android-archetypes). In a result, we'll get a sample project with configured release targets and integration tests project. Copy following code to the terminal, replacing highligted lines with your values:
 
 ```shell mark:5-7
 mvn archetype:generate \
@@ -49,17 +49,17 @@ mvn archetype:generate \
  -Dplatform=16
 ```
 
-Once generated, the application is ready to be built and tested. Start an android emulator, or plug an Android dev phone, and execute:
+Once generated, the application is ready to be built and tested. Start an Android emulator, or plug an Android dev phone, and execute:
 
 ```shell
 cd my-android-project
 mvn clean install
 ```
 
-Besides your application this commands will also install and execute integrations tests application.
+Besides your application, this commands will also install and execute integrations tests application.
 
 
-Generated project goes with test keystore that could be used for test, but not for deploying to market, execute this command to get signed apk:
+Generated project goes with test keystore that could be used for test, but not for deploying to market, run this command to get signed apk:
 
 ```shell
 mvn clean install -Prelease \
@@ -72,7 +72,7 @@ mvn clean install -Prelease \
 
 Now we need to download and add to our project dependencies [ActionbarBarSherlock](http://actionbarsherlock.com/).
 
-Latest version of the library always is available in project [download page](http://actionbarsherlock.com/download.html). When it's ready, unzip archive, copy `library` folder to your project root and rename it to `actionbarsherlock`:
+Latest version of the library always is available in the project [download page](http://actionbarsherlock.com/download.html). When it's ready, unzip archive, copy `library` folder to your project root and rename it to `actionbarsherlock`:
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/my-android-project-1.png)
 
@@ -81,10 +81,10 @@ As it is stated on [abs usage page](http://actionbarsherlock.com/usage.html) the
 
 ```xml
 <dependency>
-	<groupId>com.actionbarsherlock</groupId>
-	<artifactId>actionbarsherlock</artifactId>
-	<version>4.2.0</version>
-	<type>apklib</type>
+    <groupId>com.actionbarsherlock</groupId>
+    <artifactId>actionbarsherlock</artifactId>
+    <version>4.2.0</version>
+    <type>apklib</type>
 </dependency>
 ```
 
@@ -131,16 +131,16 @@ You'll get following error:
 ```
 
 
-If you carefully take a look to the last error you'll notice that problem is with `generation2` goal, it uses dex tool from Android SDK to generate class files for Dalvik, during execution it include `actionbarsherlock` and `support-v4-r7` dependencies two times (second time like transitive dependency from our application project), checkout  it `--output` parameter values (here is a bit formatted text from maven error):
+If you carefully take a look at the last error, you'll notice that a problem is with `generation2` goal. It uses dex tool from Android SDK to generate class files for Dalvik. During the execution, it includes `actionbarsherlock` and `support-v4-r7` dependencies two times (second time like transitive dependency from our application project). Check out  it `--output` parameter values (here is a bit formatted text from maven error):
 
 ```shell mark:3,7
 /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java -Xmx1024M -jar /Users/vitaliyzasadnyy/Development/SDKs/android-sdk-macosx/platform-tools/lib/dx.jar --dex --output=
-	/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex
-	/Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib
-	/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar
-	/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes
-	/Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar
-	/Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar
+    /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex
+    /Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib
+    /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar
+    /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes
+    /Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar
+    /Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar
 ```
 
 
@@ -148,18 +148,18 @@ We can fix this error by adding `actionbarsherlock` and `support-v4-r7` dependen
 
 ```xml mark:5,13
 <dependency>
-	<groupId>com.google.android</groupId>
-	<artifactId>support-v4</artifactId>
-	<version>r7</version>
-	<scope>provided</scope>
+    <groupId>com.google.android</groupId>
+    <artifactId>support-v4</artifactId>
+    <version>r7</version>
+    <scope>provided</scope>
 </dependency>
 
  <dependency>
-	 <groupId>com.actionbarsherlock</groupId>
-	 <artifactId>actionbarsherlock</artifactId>
-	 <version>4.2.0</version>
-	 <type>apklib</type>
-	 <scope>provided</scope>
+     <groupId>com.actionbarsherlock</groupId>
+     <artifactId>actionbarsherlock</artifactId>
+     <version>4.2.0</version>
+     <type>apklib</type>
+     <scope>provided</scope>
 </dependency>
 ```
 
@@ -167,11 +167,11 @@ We can fix this error by adding `actionbarsherlock` and `support-v4-r7` dependen
 Now project should build successfully.
 
 
-Next steep is to configurate eclipse. Rename parent folder of a project from `my-android-project` to `my-android-project-parent`.
+Next step is to configurate eclipse. Rename parent folder of a project from `my-android-project` to `my-android-project-parent`.
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/my-android-project-2.png)
 
-Open eclipse, import `my-android-project-parent` using existing maven project wizard. As `actionbarsherlock` is not part of our parent maven project you'll also need to import it as existing maven project (<u>don't</u> import it as android library project!). After this steeps you should have following project structure:
+Open Eclipse, import `my-android-project-parent` using existing maven project wizard. As `actionbarsherlock` is not part of our parent maven project you'll also need to import it as existing maven project (<u>don't</u> import it as Android library project!). After this steps you should have following project structure:
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/eclipse-project-1.png)
 
@@ -179,8 +179,8 @@ Let's fix build path problems that we have.
 
 1. Go to `my-android-project` properties
 2. Open Android section
-3. Add `actionbarsherlock` as library by pressing Add button
-4. Now you should see `actionbarsherlock` in library section
+3. Add `actionbarsherlock` as a library by pressing Add button
+4. Now you should see `actionbarsherlock` in a library section
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/eclipse-project-2.png)
 
@@ -193,12 +193,12 @@ As we are using separate project for integration test, we should remove `src/tes
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/eclipse-project-3.png)
 
-Now all errors form eclipse markers view should disappear and we can run our project. Select `my-android-project` and run it as android application...but you'll get:
+Now all errors from Eclipse markers view should disappear, and we can run our project. Select `my-android-project` and run it as Android application... but you'll get:
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/eclipse-project-3-error.png)
 
 
-In console view you'll find error like this one:
+In console view, you'll find an error like this one:
 
 ```shell
 [2012-11-04 14:22:26 - my-android-project] Conversion to Dalvik format failed with error 1

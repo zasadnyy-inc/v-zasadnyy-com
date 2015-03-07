@@ -16,7 +16,7 @@ sourceUrl: "http://developers.nravo.com/mastering-unity-project-folder-structure
 In this series of posts, I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.
 
 
-Before gamedev, I used to be an Android developer and I really liked predefined and consistent folder structure across all projects. So I was a bit confused when we started first Unity game.
+Before gamedev, I used to be an Android developer, and I really liked predefined and consistent folder structure across all projects. So I was a bit confused when we started first Unity game.
 {:.h-disclaimer}
 
 
@@ -37,7 +37,7 @@ You’ll find that there are quite a lot of files and folders, good news that **
 
 `testproject.sln` and `testproject-csharp.sln` – solution files for IDEs, first one includes all C#, JavaScript and Boo projects, while the second one – only C# projects and is designed to be opened in Visual Studio, because VS doesn’t know to handle JavaScript and Boo projects.
 
-`testproject.userprefs` and `testproject-csharp.userprefs` – configuration files where MonoDevelop stores current opened files, breakpoints, watches etc.
+`testproject.userprefs` and `testproject-csharp.userprefs` – configuration files where MonoDevelop stores current opened files, breakpoints, watches, etc.
 
 All files listed above except `.userprefs` are re-generated each time you select Assets → Sync MonoDevelop Project in Unity Editor menu.
 {:.h-note}
@@ -50,9 +50,9 @@ After syncing project MonoDevelop will open testproject.sln with all projects bu
 ![image]({{site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-settings.png) <!-- Unity Project Folder Structure. Tip 1 -->
 {:.h-tip}
 
-`Assets` – folder where all game resources are stored, including scripts, textures, sound, custom editors etc. Definitely the most important folder in your project.
+`Assets` – folder where all game resources are stored, including scripts, textures, sound, custom editors, etc. Definitely the most important folder in your project.
 
-`ProjectSettings` – in this folder Unity stores all project settings like Physics, Tags, Player settings etc. In other words everything you setup from Edit → Project Settings set of menus goes into this folder.
+`ProjectSettings` – in this folder Unity stores all project settings like Physics, Tags, Player settings, etc. In other words everything you setup from Edit → Project Settings set of menus goes into this folder.
 ![image]({{ site.baseurl }}/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-tip1.png) <!-- Unity Project Folder Structure. Project Settings -->
 
 `Library` – local cache for imported assets, when using external version control system should be completely ignored.
@@ -62,7 +62,7 @@ After syncing project MonoDevelop will open testproject.sln with all projects bu
 
 #### Version Control System setup
 
-There are several options how we can keep track of versions. Traditionally Unity encourages developers to use [Unity Asset Server](http://docs.unity3d.com/Documentation/Manual/AssetServer.html). Our team tried to use it for one month after what we agreed that Asset Server can’t handle everything we need, it doesn’t have branches, locks, it’s paid (requires Team Licence, +500$) and looks more like simplified SVN. So we have decided to switch to GIT.
+There are several options how we can keep track of versions. Traditionally Unity encourages developers to use [Unity Asset Server](http://docs.unity3d.com/Documentation/Manual/AssetServer.html). Our team tried to use it for one month after what we agreed that Asset Server can’t handle everything we need. It doesn’t have branches, locks, and it’s paid (requires Team Licence, +500$) and looks more like simplified SVN. So we have decided to switch to GIT.
 
 ##### Here is a short setup guide for Unity 4.3
 
@@ -114,7 +114,7 @@ For more detailed instructions how to setup version control checkout this posts:
 - [Just in case you’ll decide to use Unity Asset Server – official setup guide](http://docs.unity3d.com/Documentation/Manual/AssetServer.html)
 
 
-In the second post I’ll describe what predefined folder does Unity use and what for.
+In the second post, I’ll describe what predefined folder does Unity use and what for.
 
 
 More posts from Mastering Unity Project Folder Structure series:

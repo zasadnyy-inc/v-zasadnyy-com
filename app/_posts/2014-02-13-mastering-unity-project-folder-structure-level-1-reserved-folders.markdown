@@ -15,7 +15,7 @@ sourceUrl: "http://developers.nravo.com/mastering-unity-project-folder-structure
 
 In the previous post, I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever subfolders you want. But there are some reserved folder names for special needs.
 
-I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some extra info from our team experience. The original version available on [wiki](http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder).
+I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some extra info from our team experience. The original version is available on [wiki](http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder).
 {:.quote}
 
 
@@ -28,19 +28,19 @@ Scripts inside the Standard Assets folder will be compiled earlier than your oth
 
 ##### Pro Standard Assets
 
-Same with `Standard Assets`, only files here are meant for the Pro version. This means assets here make use of Pro-only features like render textures and screen-space effects. Again, scripts here are compiled earlier, allowing them to be accessed by other scripts (of any language) that are outside the `Pro Standard Assets` folder.
+Same with `Standard Assets`, only files here are meant for the Pro version. Assets here make use of Pro-only features like render textures and screen-space effects. Again, scripts here are compiled earlier, allowing them to be accessed by other scripts (of any language) that are outside the `Pro Standard Assets` folder.
 
 
 ##### Editor
 
-The `Editor` folder name is a special name which allows your scripts to access to the Unity Editor Scripting API. If your script uses any classes or functionality from the UnityEditor namespace, it has to be placed in a folder called Editor.
+The `Editor` folder name is a special name that allows your scripts to access to the Unity Editor Scripting API. If your script uses any classes or functionality from the UnityEditor namespace, it has to be placed in a folder called Editor.
 
 Scripts inside an Editor folder will not be included in your game’s build. They are only used in the Unity Editor.
 
 You can have multiple `Editor` folders throughout your project.
 
 
-An `Editor` folder which is not located in another special folder can be placed/nested anywhere in the project. However, if it’s in `Standard Assets`, `Pro Standard Assets`, or `Plugins`, it must be a direct child of these folders. Otherwise, it will not get processed. For example, it’s ok to have a path like `My Extension/Scripts/Editor`, but if placed in a special folder, it must always be `Standard Assets/Editor/My Extension/Scripts`, or `Pro Standard Assets/Editor/My Extension/Scripts`, or `Plugins/Editor/My Extension/Scripts`.
+An `Editor` folder that is not located in another special folder can be placed/nested anywhere in the project. However, if it’s in `Standard Assets`, `Pro Standard Assets`, or `Plugins`, it must be a direct child of these folders. Otherwise, it will not get processed. For example, it’s ok to have a path like `My Extension/Scripts/Editor`, but if placed in a special folder, it must always be `Standard Assets/Editor/My Extension/Scripts`, or `Pro Standard Assets/Editor/My Extension/Scripts`, or `Plugins/Editor/My Extension/Scripts`.
 {:.h-note}
 
 More about custom editors on the Unity [documentation](http://docs.unity3d.com/Documentation/Components/ExtendingTheEditor.html).
@@ -59,11 +59,11 @@ More information about creating [native Android](http://docs.unity3d.com/Documen
 
 ##### Resources
 
-The `Resources` folder is a special folder which allows you to access assets by file path and name in your scripts, rather than by the usual (and recommended) method of direct references (as variables in scripts via drag-and-drop in the Unity Editor).
+The `Resources` folder is a special folder that allows you to access assets by file path and name in your scripts. Rather than by the usual (and recommended) method of direct references (as variables in scripts via drag-and-drop in the Unity Editor).
 
 For this reason, caution is advised when using it. All assets you put in the `Resources` folder are always included in your build (even unused ones), because Unity has no way of determining which Resources-based assets are used or not.
 
-You can have multiple `Resources` folders throughout your project, so it is not recommended to have an asset in one `Resources` folder and have another asset with that same name in another `Resources` folder.
+You can have multiple `Resources` folders throughout your project. It is not recommended to have an asset in one `Resources` folder and have another asset with that same name in another `Resources` folder.
 
 Once your game is built, all assets in all `Resources` folders get packed into the game’s archive for assets.
 
