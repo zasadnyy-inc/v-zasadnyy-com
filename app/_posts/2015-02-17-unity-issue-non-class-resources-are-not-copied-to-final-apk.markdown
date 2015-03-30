@@ -32,6 +32,9 @@ For a temporary solution, there are two approaches:
 
 2. Hassle with source code. If you're missing configuration files and have access to source code, it's possible to hardcode values directly to java code to remove all references to resources.
 
+### External discussion
+
+Check out the issue discussion on [Unity Community Forum][forum] and [FogBugz][fogbuz] Unity bug tracker.
 
 ### Demo
 
@@ -85,3 +88,5 @@ Download demo Unity project from [here][demo].
 
 [getsocial]: https://www.getsocial.im/
 [demo]: {{ site.baseurl }}/files/posts/unity-issue-non-class-resources-are-not-copied-to-final-apk-demo.zip
+[forum]: http://forum.unity3d.com/threads/issue-non-java-resources-from-jar-libraries-are-not-included-in-final-apk.298921/#post-1970236
+[fogbuz]: http://fogbugz.unity3d.com/default.asp?673008_mv7e971irj1dicks
