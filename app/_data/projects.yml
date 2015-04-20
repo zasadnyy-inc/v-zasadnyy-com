@@ -21,7 +21,7 @@
       featured: false
     -
       title: "Unity Editor Utilities"
-      description: "Small editor extension to help you in everyday Unity development."
+      description: "Editor extension to show current editor state and create working scene shortcuts."
       project_page: "https://github.com/zasadnyy/unity-editor-utilities"
       tags: ["unity", "editor"]
       featured: true
