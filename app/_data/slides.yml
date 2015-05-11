@@ -115,3 +115,12 @@
   slides_provider: google_docs
   recording: ""
   date: 2015-02-04
+-
+  title: "Reach 4 million Unity developers with your Android library"
+  description: "Reach 4 million Unity developers with your Android library With the 45% market share, Unity is the most popular game engine in the world. Featuring reach API exposed in C# and JavaScript, a tremendous amount of assets and libraries available and Asset Store - an open platform to sell or share them. While talk will discuss why it is time to make your Android library or SDK available to Unity developers. How to expose it to C# using Unity API, JNI and a bit of magic. What problems you'll face with while porting. And last but not least, how to publish your work to Unity Asset Store."
+  thumbnail: "thumb_reach_4_million_unity_developers.png"
+  details_url: ""
+  slides_url: "/slides/reach-4-million-unity-developers-with-your-android-library.pdf"
+  slides_provider: icloud
+  recording: ""
+  date: 2015-05-11
