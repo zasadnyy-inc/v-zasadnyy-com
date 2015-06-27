@@ -21,8 +21,8 @@
   description: "Non technical presentation about community management."
   thumbnail: "thumb_what_is_community.png"
   details_url: ""
-  slides_url: "https://docs.google.com/presentation/d/1qFSsCEK-PDJ8lRRKml2GESy7hP-3KSRfs1FVbnd7MKI/pub?start=false&loop=false&delayms=3000"
-  slides_provider: google_docs
+  slides_url: "https://speakerdeck.com/zasadnyy/what-is-community-and-how-to-manage-it"
+  slides_provider: speakerdeck
   recording: ""
   date: 2013-03-27
 -
@@ -30,8 +30,8 @@
   description: "Workshop prepared for Ankara Android Developer Days 2013 (1200+ participants). Main topic was - common troubleshoots with Android WebView component and how to deal with them. My first public speak in English."
   thumbnail: "thumb_working_with_web_view.png"
   details_url: ""
-  slides_url: "https://docs.google.com/presentation/d/1EO-U-dAZ5xWDwAzIsHrdtoWh1lrxzKVSk-25w9DADm0/pub?start=false&loop=false&delayms=3000"
-  slides_provider: google_docs
+  slides_url: "https://speakerdeck.com/zasadnyy/porting-web-mmo-games-to-native-platforms-working-with-webview"
+  slides_provider: speakerdeck
   recording: "http://www.paylas.com/video/android-gelistirici-gunleri-vitaliy-zasadnyy"
   date: 2013-06-14
 -
@@ -63,16 +63,16 @@
   date: 2013-12-15
 -
   title: "How to become GameDev?"
-  description: "Game development probably is one of the most challenging area of software engineering. With evolution of wearable devices like Google Glass it becomes even more interesting. This presentation is a quick walk thought glass games ideology, resources and sensors we can use and finally tools and frameworks suitable for building next generation games."
+  description: ""
   thumbnail: "thumb_how_to_become_gamedev.png"
   details_url: ""
-  slides_url: "https://docs.google.com/presentation/d/1a61nZ_nkvu154HGnub2-kHRGqIJcm5W6GgJG73YTis8/pub?start=false&loop=false&delayms=3000"
-  slides_provider: google_docs
+  slides_url: "https://speakerdeck.com/zasadnyy/how-to-become-gamedev"
+  slides_provider: speakerdeck
   recording: "https://www.youtube.com/watch?v=32_oa4BO4oE"
   date: 2013-12-26
 -
   title: "ok glass, play a game..."
-  description: "Game development probably is one of the most challenging area of software engineering. With evolution of wearable devices like Google Glass it becomes even more interesting. This presentation is a quick walk thought glass games ideology, resources and sensors we can use and finally tools and frameworks suitable for building next generation games."
+  description: "Game development probably is one of the most challenging areas of software engineering. With the evolution of wearable devices, like Google Glass, it becomes even more interesting. This presentation is a quick walk through glass games ideology, resources and sensors we can use and finally tools and frameworks suitable for building next generation games."
   thumbnail: "thumb_ok_glass_play_a_game.png"
   details_url: ""
   slides_url: "https://prezi.com/knzyaibx-srn/ok-glass-play-a-game/"
@@ -81,29 +81,29 @@
   date: 2014-05-16
 -
   title: "New Hardware at Google I/O‘14"
-  description: "All about Android Auto, Wear, TV and of cource Cardboard"
+  description: "All about Android Auto, Wear, TV and of course Cardboard"
   thumbnail: "thumb_new_hardware_at_google_io.png"
   details_url: ""
-  slides_url: "https://docs.google.com/presentation/d/1Gmtfb-0VhGSL43K5-QWkIaWfWsJG_pQzsX6cO-bcNsc/pub?start=false&loop=false&delayms=3000"
-  slides_provider: google_docs
+  slides_url: "https://speakerdeck.com/zasadnyy/o-14"
+  slides_provider: speakerdeck
   recording: ""
   date: 2014-07-26
 -
   title: "Extending your apps to wearables"
-  description: "Learn how to take advantage from wearables? In this talk and learn how easily add support for Android Wear and Sony Smart Extension devices to your existing application. Besides that we'll talk about UI/UX on small screen, project structure best practices and finally decide what platform is more perspective an easier to work with from developer point of view."
+  description: "Learn how to take advantage from wearables? In this talk and learn how easily add support for Android Wear and Sony Smart Extension devices to your existing application. Besides that we'll talk about UI/UX on small screen, project structure best practices and finally decide what platform is more perspective and easier to work with from developer point of view."
   thumbnail: "thumb_extending_your_apps_to_wearables.png"
   details_url: ""
-  slides_url: "https://docs.google.com/presentation/d/1M5fz8kxK5hjR2SJBfwOyud_jjO53fwRN6cx4gqorvGA/pub?start=false&loop=false&delayms=3000"
-  slides_provider: google_docs
+  slides_url: "https://speakerdeck.com/zasadnyy/extending-your-apps-to-wearables"
+  slides_provider: speakerdeck
   recording: ""
   date: 2014-09-06
 -
   title: "Wearables Architectures or how to ping your watch"
-  description: "We’re on the begging on the new era of computing devices. Wearables, probably, are one of the hottest topic now, with launch of Android Wear, Apple Watch and huge success of activity trackers like Nike Fuel or Jawbone everyone talks how cool or not they are. During this presentation we'll get back to early 2000 and check wearables evolution from totally geek devices to must have accessory for each hipster."
+  description: "We’re on the begging on the new era of computing devices. Wearables, probably, are one of the hottest topics now, with the launch of Android Wear, Apple Watch and huge success of activity trackers like Nike Fuel or Jawbone everyone talks how cool or not they are. During this presentation, we'll get back to early 2000 and check wearables evolution from totally geek devices to must-have accessory for each hipster."
   thumbnail: "thumb_wearable_architectures.png"
   details_url: ""
-  slides_url: "https://docs.google.com/presentation/d/1RcpXrtx-8GfMMO-uT2UAyJZeAQecAkIkBxfdfF5N-P0/pub?start=false&loop=false&delayms=3000"
-  slides_provider: google_docs
+  slides_url: "https://speakerdeck.com/zasadnyy/wearables-architectures-or-how-to-ping-your-watch"
+  slides_provider: speakerdeck
   recording: "https://www.youtube.com/watch?v=YOZ77QxyO4E"
   date: 2014-12-06
 -
@@ -111,16 +111,16 @@
   description: "Building an MMO RPG game is a complex and long-lasting project, especially for an inexperienced team. This talk is about mistakes we've made, problems we've faced and how we solved them."
   thumbnail: "thumb_building_an_mmo_game.png"
   details_url: ""
-  slides_url: "https://docs.google.com/presentation/d/14Buq_jjXlKHgYzvLJJL9ALelcJwqs7E8gMoac-czy8k/pub?start=false&loop=false&delayms=3000"
-  slides_provider: google_docs
-  recording: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/building-an-mmo-rpg-game-the-wrong-way"
+  slides_provider: speakerdeck
+  recording: "https://www.youtube.com/watch?v=oOpgnjOVViM"
   date: 2015-02-04
 -
   title: "Reach 4 million Unity developers with your Android library"
   description: "Reach 4 million Unity developers with your Android library With the 45% market share, Unity is the most popular game engine in the world. Featuring reach API exposed in C# and JavaScript, a tremendous amount of assets and libraries available and Asset Store - an open platform to sell or share them. While talk will discuss why it is time to make your Android library or SDK available to Unity developers. How to expose it to C# using Unity API, JNI and a bit of magic. What problems you'll face with while porting. And last but not least, how to publish your work to Unity Asset Store."
   thumbnail: "thumb_reach_4_million_unity_developers.png"
   details_url: ""
-  slides_url: "/slides/reach-4-million-unity-developers-with-your-android-library.pdf"
-  slides_provider: icloud
-  recording: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/reach-4-million-unity-developers-with-your-android-library"
+  slides_provider: speakerdeck
+  recording: "http://www.butterflytv.net/player.html?videoId=from_pi21371431281378228"
   date: 2015-05-11
