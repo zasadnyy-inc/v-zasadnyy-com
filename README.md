@@ -9,4 +9,5 @@
 7.  **You are ready to rock!!!** :)
 
 ### Issues faced with:
-- https://github.com/stefanpenner/ember-app-kit/issues/69
+- [Error: EACCES, unlink '/usr/local/lib/node_modules/grunt-cli/.npmignore'](https://github.com/stefanpenner/ember-app-kit/issues/69)
+- [Could not find gem 'jekyll (>= 0) ruby' in any of the gem sources listed in your Gemfile or available on this machine.](http://stackoverflow.com/questions/13961007/bundler-cannot-find-a-version-of-a-gem-but-gem-install-with-the-same-game-works)
