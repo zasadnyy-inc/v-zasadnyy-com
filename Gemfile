@@ -1,8 +1,8 @@
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'kramdown'
-gem "jekyll-sitemap"
-gem "octopress-codefence"
-gem "rouge"
+gem 'jekyll-sitemap'
+gem 'octopress-codefence'
+gem 'rouge'
 gem 'jekyll-redirect-from'
