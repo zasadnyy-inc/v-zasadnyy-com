@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</loc>
+    <lastmod>2015-08-05T04:20:38+02:00</lastmod>
+  </url>
+  <url>
     <loc>http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</loc>
     <lastmod>2015-02-17T03:20:38+01:00</lastmod>
   </url>
@@ -71,5 +75,8 @@
   </url>
   <url>
     <loc>http://v.zasadnyy.com/blog/tag/productivity/</loc>
+  </url>
+  <url>
+    <loc>http://v.zasadnyy.com/blog/tag/getsocial/</loc>
   </url>
 </urlset>
