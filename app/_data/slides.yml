@@ -124,3 +124,12 @@
   slides_provider: speakerdeck
   recording: "http://www.butterflytv.net/player.html?videoId=from_pi21371431281378228"
   date: 2015-05-11
+-
+  title: "Gradle beyond Android. Or going crazy with build automation"
+  description: "Nowadays almost all Android projects are built with Gradle but do you know that Gradle is not only for Android? You can go pretty crazy with it's possibilities.<br/><br/>During the talk, Vitaliy will share his experience with adopting Gradle to manage complex GetSocial SDK build process with Android, iOS and Unity 3D subprojects.<br/><br/>As a bonus, he'll run quick walk through Gradle plugin creation process and tell how you can share it with the world."
+  thumbnail: "thumb_going_crazy_with_gradle.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/gradle-beyond-android-or-going-crazy-with-build-automation"
+  slides_provider: speakerdeck
+  recording: ""
+  date: 2015-10-10
