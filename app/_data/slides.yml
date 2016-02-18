@@ -133,3 +133,12 @@
   slides_provider: speakerdeck
   recording: ""
   date: 2015-10-10
+-
+  title: "J2ObjC. The silver bullet in cross-platform mobile development"
+  description: "The war between mobile platforms is over. After several years of active competition, we’ve got two operating systems with almost the same quality and feature set. The closest competitors of Android and iOS are far behind in market share. For us, as mobile developers, it means that all further projects should target at least two platforms. Main products we are working on at GetSocial are 3 SDKs for Android, iOS and Unity. All libraries have the same functionality and feature rich UI. In this talk, I want to share results of our internal RnD experiments with j2objc – Java to Objective-C translation tool developed by Google. J2objc goal is to write an app’s non-UI code (such as application logic and data models) in Java, which is then shared with no editing by Android and iOS apps."
+  thumbnail: "thumb_objc_the_silver_bullet_in_crossplatform_development.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/j2objc-the-silver-bullet-in-cross-platform-mobile-development"
+  slides_provider: speakerdeck
+  recording: ""
+  date: 2016-02-18
