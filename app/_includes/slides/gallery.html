@@ -5,8 +5,14 @@
                 <a href="{{ item.slides_url }}" target="_blank">
                     <div class="thumb flow-img" style="background-image: url({{ item.thumbnail | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>
                     <h6 class="slide-title">{{ item.title }}</h6>
-                    <span class="slide-date">{{ item.date | date: '%B %d, %Y' }}</span>
                 </a>
+                <span class="slide-subtitle">
+                    {% if item.conference_url %}
+                        <a href="{{ item.conference_url }}" target="_blank">{{ item.conference }}</a>, {{ item.date | date: '%B %d, %Y' }}
+                    {% else %}
+                        {{ item.conference }}, {{ item.date | date: '%B %d, %Y' }}
+                    {% endif %}
+                </span>
             </li>
         {% endfor %}
     </ul>

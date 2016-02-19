@@ -6,6 +6,8 @@
   slides_url: "http://prezi.com/ud0ga5eigfeh/porting-web-mmo-games-to-native-platforms-tips-tricks/"
   slides_provider: prezi
   recording: "https://www.youtube.com/watch?v=oOpgnjOVViM"
+  conference: "GameDev Lviv Conference"
+  conference_url: "http://gamedev.lviv.ua/"
   date: 2013-02-12
 -
   title: "Oh!Mobile! S1E2. Android intro"
@@ -15,6 +17,8 @@
   slides_url: "https://prezi.com/3hjd5nibtklp/android-intro/"
   slides_provider: prezi
   recording: "https://www.youtube.com/watch?v=-MiqGitp92g&list=PLJf2EuD0BrxjCS90No30-P55LIhQ06BMn"
+  conference: "Oh!Mobile! S1E2"
+  conference_url:
   date: 2013-03-15
 -
   title: "What is community and how to manage it"
@@ -24,6 +28,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/what-is-community-and-how-to-manage-it"
   slides_provider: speakerdeck
   recording: ""
+  conference: "Twitter Meetup Lviv"
+  conference_url:
   date: 2013-03-27
 -
   title: "Porting web MMO games to native platforms. Working with WebView"
@@ -33,6 +39,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/porting-web-mmo-games-to-native-platforms-working-with-webview"
   slides_provider: speakerdeck
   recording: "http://www.paylas.com/video/android-gelistirici-gunleri-vitaliy-zasadnyy"
+  conference: "Android Developer Days Ankara"
+  conference_url: "http://www.androiddeveloperdays.com/"
   date: 2013-06-14
 -
   title: "Gradle - New Android build system"
@@ -42,6 +50,8 @@
   slides_url: "http://zasadnyy.github.io/gradle-slides/"
   slides_provider: embeded_page
   recording: ""
+  conference: "GDG DevFest Tbilisi"
+  conference_url:
   date: 2013-09-21
 -
   title: "Being Productive Android Dev. Tips & Tricks"
@@ -51,6 +61,8 @@
   slides_url: "http://zasadnyy.github.io/doing-better-on-android-hackathon-slides/"
   slides_provider: embeded_page
   recording: ""
+  conference: "GDG DevFest Tbilisi"
+  conference_url:
   date: 2013-10-13
 -
   title: "Завтра — це вже майже сьогодні. Або за скільки часу технології змінять наше життя"
@@ -60,6 +72,8 @@
   slides_url: "http://prezi.com/c2ieboc6hkxe/tedxlnu/"
   slides_provider: prezi
   recording: "https://www.youtube.com/watch?v=uYf_txh0bd0"
+  conference: "TEDxLNU"
+  conference_url: "https://www.ted.com/tedx/events/10142"
   date: 2013-12-15
 -
   title: "How to become GameDev?"
@@ -69,6 +83,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/how-to-become-gamedev"
   slides_provider: speakerdeck
   recording: "https://www.youtube.com/watch?v=32_oa4BO4oE"
+  conference: "Uzhorod IT Meetup"
+  conference_url:
   date: 2013-12-26
 -
   title: "ok glass, play a game..."
@@ -78,6 +94,8 @@
   slides_url: "https://prezi.com/knzyaibx-srn/ok-glass-play-a-game/"
   slides_provider: prezi
   recording: "http://www.paylas.com/video/ok-glass-play-a-game-with-vitaliy-zasadnyy"
+  conference: "Droidcon Moskow"
+  conference_url: "http://droidcon.moscow/"
   date: 2014-05-16
 -
   title: "New Hardware at Google I/O‘14"
@@ -87,6 +105,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/o-14"
   slides_provider: speakerdeck
   recording: ""
+  conference: "Education for Entepreneurship"
+  conference_url: "https://softserve.ua/en/press-center/events/zaproshuyemo-na-education-for-entrepreneurship-and-innovation-dlya-molodih-ta-ambitnih/"
   date: 2014-07-26
 -
   title: "Extending your apps to wearables"
@@ -96,6 +116,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/extending-your-apps-to-wearables"
   slides_provider: speakerdeck
   recording: ""
+  conference: "IT Arena Lviv"
+  conference_url: "http://itarena.lviv.ua/"
   date: 2014-09-06
 -
   title: "Wearables Architectures or how to ping your watch"
@@ -105,6 +127,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/wearables-architectures-or-how-to-ping-your-watch"
   slides_provider: speakerdeck
   recording: "https://www.youtube.com/watch?v=YOZ77QxyO4E"
+  conference: "GDG DevFest Instanbul"
+  conference_url: "http://2014.devfesttr.com/"
   date: 2014-12-06
 -
   title: "Building an MMO RPG Game. The Wrong Way"
@@ -114,6 +138,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/building-an-mmo-rpg-game-the-wrong-way"
   slides_provider: speakerdeck
   recording: "https://www.youtube.com/watch?v=oOpgnjOVViM"
+  conference: "Casual Connect Europe"
+  conference_url: "http://europe.casualconnect.org/"
   date: 2015-02-04
 -
   title: "Reach 4 million Unity developers with your Android library"
@@ -123,6 +149,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/reach-4-million-unity-developers-with-your-android-library"
   slides_provider: speakerdeck
   recording: "http://www.butterflytv.net/player.html?videoId=from_pi21371431281378228"
+  conference: "Android Developer Days Ankara"
+  conference_url: "http://www.androiddeveloperdays.com/"
   date: 2015-05-11
 -
   title: "Gradle beyond Android. Or going crazy with build automation"
@@ -132,6 +160,8 @@
   slides_url: "https://speakerdeck.com/zasadnyy/gradle-beyond-android-or-going-crazy-with-build-automation"
   slides_provider: speakerdeck
   recording: ""
+  conference: "GDG DevFest NL"
+  conference_url: "http://www.devfest.nl/"
   date: 2015-10-10
 -
   title: "J2ObjC. The silver bullet in cross-platform mobile development"
@@ -141,4 +171,6 @@
   slides_url: "https://speakerdeck.com/zasadnyy/j2objc-the-silver-bullet-in-cross-platform-mobile-development"
   slides_provider: speakerdeck
   recording: ""
+  conference: "Mobile Operating Systems Conference"
+  conference_url: "http://romobos.com/"
   date: 2016-02-18
