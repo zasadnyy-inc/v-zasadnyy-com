@@ -25,6 +25,12 @@
       project_page: "https://github.com/zasadnyy/unity-editor-utilities"
       tags: ["unity", "editor"]
       featured: true
+    -
+      title: "Unity Gradle Plugin"
+      description: "Build and test Unity 3D projects with Gradle."
+      project_page: "https://github.com/zasadnyy/unity-gradle-plugin"
+      tags: ["gradle", "unity", "build"]
+      featured: true
 -
   group: "Proprietary Open Source"
   elements:
