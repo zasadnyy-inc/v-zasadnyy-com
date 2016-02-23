@@ -3,7 +3,7 @@
   elements:
     -
       title: "z-validations"
-      description: "Small library that helps with Android form validations."
+      description: "Library that helps with Android form validations."
       project_page: "https://github.com/zasadnyy/z-validations"
       tags: ["android", "library"]
       featured: true
@@ -27,7 +27,7 @@
       featured: true
     -
       title: "Unity Gradle Plugin"
-      description: "Build and test Unity 3D projects with Gradle."
+      description: "Automate building and testing of Unity 3D projects with Gradle."
       project_page: "https://github.com/zasadnyy/unity-gradle-plugin"
       tags: ["gradle", "unity", "build"]
       featured: true
