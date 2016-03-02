@@ -5,8 +5,8 @@
     <description></description>
     <link>http://v.zasadnyy.com/</link>
     <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 23 Feb 2016 01:51:06 +0100</pubDate>
-    <lastBuildDate>Tue, 23 Feb 2016 01:51:06 +0100</lastBuildDate>
+    <pubDate>Wed, 02 Mar 2016 18:59:38 +0100</pubDate>
+    <lastBuildDate>Wed, 02 Mar 2016 18:59:38 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -390,6 +390,18 @@ Test devices table&lt;/p&gt;
 &lt;p&gt;Once your game is built, all assets in all &lt;code&gt;Resources&lt;/code&gt; folders get packed into the game’s archive for assets.&lt;/p&gt;
 
 &lt;p&gt;Also, see &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html&quot;&gt;Loading Resources at Runtime&lt;/a&gt; topic from documentation.&lt;/p&gt;
+
+&lt;h5 id=&quot;editor-default-resources&quot;&gt;Editor Default Resources&lt;/h5&gt;
+
+&lt;p&gt;This folder functions like a Resources folder, but is meant for editor scripts only. Use this if your editor plugin needs to load assets (e.g. icons, GUI skins, etc.) while making sure said assets won’t get included in the user’s build (putting such files in a normal Resources folder would have meant that those assets would be included in the user’s game when built).&lt;/p&gt;
+
+&lt;p&gt;To access assets inside the “Editor Default Resources”, you need to use &lt;a href=&quot;http://docs.unity3d.com/ScriptReference/EditorGUIUtility.Load.html&quot;&gt;EditorGUIUtility.Load&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handleMaterial&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditorGUIUtility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;HandleMaterial.mat&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;Unlike &lt;code&gt;Resources.Load&lt;/code&gt;, &lt;code&gt;EditorGUIUtility.Load&lt;/code&gt; requires you to specify the filename extension of the asset you’re trying to load.&lt;/p&gt;
+
+&lt;p&gt;Only one “Editor Default Resources” folder can be present, and it has to be directly under the top Assets folder.&lt;/p&gt;
 
 &lt;h5 id=&quot;gizmos&quot;&gt;Gizmos&lt;/h5&gt;
 
