@@ -69,6 +69,20 @@ Once your game is built, all assets in all `Resources` folders get packed into t
 
 Also, see [Loading Resources at Runtime](http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html) topic from documentation.
 
+##### Editor Default Resources
+
+This folder functions like a Resources folder, but is meant for editor scripts only. Use this if your editor plugin needs to load assets (e.g. icons, GUI skins, etc.) while making sure said assets won't get included in the user's build (putting such files in a normal Resources folder would have meant that those assets would be included in the user's game when built).
+
+To access assets inside the "Editor Default Resources", you need to use [EditorGUIUtility.Load](http://docs.unity3d.com/ScriptReference/EditorGUIUtility.Load.html)
+
+``` java
+var handleMaterial = EditorGUIUtility.Load("HandleMaterial.mat");
+```
+
+Unlike `Resources.Load`, `EditorGUIUtility.Load` requires you to specify the filename extension of the asset you're trying to load.
+{:.h-note}
+
+Only one "Editor Default Resources" folder can be present, and it has to be directly under the top Assets folder.
 
 ##### Gizmos
 
