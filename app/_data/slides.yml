@@ -159,7 +159,7 @@
   details_url: ""
   slides_url: "https://speakerdeck.com/zasadnyy/gradle-beyond-android-or-going-crazy-with-build-automation"
   slides_provider: speakerdeck
-  recording: ""
+  recording: "https://www.youtube.com/watch?v=psPucDk49GY"
   conference: "GDG DevFest NL"
   conference_url: "http://www.devfest.nl/"
   date: 2015-10-10
