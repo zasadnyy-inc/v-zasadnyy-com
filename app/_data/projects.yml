@@ -31,6 +31,12 @@
       project_page: "https://github.com/zasadnyy/unity-gradle-plugin"
       tags: ["gradle", "unity", "build"]
       featured: true
+    -
+      title: "Appium Gradle Plugin"
+      description: "Gradle plugin that start/stop Appium server on test task execution."
+      project_page: "https://github.com/zasadnyy/appium-gradle-plugin"
+      tags: ["gradle", "appium", "build"]
+      featured: false
 -
   group: "Proprietary Open Source"
   elements:
