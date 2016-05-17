@@ -174,3 +174,14 @@
   conference: "Mobile Operating Systems Conference"
   conference_url: "http://romobos.com/"
   date: 2016-02-18
+-
+  title: "The definitive guide to large scale events. Or DevFest season is coming..."
+  description: "Have you ever wondered how to organize a great event for 500, 1000, 1500 attendees? What needs to be done? How to create the rock solid team? How to maximize public visibility and impact on the local community? GDG Lviv (Ukraine) team is going to share experience and practical tips from organizing few of the biggest IT conferences in the country."
+  thumbnail: "thumb_the_definitive_guide_to_the_large_scale_events.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/the-definitive-guide-to-large-scale-events-or-devfest-season-is-coming-dot-dot-dot"
+  slides_provider: speakerdeck
+  recording: ""
+  conference: "GDG Global Summit. San Francisco"
+  conference_url: "https://sites.google.com/site/gdgorganizersummit/home"
+  date: 2016-05-17
