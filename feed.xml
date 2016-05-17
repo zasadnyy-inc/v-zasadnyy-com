@@ -5,8 +5,8 @@
     <description></description>
     <link>http://v.zasadnyy.com/</link>
     <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 27 Apr 2016 18:37:06 +0200</pubDate>
-    <lastBuildDate>Wed, 27 Apr 2016 18:37:06 +0200</lastBuildDate>
+    <pubDate>Tue, 17 May 2016 10:53:21 -0700</pubDate>
+    <lastBuildDate>Tue, 17 May 2016 10:53:21 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -108,7 +108,7 @@
 
 &lt;p&gt;It was only a first post from the series, follow GetSocial on social networks in order not to miss updates and don’t hesitate to share your thoughts and experience with building Unity plugins in comments.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Aug 2015 04:20:38 +0200</pubDate>
+        <pubDate>Tue, 04 Aug 2015 19:20:38 -0700</pubDate>
         <link>http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</guid>
         
@@ -190,7 +190,7 @@
 &lt;p&gt;Download demo Unity project from &lt;a href=&quot;/files/posts/unity-issue-non-class-resources-are-not-copied-to-final-apk-demo.zip&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 17 Feb 2015 03:20:38 +0100</pubDate>
+        <pubDate>Mon, 16 Feb 2015 18:20:38 -0800</pubDate>
         <link>http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</guid>
         
@@ -266,7 +266,7 @@ Test devices table&lt;/p&gt;
 &lt;p&gt;Do you use other devices for game testing? Share your list in the comments.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 09 Jun 2014 22:20:38 +0200</pubDate>
+        <pubDate>Mon, 09 Jun 2014 13:20:38 -0700</pubDate>
         <link>http://v.zasadnyy.com/blog/best-test-devices-for-game-development</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/best-test-devices-for-game-development</guid>
         
@@ -330,7 +330,7 @@ Test devices table&lt;/p&gt;
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 11 Mar 2014 14:31:43 +0100</pubDate>
+        <pubDate>Tue, 11 Mar 2014 06:31:43 -0700</pubDate>
         <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</guid>
         
@@ -431,7 +431,7 @@ Test devices table&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 13 Feb 2014 14:14:41 +0100</pubDate>
+        <pubDate>Thu, 13 Feb 2014 05:14:41 -0800</pubDate>
         <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</guid>
         
@@ -544,7 +544,7 @@ Test devices table&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 12 Feb 2014 13:42:57 +0100</pubDate>
+        <pubDate>Wed, 12 Feb 2014 04:42:57 -0800</pubDate>
         <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</guid>
         
@@ -585,7 +585,7 @@ Test devices table&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Update (29.01.14):&lt;/strong&gt; Unity releases version 4.3.4, where issue should be fixed. Download it &lt;a href=&quot;http://unity3d.com/unity/whats-new/unity-4.3.4&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 19 Jan 2014 22:16:46 +0100</pubDate>
+        <pubDate>Sun, 19 Jan 2014 13:16:46 -0800</pubDate>
         <link>http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</guid>
         
@@ -698,7 +698,7 @@ Failed InRange validation&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://developer.android.com/guide/topics/ui/controls/text.html&quot;&gt;Post about text input on d.android.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 04 Aug 2013 00:14:17 +0200</pubDate>
+        <pubDate>Sat, 03 Aug 2013 15:14:17 -0700</pubDate>
         <link>http://v.zasadnyy.com/blog/android-form-validation-right-way</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/android-form-validation-right-way</guid>
         
@@ -760,7 +760,7 @@ Edsger Dijkstra&lt;/p&gt;
   &lt;li&gt;In order to FIX issue: unzip unsigned bar file → edit manifest → zip → change file extension back to .bar&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 27 Jan 2013 22:16:46 +0100</pubDate>
+        <pubDate>Sun, 27 Jan 2013 13:16:46 -0800</pubDate>
         <link>http://v.zasadnyy.com/blog/cyrillic-app-name-incorrectly-encoded</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/cyrillic-app-name-incorrectly-encoded</guid>
         
@@ -963,7 +963,7 @@ In a result we’ll get a project with:&lt;/p&gt;
 
 &lt;p&gt;Hope this post was useful, if you have any notes or propositions how it can be improved, please write a comment.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 03 Nov 2012 23:01:00 +0100</pubDate>
+        <pubDate>Sat, 03 Nov 2012 15:01:00 -0700</pubDate>
         <link>http://v.zasadnyy.com/blog/abs-maven-eclipse-integration</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/abs-maven-eclipse-integration</guid>
         
