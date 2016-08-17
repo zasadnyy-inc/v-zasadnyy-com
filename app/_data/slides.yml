@@ -181,7 +181,18 @@
   details_url: ""
   slides_url: "https://speakerdeck.com/zasadnyy/the-definitive-guide-to-large-scale-events-or-devfest-season-is-coming-dot-dot-dot"
   slides_provider: speakerdeck
-  recording: ""
+  recording: "https://www.youtube.com/watch?v=9VOUQXPQ92o&edit=vd"
   conference: "GDG Global Summit. San Francisco"
   conference_url: "https://sites.google.com/site/gdgorganizersummit/home"
   date: 2016-05-17
+-
+  title: "J2ObjC. The good, the bad, and the ugly"
+  description: "Vitaliy will show that the war between mobile platforms is over. After several years of active competition, we’ve got two operating systems with almost the same quality and feature set. The closest competitors of Android and iOS are far behind in market share. For mobile developers this means that all further projects should target at least two platforms. In this talk, Vitaliy will go through build configuration, development process and project impact created while using j2objc – Java to Objective-C translation tool developed by Google. J2objc goal is to write an app’s non-UI code (such as application logic and data models) in Java, which is then shared with no editing by Android and iOS apps."
+  thumbnail: "thumb_j2objc_the_good_the_bad_and_the_ugly.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/j2objc-the-good-the-bad-and-the-ugly"
+  slides_provider: speakerdeck
+  recording: ""
+  conference: "Big Android BBQ Amsterdam"
+  conference_url: "http://babbq.nl"
+  date: 2016-08-15
