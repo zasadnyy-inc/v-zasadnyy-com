@@ -196,3 +196,14 @@
   conference: "Big Android BBQ Amsterdam"
   conference_url: "http://babbq.nl"
   date: 2016-08-15
+-
+  title: "J2ObjC. Cross platform development - Google way"
+  description: "The war between mobile platforms is over. After several years of active competition, we’ve got two operating systems with almost the same quality and feature set.\n\nFor mobile developers this means that all further projects should target at least two platforms. In this talk, Vitaliy wants to share results of internal R&D experiments at GetSocial with J2ObjC – Java to Objective-C translation tool developed by Google.\n\nJ2ObjC goal is to write an app’s non-UI code (such as application logic and data models) in Java, which is then shared with no editing by Android and iOS apps."
+  thumbnail: "thumb_j2objc_cross_platform_development_google_way.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/j2objc-cross-platform-development-google-way"
+  slides_provider: speakerdeck
+  recording: ""
+  conference: "GDG DevFest Ukraine 2016"
+  conference_url: "https://devfest.gdg.org.ua/"
+  date: 2016-09-10
