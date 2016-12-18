@@ -5,9 +5,61 @@
     <description></description>
     <link>http://v.zasadnyy.com/</link>
     <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Oct 2016 23:27:40 +0200</pubDate>
-    <lastBuildDate>Tue, 11 Oct 2016 23:27:40 +0200</lastBuildDate>
+    <pubDate>Sun, 18 Dec 2016 15:04:25 +0100</pubDate>
+    <lastBuildDate>Sun, 18 Dec 2016 15:04:25 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Public API Design Resources</title>
+        <description>&lt;p&gt;Around a year ago, we at &lt;a href=&quot;https://getsocial.im&quot;&gt;GetSocial&lt;/a&gt; decided to rebuild our mobile SDKs from scratch, utilizing 4 years of experience and all best practices possible. The year has come to an end, we’re doing last preparations before publishing new shiny SKD and decided to share our findings and pitfalls we had along the way.&lt;/p&gt;
+
+&lt;p&gt;To start with, I’m going to share the collection of books, videos, presentations and other resources that we collected and were using during public API design of our new SDK.&lt;/p&gt;
+
+&lt;h3 id=&quot;public-api-design-resources&quot;&gt;Public API Design Resources&lt;/h3&gt;
+
+&lt;p&gt;The truth is that &lt;strong&gt;there are not that many resources on the topic&lt;/strong&gt;. If you try to &lt;a href=&quot;https://lmgtfy.com/?q=public+api+design&quot;&gt;google &lt;em&gt;“public API design”&lt;/em&gt;&lt;/a&gt; most likely you’ll get an advertisement from Mulesoft, lot of information on RESTful APIs and very few results on client library API design.&lt;/p&gt;
+
+&lt;p&gt;Below you can find a collection of top resources that I collected around the web that are going to help you to create a state of art API in your mobile library.&lt;/p&gt;
+
+&lt;h4 id=&quot;books&quot;&gt;Books&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/4441064-practical-api-design&quot;&gt;Practical API Design: Confessions of a Java Framework Architect&lt;/a&gt; by Jaroslav Tulach, the designer of NetBeans API. The book starts with a bit of theory on why good API is important and what makes API great. Next chapters cover aspects of practical design and recommendations on how to improve API design skills. It’s an advanced level book, but the &lt;strong&gt;must-read for anyone who is building the SDK or library&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/18311306-framework-design-guidelines?from_search=true&quot;&gt;Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries&lt;/a&gt; by Microsoft architects Krzysztof Cwalina and Brad Abramscreated. I find this book very interesting, coz it contains explanations from 35 architects of .NET Framework on decisions they made and rules they broke.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://people.mpi-inf.mpg.de/~jblanche/api-design.pdf&quot;&gt;The Little Manual of API Design&lt;/a&gt; by Jasmin Blanchette from Nokia. A book very similar by content to presentation “How to Design a Good API and Why it Matters” by Joshua Bloch, but for Qt developers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wiki.apidesign.org/wiki/TheAPIBook&quot;&gt;The API Book&lt;/a&gt; is a website created by Jaroslav Tulach. It contains practical advice and solutions to everyday problems during API design and implementation process. If you have a question on what is a better way to implement something, there is a good chance that answer is there.&lt;/p&gt;
+
+&lt;h4 id=&quot;presentations&quot;&gt;Presentations&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.infoq.com/presentations/effective-api-design&quot;&gt;How to Design a Good API &amp;amp; Why it Matters&lt;/a&gt; - the must see presentation recording from Java library designer Joshua Bloch. It is short but contains all the basics you need to know about public API with a lot of examples of ‘good’ and ‘bad’ APIs. You can also check &lt;a href=&quot;https://www.cs.cmu.edu/~charlie/courses/15-214/2014-fall/slides/17-api-design.pdf&quot;&gt;slides&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://channel9.msdn.com/blogs/pdc2008/pc58&quot;&gt;Framework Design Guidelines&lt;/a&gt; - is an extract from the book by Krzysztof Cwalina and Brad Abramscreated mentioned above. If the book is too much for you, check this video.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=C2A3MjCA3I4&quot;&gt;Mobile SDK - Considerations &amp;amp; Best Practices&lt;/a&gt; - presentation by Yaron Karasik, a developer from live chat platform Liveperson. I found this presentation especially useful, as it is &lt;strong&gt;focused on mobile&lt;/strong&gt; and also covers best practices about size, resource usage, etc. Slides are available on &lt;a href=&quot;http://www.slideshare.net/LivePersonDev/mobile-sdk-considerations-best-practices&quot;&gt;Slideshare&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;blog-posts&quot;&gt;Blog Posts&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://dzone.com/articles/how-design-good-regular-api&quot;&gt;How to Design a Good, Regular API&lt;/a&gt; - a great article that focuses on importance of &lt;strong&gt;Regularity&lt;/strong&gt; in the library with the examples on how Java API violates this rule.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mattgemmell.com/api-design/&quot;&gt;API Design Rules for iOS and OS X&lt;/a&gt; - by Matt Gemmell, a collection of 25 rules for great API that covers class interface, protocols, and notifications.&lt;/p&gt;
+
+&lt;h3 id=&quot;want-to-learn-more&quot;&gt;Want to learn more?&lt;/h3&gt;
+
+&lt;p&gt;This is the list of the top picks from our team, if you have any suggestions, please share your resources in the comments.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in the topic and want to learn more, visit my talk at &lt;a href=&quot;http://romobos.com/&quot;&gt;Mobile Operating Systems Conference&lt;/a&gt; that is going to take place in Cluj-Napoca, Romania on February 16-17th. I’m going to share key findings and failures our team had during the complete rewrite of GetSocial SDK.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Dec 2016 11:20:38 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/building-mobile-sdk-resources</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/building-mobile-sdk-resources</guid>
+        
+        
+        <category>apidesign</category>
+        
+        <category>getsocial</category>
+        
+      </item>
     
       <item>
         <title>Challenges in building Unity native plugins. Intro</title>
@@ -768,211 +820,6 @@ Edsger Dijkstra&lt;/p&gt;
         <category>blackberry</category>
         
         <category>bug</category>
-        
-      </item>
-    
-      <item>
-        <title>Action Bar Sherlock, Maven, Eclipse integration</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/eclipse-maven-abs.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hello, today I’d like to describe a process of integration commonly used library for emulation action bar in old Android versions - &lt;a href=&quot;http://actionbarsherlock.com/&quot;&gt;ActionBarSherlock&lt;/a&gt; into maven - Eclipse project.
-In a result we’ll get a project with:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;support of Action Bar Sherlock&lt;/li&gt;
-  &lt;li&gt;support of integration tests as a separate project&lt;/li&gt;
-  &lt;li&gt;configured Maven build and release targets&lt;/li&gt;
-  &lt;li&gt;configured Eclipse for develop and debug&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This is my first post, so don’t be too critical :)&lt;/p&gt;
-
-&lt;p&gt;At first let’s create empty Android mvn project. In order to complete this step we’ll need:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk7u9-downloads-1859576.html&quot;&gt;JDK 1.6+&lt;/a&gt; installed as required for Android development&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://developer.android.com/intl/ru/sdk/index.html&quot;&gt;Android SDK&lt;/a&gt; installed r17+ , preferably with all platforms&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://maven.apache.org/download.html&quot;&gt;Maven 3.0.3+&lt;/a&gt; installed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you use Eclipse for development, you’ll also need:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Eclipse with &lt;a href=&quot;http://eclipse.org/m2e/&quot;&gt;m2e&lt;/a&gt; plugin installed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At first let’s create Android project using akquinet &lt;a href=&quot;https://github.com/akquinet/android-archetypes&quot;&gt;android-archetypes&lt;/a&gt;. In a result, we’ll get a sample project with configured release targets and integration tests project. Copy following code to the terminal, replacing highligted lines with your values:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn archetype:generate &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DarchetypeArtifactId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;android-release &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DarchetypeGroupId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;de.akquinet.android.archetypes &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DarchetypeVersion&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.0.8 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DgroupId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;com.foo.bar &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -DartifactId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;my-android-project &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -Dpackage&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;com.foo.bar.test &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; -Dplatform&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;16&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Once generated, the application is ready to be built and tested. Start an Android emulator, or plug an Android dev phone, and execute:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-android-project
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn clean install&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Besides your application, this commands will also install and execute integrations tests application.&lt;/p&gt;
-
-&lt;p&gt;Generated project goes with test keystore that could be used for test, but not for deploying to market, run this command to get signed apk:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn clean install -Prelease &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.keystore&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;PATH_OF_THE_PROJECT/my-android-project/test-key.keystore &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.alias&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;mykey &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.storepass&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;testtest &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;-Dsign.keypass&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;testtest&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now we need to download and add to our project dependencies &lt;a href=&quot;http://actionbarsherlock.com/&quot;&gt;ActionbarBarSherlock&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Latest version of the library always is available in the project &lt;a href=&quot;http://actionbarsherlock.com/download.html&quot;&gt;download page&lt;/a&gt;. When it’s ready, unzip archive, copy &lt;code&gt;library&lt;/code&gt; folder to your project root and rename it to &lt;code&gt;actionbarsherlock&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/my-android-project-1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As it is stated on &lt;a href=&quot;http://actionbarsherlock.com/usage.html&quot;&gt;abs usage page&lt;/a&gt; the only thing we need - is to add this lines to &lt;code&gt;my-android-project/my-android-project/pom.xml&lt;/code&gt; :&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;4.2.0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;apklib&lt;span class=&quot;nt&quot;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Also you need to extend &lt;code&gt;HelloAndroidActivity&lt;/code&gt; from &lt;code&gt;com.actionbarsherlock.app.SherlockActivity&lt;/code&gt; instead of &lt;code&gt;android.app.Activity&lt;/code&gt; and change activity theme in &lt;code&gt;AndroidManifest.xml&lt;/code&gt; to &lt;code&gt;android:theme=&quot;@style/Theme.Sherlock&quot;&lt;/code&gt;. Checkout &lt;a href=&quot;/files/posts/patch.diff&quot;&gt;git patch file&lt;/a&gt; for details. Try to build app. From parent project folder execute:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;mvn clean install&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;You’ll get following error:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] UNEXPECTED TOP-LEVEL EXCEPTION:
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] java.lang.IllegalArgumentException: already added: Landroid/support/v4/app/Watson&lt;span class=&quot;nv&quot;&gt;$OnCreateOptionsMenuListener&lt;/span&gt;;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.dex.file.ClassDefsSection.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassDefsSection.java:123&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.dex.file.DexFile.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DexFile.java:163&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processClass&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:486&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processFileBytes&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:455&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.access&lt;span class=&quot;nv&quot;&gt;$400&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:67&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.processFileBytes&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:394&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.cf.direct.ClassPathOpener.processArchive&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassPathOpener.java:245&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.cf.direct.ClassPathOpener.processOne&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassPathOpener.java:131&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.cf.direct.ClassPathOpener.process&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassPathOpener.java:109&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processOne&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:418&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;13&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.processAllFiles&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:329&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;14&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.run&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:206&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;15&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.dexer.Main.main&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:174&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;16&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]  at com.android.dx.command.Main.main&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Main.java:91&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;17&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] 1 error; aborting
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;18&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;19&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Reactor Summary:
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;20&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO]
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;21&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] my-android-project - Parent ....................... SUCCESS &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0.394s]
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;22&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] my-android-project - Application .................. SUCCESS &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;14.880s]
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;23&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] my-android-project-it - Integration tests ......... FAILURE &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9.501s]
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;24&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;25&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] BUILD FAILURE
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;26&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;27&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Total &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;: 21.255s
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;28&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Finished at: Sun Nov 04 12:50:51 GMT+02:00 2012
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;29&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] Final Memory: 15M/81M
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;30&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;INFO] ------------------------------------------------------------------------
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;31&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ERROR] Failed to execute goal com.jayway.maven.plugins.android.generation2:android-maven-plugin:3.1.1:dex &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;default-dex&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; on project my-android-project-it: MojoExecutionException: ANDROID-040-001: Could not execute: Command &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /bin/sh -c &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java -Xmx1024M -jar /Users/vitaliyzasadnyy/Development/SDKs/android-sdk-macosx/platform-tools/lib/dx.jar --dex --output&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex /Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes /Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar /Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar, Result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1 -&amp;gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Help 1]&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;If you carefully take a look at the last error, you’ll notice that a problem is with &lt;code&gt;generation2&lt;/code&gt; goal. It uses dex tool from Android SDK to generate class files for Dalvik. During the execution, it includes &lt;code&gt;actionbarsherlock&lt;/code&gt; and &lt;code&gt;support-v4-r7&lt;/code&gt; dependencies two times (second time like transitive dependency from our application project). Check out  it &lt;code&gt;--output&lt;/code&gt; parameter values (here is a bit formatted text from maven error):&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java -Xmx1024M -jar /Users/vitaliyzasadnyy/Development/SDKs/android-sdk-macosx/platform-tools/lib/dx.jar --dex --output&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes.dex
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    /Users/vitaliyzasadnyy/.m2/repository/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project/target/my-android-project-1.0-SNAPSHOT.jar
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    /Users/vitaliyzasadnyy/Development/workspaces/blog/my-android-project-parent/my-android-project-it/target/classes
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    /Users/vitaliyzasadnyy/.m2/repository/de/akquinet/android/androlog/androlog/1.0.5/androlog-1.0.5.jar
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    /Users/vitaliyzasadnyy/.m2/repository/com/google/android/support-v4/r7/support-v4-r7.jar&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;We can fix this error by adding &lt;code&gt;actionbarsherlock&lt;/code&gt; and &lt;code&gt;support-v4-r7&lt;/code&gt; dependencies with scope provided to &lt;code&gt;my-android-project-it/pom.xml&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.google.android&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;support-v4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;r7&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;scope&amp;gt;&lt;/span&gt;provided&lt;span class=&quot;nt&quot;&gt;&amp;lt;/scope&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;actionbarsherlock&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;4.2.0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;apklib&lt;span class=&quot;nt&quot;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;13&quot; class=&quot;code-highlight-row numbered marked-line start-marked-line end-marked-line&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;scope&amp;gt;&lt;/span&gt;provided&lt;span class=&quot;nt&quot;&gt;&amp;lt;/scope&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;14&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now project should build successfully.&lt;/p&gt;
-
-&lt;p&gt;Next step is to configurate eclipse. Rename parent folder of a project from &lt;code&gt;my-android-project&lt;/code&gt; to &lt;code&gt;my-android-project-parent&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/my-android-project-2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Open Eclipse, import &lt;code&gt;my-android-project-parent&lt;/code&gt; using existing maven project wizard. As &lt;code&gt;actionbarsherlock&lt;/code&gt; is not part of our parent maven project you’ll also need to import it as existing maven project (&lt;u&gt;don&#39;t&lt;/u&gt; import it as Android library project!). After this steps you should have following project structure:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/eclipse-project-1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s fix build path problems that we have.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to &lt;code&gt;my-android-project&lt;/code&gt; properties&lt;/li&gt;
-  &lt;li&gt;Open Android section&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;actionbarsherlock&lt;/code&gt; as a library by pressing Add button&lt;/li&gt;
-  &lt;li&gt;Now you should see &lt;code&gt;actionbarsherlock&lt;/code&gt; in a library section&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/eclipse-project-2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As we are using separate project for integration test, we should remove &lt;code&gt;src/test/java&lt;/code&gt; folder from &lt;code&gt;my-android-project&lt;/code&gt; and &lt;code&gt;my-android-project-it&lt;/code&gt; build path:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to &lt;code&gt;my-android-project&lt;/code&gt; (or &lt;code&gt;my-android-project-it&lt;/code&gt;) properties&lt;/li&gt;
-  &lt;li&gt;Open Java Build Path section&lt;/li&gt;
-  &lt;li&gt;Under Sources tab select &lt;code&gt;src/test/java&lt;/code&gt; folder&lt;/li&gt;
-  &lt;li&gt;Press remove button&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/eclipse-project-3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now all errors from Eclipse markers view should disappear, and we can run our project. Select &lt;code&gt;my-android-project&lt;/code&gt; and run it as Android application… but you’ll get:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/eclipse-project-3-error.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In console view, you’ll find an error like this one:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:22:26 - my-android-project] Conversion to Dalvik format failed with error 1
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:23:55 - my-android-project] Dx
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;UNEXPECTED TOP-LEVEL EXCEPTION:
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;java.lang.IllegalArgumentException: already added: Lorg/hamcrest/BaseDescription;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:23:55 - my-android-project] Dx  at com.android.dx.dex.file.ClassDefsSection.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ClassDefsSection.java:123&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-04 14:23:55 - my-android-project] Dx  at com.android.dx.dex.file.DexFile.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DexFile.java:163&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Remember our problem with maven configuration? Here we have quite the same issue with double inclusion. In order to fix it remove libs folder with &lt;code&gt;android-support-v4.jar&lt;/code&gt; from &lt;code&gt;actionbarsherlock&lt;/code&gt; project.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/eclipse-project-4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, clean all projects and run &lt;code&gt;my-android-project&lt;/code&gt;. We’ve got working application:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/abs-maven-eclipse-integration/app-screenshot.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sample project from post you can &lt;a href=&quot;/files/posts/abs-maven-eclipse-integration/my-android-project-parent.zip&quot;&gt;download here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hope this post was useful, if you have any notes or propositions how it can be improved, please write a comment.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 03 Nov 2012 23:01:00 +0100</pubDate>
-        <link>http://v.zasadnyy.com/blog/abs-maven-eclipse-integration</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/abs-maven-eclipse-integration</guid>
-        
-        
-        <category>android</category>
-        
-        <category>maven</category>
-        
-        <category>eclipse</category>
         
       </item>
     
