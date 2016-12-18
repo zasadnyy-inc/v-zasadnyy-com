@@ -1,7 +1,7 @@
 # Site detail
 title: "Vitaliy Zasadnyy"
-description: "Hi, my name is Vitaliy, I'm mobile developer and Google Developers Group Lviv co-founder. I'm interested in GameDev, Android, iOS, Google App Engine and community management. Used to work for enterprise giants like EPAM as well as for product companies such as NRavo."
-keywords: "developer, geek, google fan, gdg manager"
+description: "Hi, my name is Vitaliy. My background includes mobile application and game development, tech leadership and conference organization. Nowadays, I'm leading development of the next generation in-app marketing tools at the Dutch startup GetSocial. I'm a frequent speaker at conferences, an active member of various technical communities and a founder of the Google Developers Group Lviv."
+keywords: "developer, public speaker, manager, personal website"
 twitter: zasadnyy
 
 # Base information
@@ -22,5 +22,5 @@ navigation:
 # Blog
 images_folder: "/img/posts/"
 discus_short_name: "vzasadnyy"
-about_me: "Hi, my name is Vitaliy. My technical background includes mobile gaming, mobile application development, and large-scale enterprise systems. Nowadays, I'm leading the development of the next generation in-app marketing tools at <a href='https://www.getsocial.im/' target='_blank'>GetSocial</a>. I'm a frequent speaker at conferences, an active member of various technical communities and a founder of the <a href='http://lviv.gdg.org.ua/' target='_blank'>Google Developers Group Lviv</a>."
-get_in_touch: "You can find me on <a href='https://www.google.com/+VitalikZasadnyy' target='_blank'>Google+</a>, <a href='http://twitter.com/zasadnyy' target='_blank'>Twitter</a> or <a href='https://www.linkedin.com/in/zasadnyy' target='_blank'>LinkedIn</a>. If you want reach me directly, please send an <a href='mailto:vitaliy@zasadnyy.com' target='_blank'>email</a>."
+about_me: "Hi, my name is Vitaliy. My background includes mobile application and game development, tech leadership and conference organization. Nowadays, I'm leading development of the next generation in-app marketing tools at the Dutch startup <a href='https://getsocial.im' target='_blank'>GetSocial</a>. I'm a frequent speaker at conferences, an active member of various technical communities and a founder of the <a href='http://lviv.gdg.org.ua' target='_blank'>Google Developers Group Lviv</a>."
+get_in_touch: "You can find me on <a href='https://www.linkedin.com/in/zasadnyy' target='_blank'>LinkedIn</a>, <a href='http://twitter.com/zasadnyy' target='_blank'>Twitter</a>, <a href='https://www.youtube.com/channel/UCZuD7FqMvpjr_onzMl3MnuQ' target='_blank'>YouTube</a> and <a href='https://speakerhub.com/user/7163' target='_blank'>SpeakerHub</a>. If you want reach me directly, please send an <a href='mailto:vitaliy@zasadnyy.com' target='_blank'>email</a>."
