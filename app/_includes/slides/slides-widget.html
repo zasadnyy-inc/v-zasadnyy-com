@@ -1,5 +1,5 @@
 <div class="projects-widget col-md-5 col-md-offset-1">
-    <span class="widget-title">Recent slides</span>
+    <span class="widget-title">Recent and upcoming talks</span>
     <ul>
         {% assign itemsToShow = 3 %}
         {% assign slides = site.data.slides %}
@@ -14,5 +14,5 @@
             </li>
         {% endfor %}
     </ul>
-    <a class="side-link" href="{{ "/slides/" || prepend: site.baseurl }}">See all</a>
+    <a class="side-link" href="{{ "/talks/" || prepend: site.baseurl }}">See all</a>
 </div>
