@@ -206,7 +206,7 @@ past:
   recording: "https://www.youtube.com/watch?v=uQqFfSSylbA"
   conference: "GDG DevFest Ukraine 2016"
   conference_url: "https://devfest.gdg.org.ua/"
-  date: 2016-09-10
+  date: 2016-09-09
 -
   title: "J2ObjC. Cross platform development - Google way"
   description: "The war between mobile platforms is over. After several years of active competition, we’ve got two operating systems with almost the same quality and feature set.\n\nFor mobile developers this means that all further projects should target at least two platforms. In this talk, Vitaliy wants to share results of internal R&D experiments at GetSocial with J2ObjC – Java to Objective-C translation tool developed by Google.\n\nJ2ObjC goal is to write an app’s non-UI code (such as application logic and data models) in Java, which is then shared with no editing by Android and iOS apps."
@@ -229,6 +229,26 @@ past:
   conference: "GDG CEE Summit. Warsaw"
   conference_url: "https://gdgcee.org"
   date: 2016-10-08
+-
+  title: "Mobile User Acquisition and Engagement. Tactics You Can’t Ignore"
+  description: "So where should a game developer turn to, to be able to get quality user acquisition and keep them in a game without going bankrupt?<br/><br/>During the talk you’ll learn how to: <br/>- Prepare your app for user acquisition. <br/>- Learn how to get high quality users with little to no marketing - spend. <br/>- Set-up user acquisition tactics that create viral loops.<br/><br/>This presentation is the result of GetSocial’s experience addressing User Acquisition and Engagement challenges, and it reveals a unique solution that is already being used by the likes of VNG, Glu, Tribeflame, Tabtale, PeopleFun, Hutch and much more."
+  thumbnail: "thumb_tactics_you_cant_ignore.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/mobile-user-acquisition-and-engagement-tactics-you-cant-ignore"
+  recording: ""
+  conference: "GameDev Conference Lviv"
+  conference_url: "http://gamedev.lviv.ua/en/"
+  date: 2017-01-21
+-
+  title: "Key learnings and pitfalls from building mobile SDK"
+  description: "Are you working on the client library? Or design a public API for the module that is going to be used by other team or department?<br/><br/>In this session, Vitality will share his experience and key learnings from building a set of mobile SDKs. The session will be interesting for Android and iOS developers who want to learn what makes client library great. What are the best practices and common pitfalls in public API design. What is important, only programming API you expose or also ecosystem around?"
+  thumbnail: "thumb_key_learnings_and_pitfalls_from_building_mobile_sdk.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/key-learnings-and-pitfalls-from-building-mobile-sdk"
+  recording: ""
+  conference: "Romobos Cluj-Napoca"
+  conference_url: "http://romobos.com/"
+  date: 2017-02-16
 -
   title: "Tech Team Leadership. Where mistakes are expensive"
   description: "Developers that left the company, broken deadlines, failed projects. Often those things have common root cause – problems in team leadership. <br/><br/>Learning from your own mistakes in team leadership can be expensive. In Vitaliy’s case management mistakes almost ended up is wasting all investors money. During the session, Vitaliy is going to share his vision of what are the key qualities of the good technical team leader. What are the common pitfalls and what are the tools that helped to put GetSocial back on track."
