@@ -4,19 +4,23 @@
 
 	<ul>
         {% for item in site.data.slides reversed %}
-            <li class="slide-item col-lg-3 col-md-4 col-xs-6">
-                <a href="{{ item.slides_url }}" target="_blank">
-                    <div class="thumb flow-img" style="background-image: url({{ item.thumbnail | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>
-                    <h6 class="slide-title">{{ item.title }}</h6>
-                </a>
-                <span class="slide-subtitle">
-                    {% if item.conference_url %}
-                        <a href="{{ item.conference_url }}" target="_blank">{{ item.conference }}</a>, {{ item.date | date: '%B %d, %Y' }}
-                    {% else %}
-                        {{ item.conference }}, {{ item.date | date: '%B %d, %Y' }}
-                    {% endif %}
-                </span>
-            </li>
+			<li class="slide-item col-lg-12">
+				<div class="thumb col-lg-3 col-md-3 col-xs-12" style="background-image: url({{ item.thumbnail | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>
+				<div class="details col-lg-9 col-md-9 col-xs-12">
+					<h6>{{ item.title }}</h6>
+					<span class="slide-subtitle">
+					{% if item.conference_url %}
+						<a href="{{ item.conference_url }}" target="_blank">{{ item.conference }}</a>, {{ item.date | date: '%B %d, %Y' }}
+					{% else %}
+						{{ item.conference }}, {{ item.date | date: '%B %d, %Y' }}
+					{% endif %}
+					</span>
+					<div class="links">
+						{% if item.slides_url != "" %}<a href="{{ item.slides_url }}" class="slides" target="_blank"><img src="/img/pages/google-drive-presentation.svg"/>Slides</a>{% endif %}
+						{% if item.recording != "" %}<a href="{{ item.recording }}" class="recording"  target="_blank"><img src="/img/pages/youtube-symbol.svg"/>Recording</a>{% endif %}
+					</div>
+				</div>
+			</li>
         {% endfor %}
     </ul>
 </div>
