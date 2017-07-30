@@ -1,9 +1,10 @@
 <div class="slides-gallery col-md-12">
 
 	<h4>Upcoming Talks</h4>
+
 	<ul class="upcoming">
 		{% for item in site.data.slides.upcoming reversed %}
-		<li class="slide-item col-lg-12">
+		<li class="slide-item col-md-12">
 			<!--<div class="thumb col-lg-3 col-md-3 col-xs-12" style="background-image: url({{ item.thumbnail | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>-->
 			<div class="details col-lg-12 col-md-12 col-xs-12">
 				<h6>{{ item.title }}</h6>
@@ -27,9 +28,9 @@
 
 	<ul>
         {% for item in site.data.slides.past reversed %}
-			<li class="slide-item col-lg-12">
-				<div class="thumb col-lg-3 col-md-3 col-xs-12" style="background-image: url({{ item.thumbnail | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>
-				<div class="details col-lg-9 col-md-9 col-xs-12">
+			<li class="slide-item col-xs-12">
+				<div class="thumb col-xs-12 col-sm-4 col-md-3" style="background-image: url({{ item.thumbnail | prepend: "/img/slides/" | prepend: site.baseurl }});"></div>
+				<div class="details col-xs-12 col-sm-8 col-md-9">
 					<h6>{{ item.title }}</h6>
 					<span class="slide-subtitle">
 					{% if item.conference_url %}
