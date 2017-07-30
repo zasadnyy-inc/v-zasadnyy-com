@@ -1,3 +1,4 @@
+past:
 -
   title: "Porting web MMO games to native platforms. Tips & Tricks"
   description: "Presentation about porting Web MMO games to Android and iOS. Sharing own experience and best practices."
@@ -229,3 +230,24 @@
   conference: "DevTalks Bucharest"
   conference_url: "http://www.devtalks.ro/bucharest/"
   date: 2017-08-06
+upcoming:
+-
+  title: "How not to fuckup with building SDK and make clients happy"
+  description: "Are you working on the client library? Or design a public API for the module that is going to be used by other team or department?<br/><br/>In this session, Vitality will share his experience and key learnings from building a mobile SDKs for last 4 years:<br/><br/>- what is the cost of too complex API and how to simplify it;<br/><br/>- what aspects of the library are important for clients;<br/><br/>- how documentation should look like to avoid stupid and repetitive support questions;<br/><br/>- how to make library update process smooth.<br/><br/>The session will be interesting for Android and iOS developers who want to learn what makes client library great. What are the best practices and common pitfalls in public API design? What is important, only programming API you expose or also ecosystem around?"
+  thumbnail: ""
+  details_url: ""
+  slides_url: ""
+  recording: ""
+  conference: "DevFest Nantes"
+  conference_url: "https://devfest.gdgnantes.com/"
+  date: 2017-10-19
+-
+  title: "Opening Keynote"
+  description: ""
+  thumbnail: ""
+  details_url: ""
+  slides_url: ""
+  recording: ""
+  conference: "DevTalks Ukraine"
+  conference_url: "http://devfest.gdg.org.ua"
+  date: 2017-10-13

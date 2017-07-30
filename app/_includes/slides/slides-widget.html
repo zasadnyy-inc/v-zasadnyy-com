@@ -1,8 +1,8 @@
 <div class="projects-widget col-md-5 col-md-offset-1">
-    <span class="widget-title">Recent and upcoming talks</span>
+    <span class="widget-title">Recent talks</span>
     <ul>
         {% assign itemsToShow = 3 %}
-        {% assign slides = site.data.slides %}
+        {% assign slides = site.data.slides.past %}
         {% for i in (1..itemsToShow) %}
             {% assign index = slides.size | minus: i %}
             {% assign item = slides[index] %}
