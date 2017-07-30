@@ -218,3 +218,14 @@
   conference: "GDG CEE Summit. Warsaw"
   conference_url: "https://gdgcee.org"
   date: 2016-10-08
+-
+  title: "Tech Team Leadership. Where mistakes are expensive"
+  description: "Developers that left the company, broken deadlines, failed projects. Often those things have common root cause – problems in team leadership. <br/><br/>Learning from your own mistakes in team leadership can be expensive. In Vitaliy’s case management mistakes almost ended up is wasting all investors money. During the session, Vitaliy is going to share his vision of what are the key qualities of the good technical team leader. What are the common pitfalls and what are the tools that helped to put GetSocial back on track."
+  thumbnail: "thumb_tech_leadership.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/tech-team-leadership-where-mistakes-are-expensive"
+  slides_provider: speakerdeck
+  recording: ""
+  conference: "DevTalks Bucharest"
+  conference_url: "http://www.devtalks.ro/bucharest/"
+  date: 2017-08-06
