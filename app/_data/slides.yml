@@ -204,7 +204,7 @@ past:
   details_url: ""
   slides_url: "https://speakerdeck.com/zasadnyy/j2objc-cross-platform-development-google-way"
   slides_provider: speakerdeck
-  recording: ""
+  recording: "https://www.youtube.com/watch?v=rXvZkC6X56k"
   conference: "GDG DevFest Ukraine 2016"
   conference_url: "https://devfest.gdg.org.ua/"
   date: 2016-09-10
@@ -248,6 +248,6 @@ upcoming:
   details_url: ""
   slides_url: ""
   recording: ""
-  conference: "DevTalks Ukraine"
+  conference: "DevFest Ukraine"
   conference_url: "http://devfest.gdg.org.ua"
   date: 2017-10-13
