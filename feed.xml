@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>http://v.zasadnyy.com/</link>
+    <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 10 Dec 2017 17:57:11 +0100</pubDate>
+    <lastBuildDate>Sun, 10 Dec 2017 17:57:11 +0100</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Public API Design Resources</title>
+        <description>&lt;p&gt;Around a year ago, we at &lt;a href=&quot;https://getsocial.im&quot;&gt;GetSocial&lt;/a&gt; decided to rebuild our mobile SDKs from scratch, utilizing 4 years of experience and all best practices possible. The year has come to an end, we’re doing last preparations before publishing new shiny SKD and decided to share our findings and pitfalls we had along the way.&lt;/p&gt;
+
+&lt;p&gt;To start with, I’m going to share the collection of books, videos, presentations and other resources that we collected and were using during public API design of our new SDK.&lt;/p&gt;
+
+&lt;h3 id=&quot;public-api-design-resources&quot;&gt;Public API Design Resources&lt;/h3&gt;
+
+&lt;p&gt;The truth is that &lt;strong&gt;there are not that many resources on the topic&lt;/strong&gt;. If you try to &lt;a href=&quot;https://lmgtfy.com/?q=public+api+design&quot;&gt;google &lt;em&gt;“public API design”&lt;/em&gt;&lt;/a&gt; most likely you’ll get an advertisement from Mulesoft, lot of information on RESTful APIs and very few results on client library API design.&lt;/p&gt;
+
+&lt;p&gt;Below you can find a collection of top resources that I collected around the web that are going to help you to create a state of art API in your mobile library.&lt;/p&gt;
+
+&lt;h4 id=&quot;books&quot;&gt;Books&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/4441064-practical-api-design&quot;&gt;Practical API Design: Confessions of a Java Framework Architect&lt;/a&gt; by Jaroslav Tulach, the designer of NetBeans API. The book starts with a bit of theory on why good API is important and what makes API great. Next chapters cover aspects of practical design and recommendations on how to improve API design skills. It’s an advanced level book, but the &lt;strong&gt;must-read for anyone who is building the SDK or library&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/18311306-framework-design-guidelines?from_search=true&quot;&gt;Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries&lt;/a&gt; by Microsoft architects Krzysztof Cwalina and Brad Abramscreated. I find this book very interesting, coz it contains explanations from 35 architects of .NET Framework on decisions they made and rules they broke.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://people.mpi-inf.mpg.de/~jblanche/api-design.pdf&quot;&gt;The Little Manual of API Design&lt;/a&gt; by Jasmin Blanchette from Nokia. A book very similar by content to presentation “How to Design a Good API and Why it Matters” by Joshua Bloch, but for Qt developers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wiki.apidesign.org/wiki/TheAPIBook&quot;&gt;The API Book&lt;/a&gt; is a website created by Jaroslav Tulach. It contains practical advice and solutions to everyday problems during API design and implementation process. If you have a question on what is a better way to implement something, there is a good chance that answer is there.&lt;/p&gt;
+
+&lt;h4 id=&quot;presentations&quot;&gt;Presentations&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.infoq.com/presentations/effective-api-design&quot;&gt;How to Design a Good API &amp;amp; Why it Matters&lt;/a&gt; - the must see presentation recording from Java library designer Joshua Bloch. It is short but contains all the basics you need to know about public API with a lot of examples of ‘good’ and ‘bad’ APIs. You can also check &lt;a href=&quot;https://www.cs.cmu.edu/~charlie/courses/15-214/2014-fall/slides/17-api-design.pdf&quot;&gt;slides&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://channel9.msdn.com/blogs/pdc2008/pc58&quot;&gt;Framework Design Guidelines&lt;/a&gt; - is an extract from the book by Krzysztof Cwalina and Brad Abramscreated mentioned above. If the book is too much for you, check this video.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=C2A3MjCA3I4&quot;&gt;Mobile SDK - Considerations &amp;amp; Best Practices&lt;/a&gt; - presentation by Yaron Karasik, a developer from live chat platform Liveperson. I found this presentation especially useful, as it is &lt;strong&gt;focused on mobile&lt;/strong&gt; and also covers best practices about size, resource usage, etc. Slides are available on &lt;a href=&quot;http://www.slideshare.net/LivePersonDev/mobile-sdk-considerations-best-practices&quot;&gt;Slideshare&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;blog-posts&quot;&gt;Blog Posts&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://dzone.com/articles/how-design-good-regular-api&quot;&gt;How to Design a Good, Regular API&lt;/a&gt; - a great article that focuses on importance of &lt;strong&gt;Regularity&lt;/strong&gt; in the library with the examples on how Java API violates this rule.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mattgemmell.com/api-design/&quot;&gt;API Design Rules for iOS and OS X&lt;/a&gt; - by Matt Gemmell, a collection of 25 rules for great API that covers class interface, protocols, and notifications.&lt;/p&gt;
+
+&lt;h3 id=&quot;want-to-learn-more&quot;&gt;Want to learn more?&lt;/h3&gt;
+
+&lt;p&gt;This is the list of the top picks from our team, if you have any suggestions, please share your resources in the comments.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in the topic and want to learn more, visit my talk at &lt;a href=&quot;http://romobos.com/&quot;&gt;Mobile Operating Systems Conference&lt;/a&gt; that is going to take place in Cluj-Napoca, Romania on February 16-17th. I’m going to share key findings and failures our team had during the complete rewrite of GetSocial SDK.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Dec 2016 11:20:38 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/building-mobile-sdk-resources</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/building-mobile-sdk-resources</guid>
+        
+        
+        <category>apidesign</category>
+        
+        <category>getsocial</category>
+        
+      </item>
+    
+      <item>
+        <title>Challenges in building Unity native plugins. Intro</title>
+        <description>&lt;h3 id=&quot;prehistory&quot;&gt;Prehistory&lt;/h3&gt;
+
+&lt;p&gt;Half a year ago GetSocial Mobile team had to prepare and release SDK v.3.0 with a lot of new cool features and breaking changes from 2.x version. Just in that time I’ve joined a company and had a chance to make a complete revamp of Unity SDK.Half a year ago GetSocial Mobile team released SDK v.3.0 with a lot of new cool features and breaking changes from 2.x version. Since then, I’ve joined GetSocial and have had an opportunity to make a complete revamp of their Unity SDK.&lt;/p&gt;
+
+&lt;p&gt;In this series of posts, I’ll describe what decisions we made and what challenges our team faced with developing the &lt;a href=&quot;https://github.com/getsocial-im/getsocial-unity-sdk&quot;&gt;GetSocial Unity SDK&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;approaches-in-building-unity-sdk&quot;&gt;Approaches in building Unity SDK&lt;/h3&gt;
+
+&lt;p&gt;First, we needed to decide which approach to go for in order to create an SDK.&lt;/p&gt;
+
+&lt;p&gt;At that moment, we had &lt;a href=&quot;https://github.com/getsocial-im/getsocial-android-sdk&quot;&gt;Android SDK&lt;/a&gt; written in Java and &lt;a href=&quot;https://github.com/getsocial-im/getsocial-ios-sdk&quot;&gt;iOS SDK&lt;/a&gt; in ObjectiveC, both completely native to achieve the best performance and user experience. Unity supports three scripting languages: C#, UnityScript (aka JavaScript), and Boo. We decided to expose API in C# as it’s &lt;a href=&quot;http://blogs.unity3d.com/2014/09/03/documentation-unity-scripting-languages-and-you/&quot;&gt;the most widely used one&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s check which options we had to achieve the goal…&lt;/p&gt;
+
+&lt;h5 id=&quot;pure-c-sdk&quot;&gt;Pure C# SDK&lt;/h5&gt;
+
+&lt;p&gt;The best approach from developer and user perspective as&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;it delivers the best performance;&lt;/li&gt;
+  &lt;li&gt;it is simple to setup;&lt;/li&gt;
+  &lt;li&gt;we could make SDK available to 21 platforms supported by Unity.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Looks like an ideal solution, but there are few huge disadvantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;at the end we’ll have a third huge codebase that should be kept in sync with iOS and Android ones;&lt;/li&gt;
+  &lt;li&gt;all UI should be reimplemented in C# that is not the easiest task as all games use different UI frameworks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;cross-compilation-to-c&quot;&gt;Cross-compilation to C#&lt;/h5&gt;
+
+&lt;p&gt;According Google &lt;a href=&quot;http://gmailblog.blogspot.nl/2014/11/going-under-hood-of-inbox.html&quot;&gt;report&lt;/a&gt;, that they managed to reuse 70% of code between Android, iOS and Web Inbox clients, we were so impressed by the idea that decided to give it a try.&lt;/p&gt;
+
+&lt;p&gt;Because of similarity between Java and C# we digged in a direction of recompiling Android SDK to C#.&lt;/p&gt;
+
+&lt;p&gt;From a positive side, we found that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;there are tools for cross-compilation like &lt;a href=&quot;http://www.microsoft.com/en-us/download/details.aspx?id=14349&quot;&gt;Java Language Conversion Assistant&lt;/a&gt; from Microsoft;&lt;/li&gt;
+  &lt;li&gt;in theory, in the end we get C# library, that is fast;&lt;/li&gt;
+  &lt;li&gt;and possible to use on all Unity supported platforms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On the other hand:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;it’s not possible to cross-compile presentation layer as it uses Android APIs. That means we need to replicate UI part of the SDK manually on C#;&lt;/li&gt;
+  &lt;li&gt;cross-compilation required a clear separation between business and presentation logic, which would lead to a huge refactoring in Android SDK;&lt;/li&gt;
+  &lt;li&gt;it would be hard to establish automated C# SDK regenerations when Java source is updated, as cross-compilers produce &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/5atsz094(v=vs.71).aspx&quot;&gt;upgrade issues&lt;/a&gt; that should be fixed manually.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;unity-native-plugin&quot;&gt;Unity native plugin&lt;/h5&gt;
+
+&lt;p&gt;Native plugins are platform-specific native code libraries. They can access features like OS calls and third-party code libraries that would otherwise not be available to Unity.&lt;/p&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;very few code needed; a bridge is a thin adapter layer between API exposed in C# and native SDKs;&lt;/li&gt;
+  &lt;li&gt;100% code reuse from native SDKs;&lt;/li&gt;
+  &lt;li&gt;UI rendering is handled by native side =&amp;gt; no problem with variety of Unity UI frameworks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;we’d be able to deploy only to iOS and Android Unity games;&lt;/li&gt;
+  &lt;li&gt;native SDKs API should be in sync to avoid huge amount of adapter’s code in a bridge;&lt;/li&gt;
+  &lt;li&gt;Unity Java Native Interface implementation has issues (Unity engineers fix them quickly but tend to add a new one on each release).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;selected-approach&quot;&gt;Selected approach&lt;/h3&gt;
+
+&lt;p&gt;We decided to go with Unity native plugin approach as it required the least effort, gave plenty of advantages and flexibility. Now GetSocial Unity SDK has the following architecture:
+&lt;img src=&quot;/img/posts/challenges-in-building-unity-native-plugins-intro-sdk-architecture.png&quot; alt=&quot;GetSocial Unity SDK Architecture&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Between C# API and native libraries, we have a bridge layer on Unity and native side. The main task for the bridge is to invoke methods between platforms and convert data to primitive types as we can’t pass objects between platforms.&lt;/p&gt;
+
+&lt;p&gt;To communicate between C# code and native side, Unity exposes a wide variety of APIs. On Android: Unity Messaging (the one we use to send messages between GameObjects) and wrappers around Java Native Interface. On iOS, we can invoke extern methods from ObjectiveC and use MonoPInvokeCallbackAttribute to call C# methods from the iOS world.&lt;/p&gt;
+
+&lt;h3 id=&quot;everything-is-simple-right&quot;&gt;Everything is simple, right?&lt;/h3&gt;
+
+&lt;p&gt;The theory is simple: thin bridge layer, few calls between C# and native platforms, nice demo app and problem solved. But a simple solution doesn’t come without any challenges. Here are a few of my favorites:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;performance&lt;/strong&gt;: potentially bridge could become a performance-wise bottleneck, especially if calls will be made on each frame (keep in mind &lt;a href=&quot;https://www.youtube.com/watch?v=CaMTIgxCSqU&quot;&gt;16ms rule&lt;/a&gt;);&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;testability&lt;/strong&gt;: with Unity native plugin approach most of the SDK will be in the native code, that means we can test only on iOS or Android device/simulator, but not Unity player;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;continuous delivery&lt;/strong&gt;: SDK consist of 3 parts, each one has it own build process, setting up build pipeline could be complicated;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;version fragmentation&lt;/strong&gt;: Unity is a very dynamic platform, each release brings tons of cool features and … new bugs. Unlike game developers who can select Unity version and use it during whole game life, we have to support all Unity versions starting, at least, from 4.1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;want-to-know-more&quot;&gt;Want to know more?&lt;/h3&gt;
+
+&lt;p&gt;It was only a first post from the series, follow GetSocial on social networks in order not to miss updates and don’t hesitate to share your thoughts and experience with building Unity plugins in comments.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Aug 2015 04:20:38 +0200</pubDate>
+        <link>http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</guid>
+        
+        
+        <category>unity3d</category>
+        
+        <category>getsocial</category>
+        
+      </item>
+    
+      <item>
+        <title>Unity issue: non-java resources are not included in final apk</title>
+        <description>&lt;h3 id=&quot;prehistory&quot;&gt;Prehistory&lt;/h3&gt;
+
+&lt;p&gt;Starting from January I’m working for a company called &lt;a href=&quot;https://www.getsocial.im/&quot;&gt;GetSocial&lt;/a&gt;. We are focused on powering more engagement, players and revenue for games by providing easy-to-integrate social building blocks. We already have Android and iOS SDK published, and my first task was to build Unity SDK on top of native ones.&lt;/p&gt;
+
+&lt;h3 id=&quot;actually-an-issue&quot;&gt;Actually an issue&lt;/h3&gt;
+
+&lt;p&gt;Recently I found that &lt;strong&gt;non-java resources&lt;/strong&gt; (e.g. images, properties, xml configurations) &lt;strong&gt;from included jar libraries are not copied to the final apk&lt;/strong&gt; during Unity Android build. As a result as soon as we try to load them from a java side - application crashes with &lt;code&gt;I/WindowState﹕ WIN DEATH: Window...&lt;/code&gt; exception.&lt;/p&gt;
+
+&lt;p&gt;During native Android SDK development, we had the similar issue but it was easily solved by additional gradle configuration. In the case of Unity &lt;strong&gt;there is no easy way to modify apk build process&lt;/strong&gt;. For sure you can make some magic with apk decompilation, modifying and packaging back, but that’s not the solution we’re looking for.&lt;/p&gt;
+
+&lt;p&gt;Here is a simplified diagram for Android apk build process:
+&lt;img src=&quot;/img/posts/unity-issue-android-build-process.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;temporary-solution&quot;&gt;Temporary solution&lt;/h3&gt;
+
+&lt;p&gt;For a temporary solution, there are two approaches:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Magic with Android SDK. Create a wrapper for &lt;code&gt;apkbuilder&lt;/code&gt; tool and add missing resources in this step. This approach could be the only way if you don’t have access to library source code.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Hassle with source code. If you’re missing configuration files and have access to source code, it’s possible to hardcode values directly to java code to remove all references to resources.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;external-discussion&quot;&gt;External discussion&lt;/h3&gt;
+
+&lt;p&gt;Check out the issue discussion on &lt;a href=&quot;http://forum.unity3d.com/threads/issue-non-java-resources-from-jar-libraries-are-not-included-in-final-apk.298921/#post-1970236&quot;&gt;Unity Community Forum&lt;/a&gt; and &lt;a href=&quot;http://fogbugz.unity3d.com/default.asp?673008_mv7e971irj1dicks&quot;&gt;FogBugz&lt;/a&gt; Unity bug tracker.&lt;/p&gt;
+
+&lt;h3 id=&quot;demo&quot;&gt;Demo&lt;/h3&gt;
+
+&lt;p&gt;I’ve created a small demo to show off the problem. It consists of 2 parts:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;figcaption class=&quot;code-highlight-caption&quot;&gt;&lt;span class=&quot;code-highlight-caption-title&quot;&gt;Main.java from demo.jar&lt;/span&gt;&lt;/figcaption&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loadPropertiesAndPrintValues&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;n&quot;&gt;Properties&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Properties&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;n&quot;&gt;InputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getResourceAsStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;test.properties&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;prop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isItWorking&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getProperty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;is_it_working&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;13&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isItWorking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;14&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;15&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;16&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;17&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;18&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;19&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;                &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;20&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;21&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;                &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;22&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;23&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;24&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;25&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;figcaption class=&quot;code-highlight-caption&quot;&gt;&lt;span class=&quot;code-highlight-caption-title&quot;&gt;TryToLoadJavaProperties.cs from Unity demo project&lt;/span&gt;&lt;/figcaption&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TryToLoadJavaProperties&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;OnGUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Execute loadPropertiesAndPrintValues()&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;javaClazz&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AndroidJavaObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.company.Main&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;        
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;javaClazz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;CallStatic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;loadPropertiesAndPrintValues&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Download demo Unity project from &lt;a href=&quot;/files/posts/unity-issue-non-class-resources-are-not-copied-to-final-apk-demo.zip&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 17 Feb 2015 03:20:38 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>Best test devices for game development</title>
+        <description>&lt;p&gt;Recently I had a task to select Android phones to buy to extend company’s test device list. To be more precise, I had to select 4-6 phones that will cover most of the possible hardware configurations (screen size, GPU vendor, etc.). Taking into account that mainly we make games using Unity 3D.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-is-it-important-to-test-on-devices-with-different-gpus&quot;&gt;Why is it important to test on devices with different GPUs?&lt;/h4&gt;
+
+&lt;p&gt;If we’re talking about iOS, this question doesn’t make sense because all iPhones and iPads use PowerVR GPUs. But Android devices can be powered by &lt;a href=&quot;http://en.wikipedia.org/wiki/Imageon&quot;&gt;Adreno&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Tegra&quot;&gt;Tegra&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Mali_(GPU)&quot;&gt;Mali&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/PowerVR&quot;&gt;PowerVR&lt;/a&gt; GPUs. These differ in texture formats and how alpha is handled. Moreover they all have different drivers and shader compilers. Unity documentation recommends using ETC texture compression, which is supported by all Android devices. But in some cases it’s possible to achieve better performance using other compression format adopted for certain GPU.&lt;/p&gt;
+
+&lt;h4 id=&quot;market-research-results&quot;&gt;Market research results&lt;/h4&gt;
+
+&lt;p&gt;According to statistics from &lt;a href=&quot;http://www.appbrain.com/stats/stats-index&quot;&gt;AppBrain&lt;/a&gt; for today the most popular Android phones are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Samsung Galaxy S3: 7.5 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy S4: 6.2 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy S2: 3.8 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy Note 2: 2.9 %&lt;/li&gt;
+  &lt;li&gt;Samsung Galaxy S3 Mini: 2.5 %&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Top device models according to &lt;a href=&quot;http://stats.unity3d.com/mobile/device-android.html&quot;&gt;Unity Hardware Stats&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Galaxy M: 4.1%&lt;/li&gt;
+  &lt;li&gt;Galaxy S4: 4.0%&lt;/li&gt;
+  &lt;li&gt;Galaxy Tab 3 7.0: 3.9%&lt;/li&gt;
+  &lt;li&gt;MI-2: 3.4%&lt;/li&gt;
+  &lt;li&gt;Galaxy Note 3: 3.2%&lt;/li&gt;
+  &lt;li&gt;Galaxy Note II: 3.1%&lt;/li&gt;
+  &lt;li&gt;Galaxy S2: 3.1%&lt;/li&gt;
+  &lt;li&gt;Galaxy S3: 3.0%&lt;/li&gt;
+  &lt;li&gt;Galaxy S3 Mini: 2.2%&lt;/li&gt;
+  &lt;li&gt;Galaxy S4 LTE: 2.0%&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Most popular GPU models according to &lt;a href=&quot;http://stats.unity3d.com/mobile/device-android.html&quot;&gt;Unity Hardware Stats&lt;/a&gt; data:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mali 400 MP: 26.8%&lt;/li&gt;
+  &lt;li&gt;PowerVR SGX544: 10.1%&lt;/li&gt;
+  &lt;li&gt;Adreno 320: 8.5%&lt;/li&gt;
+  &lt;li&gt;PowerVR SGX531: 7.1%&lt;/li&gt;
+  &lt;li&gt;Adreno 330: 5.9%&lt;/li&gt;
+  &lt;li&gt;Adreno 200: 5.7%&lt;/li&gt;
+  &lt;li&gt;Videocore IV: 5.4%&lt;/li&gt;
+  &lt;li&gt;PowerVR SGX540: 5.4%&lt;/li&gt;
+  &lt;li&gt;Adreno 203: 4.7%&lt;/li&gt;
+  &lt;li&gt;Adreno 305: 4.6%&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After merging all statistical data and requirements together we’ve got a table that shows what devices to buy to fulfill the most popular gpu/screen size combinations:
+Test devices table&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/best-test-devices-for-game-development-table.png&quot; alt=&quot;result table&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;h-note&quot;&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://www.amazon.com/kindle-fire-hdx-student-gaming-tablet/dp/B00BWYQ9YE&quot;&gt;Kindle Fire&lt;/a&gt; and &lt;a href=&quot;http://shield.nvidia.com/&quot;&gt;Nvidia Shield&lt;/a&gt; are on the table, but not in statistics data.&lt;/p&gt;
+
+  &lt;p&gt;First one was selected to list because of almost square screen that allows to test your UI on non-standard proportions. Also, it’s good to have Amazon device if you’ll decide to publish a game to their store.&lt;/p&gt;
+
+  &lt;p&gt;According Nvidia Shield, it is the perfect device to test user interaction with game controller.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Do you use other devices for game testing? Share your list in the comments.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Jun 2014 22:20:38 +0200</pubDate>
+        <link>http://v.zasadnyy.com/blog/best-test-devices-for-game-development</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/best-test-devices-for-game-development</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>Mastering Unity Project Folder Structure. Level 2 – Assets Organization</title>
+        <description>&lt;p&gt;Have you ever faced a problem that it was hard to find assets in your project? If you’re new to Unity and make a game more complex than &lt;a href=&quot;https://www.google.com/search?q=Space+Invaders&amp;amp;oq=Space+Invaders&quot;&gt;Space Invaders&lt;/a&gt;, the answer is probably yes. That’s exactly what happened with our team. We are working on a big 3D MMO game and three months ago we decided that our project requires restructuring. In this post, I’ll show a folder structure that we use, explain how it is connected with an art production pipeline and describe some naming conventions that help us a lot.&lt;/p&gt;
+
+&lt;p&gt;After a few hours of googling I found several topics about project structure best practices:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.glenstevens.ca/unity3d-best-practices/&quot;&gt;http://www.glenstevens.ca/unity3d-best-practices/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://team3dadiu.wikispaces.com/Unity+Project+Structure&quot;&gt;http://team3dadiu.wikispaces.com/Unity+Project+Structure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&quot;&gt;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All these posts describe very simple cases (suitable for small games) and some basic rules of assets organisation. So we decided to create our own set of rules. Now, after several iterations of folder restructuring we are ready to share them.&lt;/p&gt;
+
+&lt;h4 id=&quot;assets-folder-structure&quot;&gt;Assets Folder Structure&lt;/h4&gt;
+
+&lt;p&gt;When we started restructuring, we had two simple goals: root folder should be as clean as possible, and folder structure should be ready for Asset Bundles. Below you can find a screenshot of our project window and explanations to some folders.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-2-folder-structure.png&quot; alt=&quot;Assets folder structure&quot; class=&quot;pull-left&quot; style=&quot;margin: 10px 30px 30px 0px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/DynamicAssets/[asset bundle id]/Resources&lt;/code&gt; – a place to put assets dynamically loaded via &lt;code&gt;Resources.Load(...)&lt;/code&gt; method. Common folder contains only base resources packed with game. Resources from other folders are compiled into Asset Bundles and loaded from our servers on demand. Note, if you’re not using asset bundles you can only have one &lt;code&gt;Resources&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/Extensions/[extension name]&lt;/code&gt; – by default, all third party extensions like NGUI are unpacked to the &lt;code&gt;Assets&lt;/code&gt; folder root. But after fifth extension you’ll get a mess in the project, so we have decided to create a separate folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/StaticAssets&lt;/code&gt; – when we’ve just started our game we used folder structure described &lt;a href=&quot;http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/&quot;&gt;here&lt;/a&gt;. After four months of development we realised that it’s a total mess in the root, so we moved all static resources (referenced directly from scenes) to the separate folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/StaticAssets/Animations&lt;/code&gt; – to understand a hierarchy related to animations better I’d like to describe a part of our art pipeline (note, we use &lt;a href=&quot;https://docs.unity3d.com/Documentation/Manual/MecanimAnimationSystem.html&quot;&gt;Mecanim&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;animator imports animations into Unity in &lt;code&gt;.fbx&lt;/code&gt; format and puts them under &lt;code&gt;/StaticAssets/Animations/Sources/[model name]&lt;/code&gt; folder&lt;/li&gt;
+  &lt;li&gt;animator duplicates all the &lt;code&gt;.anim&lt;/code&gt; files from &lt;code&gt;.fbx&lt;/code&gt;, configures them and moves to &lt;code&gt;/StaticAssets/Animations/[model name]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;animator creates mecanim animator controller for specific model, puts it under &lt;code&gt;/StaticAssets/Animators&lt;/code&gt;, configures mecanim state machine using &lt;code&gt;.anim&lt;/code&gt; files from &lt;code&gt;/StaticAssets/Animations/[model name]&lt;/code&gt; folder.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;/StaticAssets/Effects&lt;/code&gt; – folder for models, materials, textures, prefabs, etc. used for particle systems.&lt;/p&gt;
+
+&lt;p class=&quot;h-warning&quot;&gt;&lt;strong&gt;Don’t use spaces in file and folder names&lt;/strong&gt;. We faced with this problem during a project build setup on CI server, as we found Unity3D [command line tools][comand-line-tools] can’t automatically process paths with spaces.&lt;/p&gt;
+
+&lt;h4 id=&quot;naming-conventions&quot;&gt;Naming conventions&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Append prefixes to differentiate asset types, e.g. &lt;code&gt;pref_&lt;/code&gt; for prefabs, &lt;code&gt;scn_&lt;/code&gt; – for scenes. We started to use prefixes when we discovered that it was easy to confuse prefab with model. Another advantage of this approach is instead of typing &lt;code&gt;t:Prefab Bear&lt;/code&gt; in search field you type &lt;code&gt;pref_Bear&lt;/code&gt;, which is shorter&lt;/li&gt;
+  &lt;li&gt;Folder structure under &lt;code&gt;/DynamicAssets/[asset bundle id]/Resources&lt;/code&gt; is exactly the same and almost the same as under &lt;code&gt;/StaticAssets&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More naming conventions you can find in this &lt;a href=&quot;http://www.glenstevens.ca/unity3d-best-practices/&quot;&gt;post&lt;/a&gt; under &lt;em&gt;“Naming Standards and Folder Structure”&lt;/em&gt; section.&lt;/p&gt;
+
+&lt;p&gt;More posts from Mastering Unity Project Folder Structure series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-0-vcs/&quot;&gt;Level 0 - Folders required for version control systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-1-reserved-folders/&quot;&gt;Level 1 – Reserved Folders&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 11 Mar 2014 14:31:43 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>Mastering Unity Project Folder Structure. Level 1 – Reserved Folders</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-1-hero.jpg&quot; alt=&quot;Reserved&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the previous post, I’ve described which files and folders are located in Unity project root, which are responsible for what and what should be kept under version control. Now we can move on to Assets folder. In general under Assets you can create whatever subfolders you want. But there are some reserved folder names for special needs.&lt;/p&gt;
+
+&lt;p class=&quot;quote&quot;&gt;I’ve started to write this post on my own, but later found page on Unity Wiki about “Special Folder Names in your Assets Folder”. Here you can find shortened version with some extra info from our team experience. The original version is available on &lt;a href=&quot;http://wiki.unity3d.com/index.php/Special_Folder_Names_in_your_Assets_Folder&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;standard-assets&quot;&gt;Standard Assets&lt;/h5&gt;
+
+&lt;p&gt;Scripts in here are always compiled first. Scripts are output to either &lt;code&gt;Assembly-CSharp-firstpass&lt;/code&gt;, &lt;code&gt;Assembly-UnityScript-firstpass&lt;/code&gt; or &lt;code&gt;Assembly-Boo-firstpass&lt;/code&gt; project, depending on the language. More information about script compilation order in &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Scripts inside the Standard Assets folder will be compiled earlier than your other scripts. So, placing scripts in Standard Assets is one way for C# scripts to be able to access .js scripts or vice-versa.&lt;/p&gt;
+
+&lt;h5 id=&quot;pro-standard-assets&quot;&gt;Pro Standard Assets&lt;/h5&gt;
+
+&lt;p&gt;Same with &lt;code&gt;Standard Assets&lt;/code&gt;, only files here are meant for the Pro version. Assets here make use of Pro-only features like render textures and screen-space effects. Again, scripts here are compiled earlier, allowing them to be accessed by other scripts (of any language) that are outside the &lt;code&gt;Pro Standard Assets&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;h5 id=&quot;editor&quot;&gt;Editor&lt;/h5&gt;
+
+&lt;p&gt;The &lt;code&gt;Editor&lt;/code&gt; folder name is a special name that allows your scripts to access to the Unity Editor Scripting API. If your script uses any classes or functionality from the UnityEditor namespace, it has to be placed in a folder called Editor.&lt;/p&gt;
+
+&lt;p&gt;Scripts inside an Editor folder will not be included in your game’s build. They are only used in the Unity Editor.&lt;/p&gt;
+
+&lt;p&gt;You can have multiple &lt;code&gt;Editor&lt;/code&gt; folders throughout your project.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;An &lt;code&gt;Editor&lt;/code&gt; folder that is not located in another special folder can be placed/nested anywhere in the project. However, if it’s in &lt;code&gt;Standard Assets&lt;/code&gt;, &lt;code&gt;Pro Standard Assets&lt;/code&gt;, or &lt;code&gt;Plugins&lt;/code&gt;, it must be a direct child of these folders. Otherwise, it will not get processed. For example, it’s ok to have a path like &lt;code&gt;My Extension/Scripts/Editor&lt;/code&gt;, but if placed in a special folder, it must always be &lt;code&gt;Standard Assets/Editor/My Extension/Scripts&lt;/code&gt;, or &lt;code&gt;Pro Standard Assets/Editor/My Extension/Scripts&lt;/code&gt;, or &lt;code&gt;Plugins/Editor/My Extension/Scripts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;More about custom editors on the Unity &lt;a href=&quot;http://docs.unity3d.com/Documentation/Components/ExtendingTheEditor.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;plugins&quot;&gt;Plugins&lt;/h5&gt;
+
+&lt;p&gt;The &lt;code&gt;Plugins&lt;/code&gt; folder is where you must put any native plugins, which you want to be accessible to your scripts. They will also be automatically included in your build. Take note that this folder may not be in any subfolder (it has to reside within the top-level &lt;code&gt;Assets&lt;/code&gt; folder).&lt;/p&gt;
+
+&lt;p&gt;In Windows, native plugins exist as &lt;code&gt;.dll&lt;/code&gt; files, in Mac OS X, they are &lt;code&gt;.bundle&lt;/code&gt; files, and in Linux, they are &lt;code&gt;.so&lt;/code&gt; files.&lt;/p&gt;
+
+&lt;p&gt;Like the &lt;code&gt;Standard Assets&lt;/code&gt; folder, any scripts in here are compiled earlier, allowing them to be accessed by other scripts (of any language) that are outside the &lt;code&gt;Plugins&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;More information about creating &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/PluginsForAndroid.html&quot;&gt;native Android&lt;/a&gt; and &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/PluginsForIOS.html&quot;&gt;iOS plugins&lt;/a&gt; in Unity.&lt;/p&gt;
+
+&lt;h5 id=&quot;resources&quot;&gt;Resources&lt;/h5&gt;
+
+&lt;p&gt;The &lt;code&gt;Resources&lt;/code&gt; folder is a special folder that allows you to access assets by file path and name in your scripts. Rather than by the usual (and recommended) method of direct references (as variables in scripts via drag-and-drop in the Unity Editor).&lt;/p&gt;
+
+&lt;p&gt;For this reason, caution is advised when using it. All assets you put in the &lt;code&gt;Resources&lt;/code&gt; folder are always included in your build (even unused ones), because Unity has no way of determining which Resources-based assets are used or not.&lt;/p&gt;
+
+&lt;p&gt;You can have multiple &lt;code&gt;Resources&lt;/code&gt; folders throughout your project. It is not recommended to have an asset in one &lt;code&gt;Resources&lt;/code&gt; folder and have another asset with that same name in another &lt;code&gt;Resources&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;Once your game is built, all assets in all &lt;code&gt;Resources&lt;/code&gt; folders get packed into the game’s archive for assets.&lt;/p&gt;
+
+&lt;p&gt;Also, see &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/LoadingResourcesatRuntime.html&quot;&gt;Loading Resources at Runtime&lt;/a&gt; topic from documentation.&lt;/p&gt;
+
+&lt;h5 id=&quot;editor-default-resources&quot;&gt;Editor Default Resources&lt;/h5&gt;
+
+&lt;p&gt;This folder functions like a Resources folder, but is meant for editor scripts only. Use this if your editor plugin needs to load assets (e.g. icons, GUI skins, etc.) while making sure said assets won’t get included in the user’s build (putting such files in a normal Resources folder would have meant that those assets would be included in the user’s game when built).&lt;/p&gt;
+
+&lt;p&gt;To access assets inside the “Editor Default Resources”, you need to use &lt;a href=&quot;http://docs.unity3d.com/ScriptReference/EditorGUIUtility.Load.html&quot;&gt;EditorGUIUtility.Load&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handleMaterial&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditorGUIUtility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;HandleMaterial.mat&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;Unlike &lt;code&gt;Resources.Load&lt;/code&gt;, &lt;code&gt;EditorGUIUtility.Load&lt;/code&gt; requires you to specify the filename extension of the asset you’re trying to load.&lt;/p&gt;
+
+&lt;p&gt;Only one “Editor Default Resources” folder can be present, and it has to be directly under the top Assets folder.&lt;/p&gt;
+
+&lt;h5 id=&quot;gizmos&quot;&gt;Gizmos&lt;/h5&gt;
+
+&lt;p&gt;The gizmos folder holds all the texture/icon assets for use with &lt;code&gt;Gizmos.DrawIcon()&lt;/code&gt;. Texture assets placed inside this folder can be called by name, and drawn on-screen as a gizmo in the editor.&lt;/p&gt;
+
+&lt;h5 id=&quot;webplayertemplates&quot;&gt;WebPlayerTemplates&lt;/h5&gt;
+
+&lt;p&gt;Used to replace the default web page used for web builds. Any scripts placed here will not be compiled at all. This folder has to be just under &lt;code&gt;Assets&lt;/code&gt; folder &lt;code&gt;Assets/WebPlayerTemplates/&lt;/code&gt;. &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/UsingWebPlayertemplates.html&quot;&gt;More information&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;streaming-assets&quot;&gt;Streaming Assets&lt;/h5&gt;
+
+&lt;p&gt;Any files in here are copied to the build folder as is, without any changes (except for mobile and web builds, where they get embedded into the final build file). The path, where they are, can vary per platform but is accessible via &lt;code&gt;Application.streamingAssetsPath&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;See documentation about &lt;a href=&quot;http://docs.unity3d.com/Documentation/ScriptReference/Application-streamingAssetsPath.html&quot;&gt;Application.streamingAssetsPath&lt;/a&gt; and &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/StreamingAssets.html&quot;&gt;Streaming Assets&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;h-tip&quot;&gt;
+  &lt;p&gt;During Android build all files from &lt;code&gt;Assets/StreamingAssets/&lt;/code&gt; are copied to &lt;code&gt;assets/&lt;/code&gt; folder uncompressed, so you can load them with java code, e.g.&lt;/p&gt;
+
+  &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;InputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bitmap&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getAssets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon.png&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;More posts from Mastering Unity Project Folder Structure series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-0-vcs/&quot;&gt;Level 0 - Folders required for version control systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 13 Feb 2014 14:14:41 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>Mastering Unity Project Folder Structure. Level 0 – Folders required for version control systems</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/hero-image.jpg&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this series of posts, I’ll spot some light on Unity Project folder structure. What folders and files are required for version control systems, what are reserved folders names and their usage and as a bonus how do we organize resources and other files in our Unity projects at Nravo.&lt;/p&gt;
+
+&lt;p class=&quot;h-disclaimer&quot;&gt;Before gamedev, I used to be an Android developer, and I really liked predefined and consistent folder structure across all projects. So I was a bit confused when we started first Unity game.&lt;/p&gt;
+
+&lt;h4 id=&quot;mastering-level-0-folders-required-for-version-control-systems&quot;&gt;Mastering Level 0. Folders required for version control systems.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/folder-structure.png&quot; alt=&quot;Test Unity Project Folder StructureLets&quot; class=&quot;pull-left&quot; style=&quot;margin: 10px 30px 30px 0px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s create new Unity project called “testproject”, import “Standard Assets (Mobile)” package, create new &lt;code&gt;Test.cs&lt;/code&gt; script attached to a camera and check our folder structure.&lt;/p&gt;
+
+&lt;p&gt;You’ll find that there are quite a lot of files and folders, good news that &lt;strong&gt;only two folders should be kept under source control: &lt;code&gt;Assets&lt;/code&gt; and &lt;code&gt;ProjectSettings&lt;/code&gt;&lt;/strong&gt;. Other are generated from this two.&lt;/p&gt;
+
+&lt;h5 id=&quot;here-is-a-quick-overview-of-all-files-and-folders&quot;&gt;Here is a quick overview of all files and folders.&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;Assembly-CSharp-vs.csproj&lt;/code&gt; and &lt;code&gt;Assembly-CSharp.csproj&lt;/code&gt; – Visual Studio (with &lt;code&gt;-vs&lt;/code&gt; suffix) and MonoDevelop project files generated for your C# scripts.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Assembly-UnityScript-vs.unityproj&lt;/code&gt; and &lt;code&gt;Assembly-UnityScript.unityproj&lt;/code&gt; – the same project files but for JavaScript scripts.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;testproject.sln&lt;/code&gt; and &lt;code&gt;testproject-csharp.sln&lt;/code&gt; – solution files for IDEs, first one includes all C#, JavaScript and Boo projects, while the second one – only C# projects and is designed to be opened in Visual Studio, because VS doesn’t know to handle JavaScript and Boo projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;testproject.userprefs&lt;/code&gt; and &lt;code&gt;testproject-csharp.userprefs&lt;/code&gt; – configuration files where MonoDevelop stores current opened files, breakpoints, watches, etc.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;All files listed above except &lt;code&gt;.userprefs&lt;/code&gt; are re-generated each time you select Assets → Sync MonoDevelop Project in Unity Editor menu.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;Read why there are so many project files generated from &lt;a href=&quot;https://docs.unity3d.com/Documentation/Manual/ScriptCompileOrderFolders.html&quot;&gt;Unity documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;h-tip&quot;&gt;After syncing project MonoDevelop will open testproject.sln with all projects but if you don’t have JavaScript code you can open testproject-csharp.sln to have twice fewer project files and no errors related to JS.
+&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-settings.png&quot; alt=&quot;image&quot; /&gt; &lt;!-- Unity Project Folder Structure. Tip 1 --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Assets&lt;/code&gt; – folder where all game resources are stored, including scripts, textures, sound, custom editors, etc. Definitely the most important folder in your project.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ProjectSettings&lt;/code&gt; – in this folder Unity stores all project settings like Physics, Tags, Player settings, etc. In other words everything you setup from Edit → Project Settings set of menus goes into this folder.
+&lt;img src=&quot;/img/posts/mastering-unity-project-folder-structure-level-0-vcs/level-0-tip1.png&quot; alt=&quot;image&quot; /&gt; &lt;!-- Unity Project Folder Structure. Project Settings --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Library&lt;/code&gt; – local cache for imported assets, when using external version control system should be completely ignored.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;obj&lt;/code&gt; and &lt;code&gt;Temp&lt;/code&gt; – folders for temporary files generated during a build, first one used by MonoDevelop, second – by Unity.&lt;/p&gt;
+
+&lt;h4 id=&quot;version-control-system-setup&quot;&gt;Version Control System setup&lt;/h4&gt;
+
+&lt;p&gt;There are several options how we can keep track of versions. Traditionally Unity encourages developers to use &lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/AssetServer.html&quot;&gt;Unity Asset Server&lt;/a&gt;. Our team tried to use it for one month after what we agreed that Asset Server can’t handle everything we need. It doesn’t have branches, locks, and it’s paid (requires Team Licence, +500$) and looks more like simplified SVN. So we have decided to switch to GIT.&lt;/p&gt;
+
+&lt;h5 id=&quot;here-is-a-short-setup-guide-for-unity-43&quot;&gt;Here is a short setup guide for Unity 4.3&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enable External option in Unity → Preferences → Packages → Repository&lt;/li&gt;
+  &lt;li&gt;Switch to Hidden Meta Files in Editor → Project Settings → Editor → Version Control Mode&lt;/li&gt;
+  &lt;li&gt;Switch to Force Text in Editor → Project Settings → Editor → Asset Serialization Mode&lt;/li&gt;
+  &lt;li&gt;Save scene and project from File menu&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now you are ready to use your favorite version control system. Don’t forget to add everything except Assets and ProjectSettings folders to your ignore list. Here is &lt;code&gt;.gitignore&lt;/code&gt; we use in our project:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# =============== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# Unity generated #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# =============== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Temp/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Library/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ===================================== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# Visual Studio / MonoDevelop generated #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ===================================== #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;ExportedObj/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;obj/
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.svd
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;13&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.userprefs
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;14&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/*.csproj
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;15&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.pidb
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;16&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.suo
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;17&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/*.sln
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;18&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.user
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;19&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.unityproj
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;20&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;*.booproj
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;21&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;22&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ============ #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;23&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# OS generated #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;24&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;# ============ #
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;25&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.DS_Store
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;26&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.DS_Store?
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;27&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;._*
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;28&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.Spotlight-V100
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;29&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;.Trashes
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;30&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;ehthumbs.db
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;31&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Thumbs.db&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;For more detailed instructions how to setup version control checkout this posts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/ExternalVersionControlSystemSupport.html&quot;&gt;SVN setup instruction from Unity documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://3dgep.com/?p=5105&quot;&gt;More detailed SVN setup instruction with a lot of explanations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.unity3d.com/Documentation/Manual/AssetServer.html&quot;&gt;Just in case you’ll decide to use Unity Asset Server – official setup guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the second post, I’ll describe what predefined folder does Unity use and what for.&lt;/p&gt;
+
+&lt;p&gt;More posts from Mastering Unity Project Folder Structure series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-1-reserved-folders/&quot;&gt;Level 1 – Reserved Folders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 12 Feb 2014 13:42:57 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</guid>
+        
+        
+        <category>unity3d</category>
+        
+      </item>
+    
+      <item>
+        <title>How to make Unity work better on Maverik</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-make-unity-work-better-on-maverick/Unity-Issue-Tracker-2014-01-18-15-32-21.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://issuetracker.unity3d.com/issues/maverick-and-unity-performance-issues&quot;&gt;Maverick performance issue&lt;/a&gt; was opened just after Maverick release and now is the most voted on Unity bug tracker. Unfortunately or not, Apple has made a new version of their Mac OS free and big part of users updated to the latest version without doubts, and all of them got affected by this issue.&lt;/p&gt;
+
+&lt;p&gt;But today we’ll talk not about how “bad” or “good” Apple is, but how to improve Unity editor performance on Maverick.&lt;/p&gt;
+
+&lt;p class=&quot;h-note&quot;&gt;This instruction won’t fix the issue completely, but at least make editor performance suitable to work with.&lt;/p&gt;
+
+&lt;p&gt;So let’s start:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Enable “Prevent App Nap”&lt;/strong&gt; for Unity and MonoDevelop. Locate Unity.app and MonoDevelop.app → right click → Get info → Prevent App Nap. This setting helps with app freezes when switching between applications. Btw App Nap don’t play well also with &lt;a href=&quot;http://www.zdnet.com/mac-mavericks-app-nap-power-nap-dont-always-play-well-with-others-7000024792/&quot;&gt;other applications&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Turn off “Displays have separate spaces”&lt;/strong&gt; in Mission Control settings. Go System Preferences → Mission Control → Displays have separate spaces.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Disable “Automatic graphics switching”&lt;/strong&gt; in Power Saver settings. Go System Preferences → Do one of the following: if you see Graphics options, select Higher Performance. You need to log out and then login again for the change to take effect. If you see the “Automatic graphics switching” option, deselect it. Your Mac will always use high-performance graphics.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Early this week Thomas Petersen, QA Director in Unity Technologies wrote that they found the problem, let’s hope they’ll release a fix for it soon:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We have identified this as a leak in Maverick’s OpenGL ARB VBO implementation which is causing these issues. A build with a workaround has proven to work, but it is not the best solution. We have notified Apple about the problem. What exactly will happen has not yet been decided, so until there is a solution to the problem, it is best to not run on Mavericks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Update (29.01.14):&lt;/strong&gt; Unity releases version 4.3.4, where issue should be fixed. Download it &lt;a href=&quot;http://unity3d.com/unity/whats-new/unity-4.3.4&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2014 22:16:46 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</guid>
+        
+        
+        <category>unity3d</category>
+        
+        <category>productivity</category>
+        
+      </item>
+    
+      <item>
+        <title>Android form validation - the right way</title>
+        <description>&lt;p&gt;After quite a long pause, I’m getting back with a new series of posts. And we’ll start with Android &lt;code&gt;EditText&lt;/code&gt; form validations.&lt;/p&gt;
+
+&lt;p&gt;At first let’s define that Android form - it is a set of EditText’s whose data should be processed. There are two main steps to make processing successful: data input and data validation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/android-form-validation-right-way/z-validations-valid-form.png&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;
+Chuck Noris is always valid&lt;/p&gt;
+
+&lt;h4 id=&quot;data-input&quot;&gt;Data input&lt;/h4&gt;
+
+&lt;p&gt;In order to make user input easy and comfortable, we need to configure &lt;code&gt;EditText&lt;/code&gt; properly, here is some tips on it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;put constraints by specifying the type of keyboard you want for your &lt;code&gt;EditText&lt;/code&gt; with &lt;code&gt;android:inputType&lt;/code&gt; attribute. For example, if you want the user to input only digits write &lt;code&gt;android:inputType=&quot;number&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;besides specifying keyboard type using &lt;code&gt;android:inputType&lt;/code&gt; attribute you can define other behaviors such as, whether to capitalize all new words or use features like auto-complete and spelling suggestions, e. g.  &lt;code&gt;android:inputType=&quot;textCapWords|textNoSuggestions&quot;&lt;/code&gt;, note that you can put several markers using bitwise operator&lt;/li&gt;
+  &lt;li&gt;probably you’ll want to disable fullscreen keyboard on landscape mode, you can do this using &lt;code&gt;android:imeOptions=&quot;flagNoExtractUi&quot;&lt;/code&gt; attribute&lt;/li&gt;
+  &lt;li&gt;pre-fill form data and provide auto-complete if possible, for example in email registration form you can get user email from &lt;code&gt;AccountManager&lt;/code&gt;, &lt;a href=&quot;http://stackoverflow.com/a/2175688/731775&quot;&gt;example from Roman Nurik on stackoverflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;validate and submit the form when user press enter on last EditText field, here code snippet I use:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mTextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnEditorActionListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OnEditorActionListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onEditorAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actionId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditorInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;IME_ACTION_DONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;validateAndSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&amp;#x7d;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here is a code snippet from a layout file with described above attributes:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;EditText&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/postal_address&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:inputType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textPostalAddress|textCapWords&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:autoText=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:editable=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:selectAllOnFocus=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:singleLine=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:imeOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;flagNoExtractUi&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:hint=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter postal address&quot;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;data-validation&quot;&gt;Data validation&lt;/h4&gt;
+
+&lt;p&gt;Question is not how to validate, but &lt;strong&gt;how to show validation errors in a user-friendly way&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)&quot;&gt;Android API&lt;/a&gt; provide &lt;code&gt;public void setError(CharSequence error, Drawable icon)&lt;/code&gt; method on EditText instance to display errors.&lt;/p&gt;
+
+&lt;p&gt;As form validation is quite a common task, there are several third party libraries for that, e.g.:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/throrin19/Android-Validator&quot;&gt;Android-Validator by Benjamin Besse&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ragunathjawahar/android-saripaar&quot;&gt;Android Saripaar by Ragunath Jawahar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both of this libraries use default API to display errors, and personally I don’t like it because when there are a lot of validation rules neglectful user can get screen like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/android-form-validation-right-way/z-validations-bad-example.png&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;
+Too many errors on one screen&lt;/p&gt;
+
+&lt;p&gt;So what is &lt;em&gt;“the right way”&lt;/em&gt;? Main idea is to help user &lt;strong&gt;solve errors one by one&lt;/strong&gt;. There are several things to do when validation error happens:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;find the first text view where validation failed&lt;/li&gt;
+  &lt;li&gt;request focus for it: &lt;code&gt;mTextView.requestFocus()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;show error message, I prefer using Crouton library: &lt;code&gt;Crouton.makeText(mActivity, message, Style.ALERT).show()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;open keyboard so user can start typing instantly:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;InputMethodManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InputMethodManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSystemService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;INPUT_METHOD_SERVICE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;// only will trigger it if no physical keyboard is open&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;showSoftInput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mTextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;I’ve created the small library with a sample project where you can find all examples from this post. Check it out on &lt;a href=&quot;https://github.com/zasadnyy/z-validations&quot;&gt;GitHub&lt;/a&gt; or install &lt;a href=&quot;https://play.google.com/store/apps/details?id=ua.org.zasadnyy.sample.zvalidations&quot;&gt;Demo app from Google Play&lt;/a&gt;. Sample code of creating validation form:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NotEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NotEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mAge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InRange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isValid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Form is valid&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/android-form-validation-right-way/z-validations-not-in-range.png&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;
+Failed InRange validation&lt;/p&gt;
+
+&lt;h5 id=&quot;useful-links&quot;&gt;Useful links&lt;/h5&gt;
+
+&lt;p&gt;&lt;em&gt;(I’ll update lists every time I find related topics)&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://developer.android.com/guide/topics/ui/controls/text.html&quot;&gt;Post about text input on d.android.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 04 Aug 2013 00:14:17 +0200</pubDate>
+        <link>http://v.zasadnyy.com/blog/android-form-validation-right-way</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/android-form-validation-right-way</guid>
+        
+        
+        <category>android</category>
+        
+        <category>best practices</category>
+        
+      </item>
+    
+      <item>
+        <title>Cyrillic app name incorrectly encoded during porting Android app to Blackberry</title>
+        <description>&lt;p&gt;Today I’ll describe bug in the latest version of &lt;code&gt;apk2bar&lt;/code&gt; (version 1.5.0) tool provided by Blackberry for converting Android apk apps to bar.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If debugging is the process of removing software bugs, then programming must be the process of putting them in.”
+Edsger Dijkstra&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I had a small problem with displaying Cyrillic app name on PlayBook and BB10 simulator. App name was incorrectly encoded from Russian after converting using apk2bar tool. Problem appeared after updating bb eclipse plugin from version 1.3 to 1.5, with plugin v.1.3 it worked just ok (the same issue was with command line tools).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/app-name-incorrectly-encoded/blackberry-10-screenshot.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When I got problems with encoding with bb eclipse plugin, I decided to do the same thing with command line tools.&lt;/p&gt;
+
+&lt;p&gt;After tools setup (sing keys, debug tokens, etc), I’ve tried to repackage my apk file with this command (source apk file was in apk/ folder and destination for bar file was bar/ folder)&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;./apk2bar apk/ -d bbplaybookdebugtoken.bar -t bar/ -a &lt;span class=&quot;s2&quot;&gt;&quot;zasadnyy&quot;&lt;/span&gt; -cg&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;When I’ve got .bar file, I’ve installed it with command:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/batchbar-deploy bar/ 192.168.1.35 mysecretpass&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Unfortunately result was unsuccessful, app name was incorrectly encoded again. After first fail, I’ve read documentation a bit more and tried to use &lt;a href=&quot;http://developer.blackberry.com/android/documentation/creating_a_custom_manifest_file_2016828_11.htm&quot;&gt;approach described on developer.blackberry.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I unzipped bar file and opened &lt;code&gt;MANIFEST.MS&lt;/code&gt;- I’ve found this line:&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Application-Name: –ì–µ—Ä–æ–∏&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;According to documentation solution should be quite strait-forward:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Rename &lt;code&gt;MANIFEST.MS&lt;/code&gt; to &lt;code&gt;&amp;lt;you apk name&amp;gt;.mf&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Update incorrect properties, in my case I’ve changed line from above to &lt;code&gt;&quot;Application-Name: Герои&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Put edited manifest file in the same folder as &lt;code&gt;&amp;lt;your apk name&amp;gt;.apk&lt;/code&gt; and rerun &lt;code&gt;apk2bar&lt;/code&gt; tool with &lt;code&gt;-m&lt;/code&gt; parameter, e.g.:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;./apk2bar apk/ -d bbplaybookdebugtoken.bar -t bar/ -a &lt;span class=&quot;s2&quot;&gt;&quot;zasadnyy&quot;&lt;/span&gt; -m -cg&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Repackage, deploy, run and ….. and again &lt;strong&gt;FAIL&lt;/strong&gt;. Application name was “–ì–µ—Ä–æ–∏”.&lt;/p&gt;
+
+&lt;p&gt;After second fail, I decided to make dirty hack. I’ve edited &lt;code&gt;MANIFEST.MF&lt;/code&gt; directly in repackaged bar file (Unzip → edit manifest → zip → change file extension to .bar).&lt;/p&gt;
+
+&lt;p&gt;Deploy updated .bar file to playbook and …. &lt;strong&gt;YEAH&lt;/strong&gt;, we’ve got Cyrillic app name!&lt;/p&gt;
+
+&lt;h5 id=&quot;conclusion-and-fix&quot;&gt;Conclusion and FIX:&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;Looks like in 1.5 release if apk2bar tool manifest encoding is misconfigured (in ver. 1.3 it worked just ok)&lt;/li&gt;
+  &lt;li&gt;In order to FIX issue: unzip unsigned bar file → edit manifest → zip → change file extension back to .bar&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 27 Jan 2013 22:16:46 +0100</pubDate>
+        <link>http://v.zasadnyy.com/blog/cyrillic-app-name-incorrectly-encoded</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/cyrillic-app-name-incorrectly-encoded</guid>
+        
+        
+        <category>blackberry</category>
+        
+        <category>bug</category>
+        
+      </item>
+    
+  </channel>
+</rss>
