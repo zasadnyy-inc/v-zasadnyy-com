@@ -291,4 +291,61 @@ past:
   conference: "DevFest Prague"
   conference_url: "https://2017.devfest.cz/"
   date: 2017-11-4
+-
+  title: "Debunking myths about mobile deep links"
+  description: "'Imagine a Web without URLs. That’s how mobile apps world looks like without deep links.' – VentureBeat.<br/><br/>According to AppSight data, only 41% of top Android apps have deep links implemented. Why? It’s is not obvious how you can leverage them, and implementation is not as transparent as documentation states.<br/><br/>In the first part of the talk, Vitaliy will show how you can use deep links to create an excellent onboarding experience, how to get more organic installs with app indexing and referral campaigns, how to authenticate users with no explicit authentication and more.<br/><br/>In the second part, we will talk about the inconsistency in the deep links implementation on Android and iOS, technical limitations of App Links, Universal Links, custom schemas and what are the missing parts of the deep linking ecosystem that you will have to build on your own. Do not expect step by step implementation guide, instead condensed learnings you can not find in the documentation from 4 years of experience in building deep linking infrastructure at GetSocial."
+  thumbnail: "thumb_how_debunking_myths_about_mobile_deep_links.png"
+  details_url: ""
+  slides_url: "https://speakerdeck.com/zasadnyy/deep-linking-myths-debunked"
+  recording: "https://www.youtube.com/watch?v=OXK-SiG8YQM"
+  conference: "Appril Amsterdam"
+  date: 2018-04-11
+-
+  title: "Keynote. The state of mobile ecosystem"
+  description: "Mobile Track Keynote at the DevTalks Bucharest 2018"
+  thumbnail: "thumb_the_state_of_mobile_ecosystem.png"
+  slides_url: "https://speakerdeck.com/zasadnyy/the-state-of-mobile-ecosystem"
+  recording: "https://www.youtube.com/watch?v=ajoWnJjpC7A"
+  conference: "DevTalks Bucharest"
+  conference_url: "http://www.devtalks.ro/bucharest/"
+  date: 2018-06-08
+-
+  title: "Deep linking myths debunked"
+  description: "'Imagine a Web without URLs. That’s how mobile apps world looks like without deep links.' – VentureBeat"
+  thumbnail: "thumb_deep_linking_myth_debunked.png"
+  slides_url: "https://speakerdeck.com/zasadnyy/debunking-myths-about-deep-links"
+  recording: "https://www.youtube.com/watch?v=zP9IvR9IvYA"
+  conference: "Droidcon Berlin"
+  conference_url: "https://www.de.droidcon.com/"
+  date: 2018-06-26
+-
+  title: "Opening Keynote. Why do we go to conferences?"
+  description: "Are the conferences valuable? Why can't we just watch YouTube recordings"
+  thumbnail: "thumb_dfua18.JPG"
+  slides_url: ""
+  recording: "https://www.youtube.com/watch?v=tU7vUCZWlBk"
+  conference: "DevFest Ukraine"
+  conference_url: "http://devfest.gdg.org.ua"
+  date: 2018-10-12
+-
+  title: "Designing games for virality"
+  description: "Whether paid or free, the competition for users is heating up. Cost per install on the tier one markets crossed 3$. Google and Apple are changing recommendation algorithms that negatively impact organic in-store discovery."
+  thumbnail: "thumb_designing_for_virality_la.png"
+  slides_url: "https://speakerdeck.com/zasadnyy/designing-games-for-virality"
+  recording: ""
+  conference: "Unite Los Angeles"
+  conference_url: "https://unite.unity.com/2018/los-angeles"
+  date: 2018-10-25
+-
+  title: "Get the most out of friend invites"
+  description: "Whether paid or free, the competition for users is heating up. Cost per install on the tier one markets crossed 3$. Google and Apple are changing recommendation algorithms that negatively impact organic in-store discovery."
+  thumbnail: "thumb_designing_for_virality_singapore.png"
+  slides_url: "https://speakerdeck.com/zasadnyy/designing-for-virality-vitaliy-zasadnyy-at-unite-singapore"
+  recording: ""
+  conference: "Unite Singapore"
+  conference_url: "https://unite.unity.com/2018/singapore"
+  date: 2018-11-16
+
+
+
 upcoming:

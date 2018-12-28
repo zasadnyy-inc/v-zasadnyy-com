@@ -1,4 +1,13 @@
 -
+  group: "Conferences"
+  elements:
+    -
+      title: "DevFest Ukraine"
+      description: "The biggest Google tech conference in CEE. 1000+ attendees and 40+ speakers."
+      project_page: "http://devfest.gdg.org.ua"
+      tags: ["android", "web", "cloud"]
+      featured: true
+-
   group: "Open Source"
   elements:
     -
@@ -6,13 +15,13 @@
       description: "Library that helps with Android form validations."
       project_page: "https://github.com/zasadnyy/z-validations"
       tags: ["android", "library"]
-      featured: true
+      featured: false
     -
       title: "Eyes Exercises for SW2 and Android Wear"
       description: "Simple app for your Sony SmartWatch 2 or Android Wear powered devices to improve your vision."
       project_page: "https://github.com/zasadnyy/vision-trainer-sw2"
       tags: ["android wear", "sony smart watch"]
-      featured: true
+      featured: false
     -
       title: "Project Zeppelin"
       description: "Project Zeppelin allows you to setup awesome conference website in 5 minutes."
@@ -24,7 +33,7 @@
       description: "Editor extension to show current editor state and create working scene shortcuts."
       project_page: "https://github.com/zasadnyy/unity-editor-utilities"
       tags: ["unity", "editor"]
-      featured: true
+      featured: false
     -
       title: "Unity Gradle Plugin"
       description: "Automate building and testing of Unity 3D projects with Gradle."
@@ -37,12 +46,9 @@
       project_page: "https://github.com/zasadnyy/appium-gradle-plugin"
       tags: ["gradle", "appium", "build"]
       featured: false
--
-  group: "Proprietary Open Source"
-  elements:
     -
       title: "Get Social Unity SDK"
       description: "Tool to power your Unity game with easy-to-integrate social building blocks."
       project_page: "https://github.com/getsocial-im/getsocial-unity-sdk"
       tags: ["unity", "sdk"]
-      featured: false
+      featured: true

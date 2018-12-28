@@ -16,7 +16,7 @@ facebook_image: "/img/seo/sharing-facebook.png"
 # Navigation
 navigation:
  - {permalink: "/", text: "Blog"}
- - {permalink: "/talks/", text: "Public Speaking"}
+ - {permalink: "/talks/", text: "Talks"}
  - {permalink: "/projects/", text: "Projects"}
 
 # Blog
