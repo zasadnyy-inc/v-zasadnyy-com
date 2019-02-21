@@ -6,7 +6,8 @@
         line-height: 1.3em;
     }
     h3 {
-        font-size: 1.6em;
+		margin: 75px 0 14px;
+        font-size: 1.8em;
         letter-spacing: -0.5px;
     }
     h4 {
@@ -60,12 +61,26 @@
         @extend .img-responsive;
         margin: 30px auto;
         border-radius: 3px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
         &.medium-width {
             @media (min-width: 768px) {
                 max-width: 400px;
             }
         }
+		&.width-75percent {
+			@media (min-width: 768px) {
+				max-width: 75%;
+			}
+		}
+		&.phone-landscape {
+			@media (min-width: 768px) {
+				max-width: 520px;
+			}
+		}
+		&.phone-portrait {
+			@media (min-width: 768px) {
+				max-width: 300px;
+			}
+		}
     }
 }
 .h-light {

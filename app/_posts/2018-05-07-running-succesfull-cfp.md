@@ -11,9 +11,9 @@ sourceName: "GDG Lviv Medium"
 sourceUrl: "https://medium.com/gdg-lviv/running-successful-call-for-papers-c30514f82474"
 ---
 
-Good speakers and good content are key ingredients for the successful conference. Your role as an organizer is to find both.
+![Header](/img/posts/running-successfull-cfp/header.jpeg){:.width-75percent}
 
-But how to distinguish good submission from a poor one? How to check if speakers have enough expertise to speak? And even if they are experts, how to check that they can share knowledge from the stage and not mumble for 40 minutes?
+How to distinguish good submission from a poor one? How to check if speakers have enough expertise to speak? And even if they are experts, how to check that they can share knowledge from the stage and not mumble for 40 minutes?
 
 Keep reading to find what we at GDG Lviv learned from 6 years of running local events and one of the biggest and the most influential DevFest in the world.
 
@@ -73,7 +73,7 @@ For 2018 we decided to push DevFest Ukraine CFP to the next level. We analyzed p
 
 Here are the results:
 
-![CFP comparision table](/img/posts/running-successfull-cfp/cfp-comparison-table.png)
+![CFP comparision table](/img/posts/running-successfull-cfp/cfp-comparison-table.png){:.width-75percent}
 
 A couple more tools didn't make into the comparison table because they didn't satisfy our basic requirements:
 - [EasyChair](https://easychair.org/). Looks powerful but UI is so 2000.
