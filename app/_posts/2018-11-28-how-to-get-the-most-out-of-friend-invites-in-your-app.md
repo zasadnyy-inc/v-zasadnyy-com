@@ -4,11 +4,11 @@ title: "How to get the most out of friend invites in your app"
 headline: "Social features like friend invites or referral campaigns are one of the most overlooked game mechanics. Common questions: how much time does it take to implement them, and what results can you expect? In this post, we’ll shed some light on the implementation process, best practices, and metrics to evaluate your results."
 date: 2018-11-28T04:20:38+02:00
 estimate: "8 mins"
-categories: [user-acquisition, getsocial]
+categories: [mobile, user-acquisition, getsocial]
 post: true
 external: true
 sourceName: "Unity Blog"
-sourceUrl: "https://medium.com/gdg-lviv/running-successful-call-for-papers-c30514f82474"
+sourceUrl: "https://blogs.unity3d.com/2018/11/28/how-to-get-the-most-out-of-friend-invites-in-your-app"
 image: "http://v.zasadnyy.com/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/hero.png"
 ---
 
