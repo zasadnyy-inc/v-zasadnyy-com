@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Challenges in building Unity native plugins. Intro"
+title: "Challenges in building Unity native plugins"
 headline: ""
 date: 2015-08-05T04:20:38+02:00
 estimate: "10 mins"

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Public API Design Resources"
+title: "Public API design resources"
 headline: "Building a Mobile SDK that works is hard. Exposing great API is even harder. Do it wrong, and it will turn your life into the support nightmare"
 date: 2016-12-16T12:20:38+02:00
 estimate: "5 mins"
