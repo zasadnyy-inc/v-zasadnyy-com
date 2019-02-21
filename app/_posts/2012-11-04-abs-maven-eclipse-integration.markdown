@@ -7,8 +7,6 @@ estimate: "10 mins"
 categories: [android, maven, eclipse]
 post: true
 image: "http://v.zasadnyy.com/img/posts/abs-maven-eclipse-integration/eclipse-maven-abs.png"
-redirect_from:
-  - /2012/10/action-bar-sherlok-maven-eclipse.html
 ---
 
 ![image]({{site.baseurl}}/img/posts/abs-maven-eclipse-integration/eclipse-maven-abs.png)

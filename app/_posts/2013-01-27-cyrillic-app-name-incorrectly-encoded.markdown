@@ -6,8 +6,6 @@ date: 2013-01-27T23:16:46+02:00
 estimate: "4 mins"
 categories: [blackberry, bug]
 post: true
-redirect_from:
-  - /2013/01/cyrillic-app-name-incorrectly-encoded.html
 ---
 
 Today I'll describe bug in the latest version of `apk2bar` (version 1.5.0) tool provided by Blackberry for converting Android apk apps to bar.

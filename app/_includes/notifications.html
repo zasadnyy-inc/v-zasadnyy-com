@@ -1,0 +1,45 @@
+<div id="notification" class="notification-container">
+	<a href="#" class="notification-close"></a>
+	<h3 class="notification-title"></h3>
+	<p class="notification-body"></p>
+	<a href="#" target="_blank" class="notification-cta">e</a>
+</div>
+<script type="text/javascript" async defer>
+	var LOCAL_STORAGE_REF = 'vz-notifications';
+	var localStorageNotifications = JSON.parse(localStorage.getItem(LOCAL_STORAGE_REF)) || {};
+	var notificationContainer = document.getElementById('notification');
+	var notifications = JSON.parse('{{ site.data.notifications  | jsonify }}');
+
+	var closeAndSave = function () {
+		localStorageNotifications[notificationToShow.id] = true;
+		localStorage.setItem(LOCAL_STORAGE_REF, JSON.stringify(localStorageNotifications));
+		notificationContainer.classList.toggle('notification-visible');
+		notificationContainer.querySelector('.notification-close').removeEventListener('click');
+		notificationContainer.querySelector('.notification-cta').removeEventListener('click');
+	};
+
+	var notificationToShow;
+
+	for (var i = 0; i < notifications.length; i++) {
+		if (!localStorageNotifications[notifications[i].id]) {
+			notificationToShow = notifications[i];
+			notificationContainer.querySelector('.notification-title').innerHTML = notificationToShow.title;
+			notificationContainer.querySelector('.notification-body').innerHTML = notificationToShow.body;
+			var cta = notificationContainer.querySelector('.notification-cta');
+			cta.innerHTML = notificationToShow.cta.label;
+			cta.href = notificationToShow.cta.link;
+			setTimeout((function () {
+				requestAnimationFrame(function () {
+					notificationContainer.classList.toggle('notification-visible');
+				})
+			}), 1000);
+			notificationContainer.querySelector('.notification-close').addEventListener('click', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				closeAndSave();
+			});
+			notificationContainer.querySelector('.notification-cta').addEventListener('click', closeAndSave);
+			break;
+		}
+	}
+</script>

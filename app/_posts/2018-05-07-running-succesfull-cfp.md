@@ -9,6 +9,7 @@ post: true
 external: true
 sourceName: "GDG Lviv Medium"
 sourceUrl: "https://medium.com/gdg-lviv/running-successful-call-for-papers-c30514f82474"
+image: "http://v.zasadnyy.com/img/posts/running-successfull-cfp/header.jpeg"
 ---
 
 ![Header](/img/posts/running-successfull-cfp/header.jpeg){:.width-75percent}

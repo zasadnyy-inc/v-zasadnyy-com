@@ -9,6 +9,7 @@ post: true
 external: true
 sourceName: "Unity Blog"
 sourceUrl: "https://medium.com/gdg-lviv/running-successful-call-for-papers-c30514f82474"
+image: "http://v.zasadnyy.com/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/hero.png"
 ---
 
 An easy and free way to grow your user base is by asking existing users to invite their friends (Friend invites).
