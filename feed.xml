@@ -5,12 +5,257 @@
     <description></description>
     <link>http://v.zasadnyy.com/</link>
     <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 02 Jan 2019 15:29:28 +0700</pubDate>
-    <lastBuildDate>Wed, 02 Jan 2019 15:29:28 +0700</lastBuildDate>
+    <pubDate>Thu, 21 Feb 2019 18:29:29 +0800</pubDate>
+    <lastBuildDate>Thu, 21 Feb 2019 18:29:29 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Public API Design Resources</title>
+        <title>How to get the most out of friend invites in your app</title>
+        <description>&lt;p&gt;An easy and free way to grow your user base is by asking existing users to invite their friends (Friend invites).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/sender-receiver-invite-flow.png&quot; alt=&quot;Sender-receiver flow&quot; class=&quot;width-75percent&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The process consists of sending an invitation, receiving one, and installing the app. At the core of the invite flow is a special deep link that holds user information about the referrer. It is smart enough to take the receiver to the proper store depending on their platform, e.g., Google Play on Android or App Store on iOS.&lt;/p&gt;
+
+&lt;h3 id=&quot;measuring-invite-flow-performance&quot;&gt;Measuring invite flow performance&lt;/h3&gt;
+
+&lt;p&gt;The data and best practices presented in this post are based on analysis of over 88M invites sent using the &lt;a href=&quot;https://www.getsocial.im/?utm_source=unity&amp;amp;utm_campaign=unity-blog&amp;amp;utm_content=get-the-most-out-si&quot;&gt;GetSocial platform&lt;/a&gt;. All apps were segmented into three categories based on the depth of the friend invites integration into the game mechanics – Level 1, Level 2, and Level 3.&lt;/p&gt;
+
+&lt;p&gt;To compare the results of different levels of invite integration we’ll use:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Number of invites sent per 1000 daily active users (DAU)&lt;/li&gt;
+  &lt;li&gt;Conversion, or the percentage of users who installed the app after receiving an invitation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-1-just-add-an-invite-friend-button&quot;&gt;Level 1. Just add an “Invite Friend” button&lt;/h3&gt;
+
+&lt;p&gt;Level 1 stands for a simple “Invite Friend” or “Share” button on the app’s UI.&lt;/p&gt;
+
+&lt;p&gt;Assuming you’re using a third-party service, like &lt;a href=&quot;https://assetstore.unity.com/packages/tools/integration/getsocial-social-features-for-user-acquisition-engagement-and-re-123383&quot;&gt;GetSocial&lt;/a&gt;, for the invitation process (read &lt;a href=&quot;https://www.getsocial.im/evaluate-build-buy-mobilegrowthstack/?utm_source=unity&amp;amp;utm_campaign=unity-blog&amp;amp;utm_content=get-the-most-out-si&quot;&gt;why it is a bad idea to build it on your own&lt;/a&gt;), you only have to decide where to add invite buttons on the UI. SDK integration and testing shouldn’t take more than &lt;strong&gt;1 day&lt;/strong&gt; for an experienced developer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/just-add-invite-button-flow.png&quot; alt=&quot;Level 1 flow&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Results can be different depending on the quality of the integration with a median of six invites sent per 1000 DAU and average send to install conversion of 1.3%. The median results are not super impressive, but the upper bound is much better.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/level-1-results.png&quot; alt=&quot;Level 1 results&quot; class=&quot;width-75percent&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We’ve analyzed the top performers of the Level 1 category and found 3 things that were common amongst them: they provide multiple entry points, multiple sharing channels, and use customized invite messages&lt;/p&gt;
+
+&lt;h4 id=&quot;provide-multiple-entry-points&quot;&gt;Provide multiple entry points&lt;/h4&gt;
+
+&lt;p&gt;Users won’t invite friends or share your app if they can’t find how to do it. Place invite buttons on visible places, like the main screen. Or place them in the context of the game flow. For instance, you can ask users to invite friends to beat their score after finishing a level or share a spectacular game event.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/multiple-entry-points.png&quot; alt=&quot;Provide multiple entry points&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Multiple entry points for Friend Invites. Doomsday Clicker by PikPok&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.getsocial.im/case-study/pikpok/?utm_source=unity&amp;amp;utm_campaign=unity-blog&amp;amp;utm_content=get-the-most-out-si&quot;&gt;Doomsday Clicker&lt;/a&gt; is doing a great job with share buttons. You can invite a friend from the main menu, share a comparison of player profiles, and show off how you destroyed the world this time.&lt;/p&gt;
+
+&lt;h4 id=&quot;provide-multiple-sharing-channels&quot;&gt;Provide multiple sharing channels&lt;/h4&gt;
+
+&lt;p&gt;Today’s communication landscape is scattered among hundreds of messengers. I personally have friends on WhatsApp, Facebook Messenger, Line, and Telegram. To make sure that a player can invite any of their friends, we have to provide as many sharing options as possible. Besides that, we have to make sure that users have the same sharing experience everywhere: content is properly displayed and deep linking works as expected.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/sharing-channels-breakdown.png&quot; alt=&quot;Sharing channels breakdown&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sharing channel usage split. Data based on 88M invites sent&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Interestingly, instant messengers surpassed Facebook and Twitter with the volume of invites sent, especially after Facebook &lt;a href=&quot;https://blog.getsocial.im/deprecation-of-face?utm_source=unity&amp;amp;utm_campaign=unity-blog&amp;amp;utm_content=get-the-most-out-sibook-invitable-friends-graph-api-and-its-impact-on-organic-growth/&quot;&gt;closed their invite friends API&lt;/a&gt; and Twitter removed their integration with iOS.&lt;/p&gt;
+
+&lt;h4 id=&quot;customize-your-invite-message&quot;&gt;Customize your invite message&lt;/h4&gt;
+
+&lt;p&gt;Customizing your invite message is the best way to improve the send to install conversion for invites. You can change the message depending on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Entry point&lt;/strong&gt;: when shared from the main menu, the message can be more generic, like “Hey, I can’t stop playing this game. I believe you’d like it as well [DEEP LINK]”, at the end of the level: “I’ve scored 9999 points in [GAME NAME], try to beat me [DEEP LINK]”.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sharing channel:&lt;/strong&gt; message for WhatsApp should be more casual and personal but only plain text and an image. On the other hand, email can have more generic but rich HTML content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/customize-invite-message.png&quot; alt=&quot;Customized invite messages&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Customized invite messages. Doomsday Clicker by PikPok&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Doomsday Clicker from PikPok &lt;a href=&quot;https://www.getsocial.im/case-study/pikpok/?utm_source=unity&amp;amp;utm_campaign=unity-blog&amp;amp;utm_content=get-the-most-out-si&quot;&gt;improved&lt;/a&gt; conversion to 19% after implementing all content optimizations. A conversion that is 14 times higher than average.&lt;/p&gt;
+
+&lt;h3 id=&quot;level-2-rewarded-invites&quot;&gt;Level 2. Rewarded invites&lt;/h3&gt;
+
+&lt;p&gt;Let’s face it, users usually share the app only when they are very delighted. The vast majority of players are indifferent, they need an extra push or an incentive for bothering their friends with an app invitation. Rewarded invites gives them this push.&lt;/p&gt;
+
+&lt;p&gt;Rewarded invites require a validation step to prevent fraud. Depending on the security requirements, you can implement validation on the client side or backend.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/level-2-flow.png&quot; alt=&quot;Level 2 flow&quot; class=&quot;medium-width&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Implementation can take anywhere from &lt;strong&gt;2 to 7 days&lt;/strong&gt; depending on how you carry out the invites rewards validation. Comparing to “Level 1. Not rewarded invites”, the number of invites sent are 2.7 times higher on average with 5.3 times higher conversion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/level-2-results.png&quot; alt=&quot;Level 2 results&quot; class=&quot;width-75percent&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While analyzing games on a case by case basis, we’ve noticed that when the rewarded invites feature is introduced, there is always a spike in the number of invites sent, but later the number drops towards the average. Below we prepared two mechanics that will keep the spikes coming week after week.&lt;/p&gt;
+
+&lt;h4 id=&quot;offer-unique-content-for-recurring-invites&quot;&gt;Offer unique content for recurring invites&lt;/h4&gt;
+
+&lt;p&gt;Unique in-game content is desirable: epic chests, legendary crystals, space cats, you name it. The goal is to come up with a perk that users can get only by inviting their friends to the game.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/recurring-events.png&quot; alt=&quot;Unique unicorn cat for friend invites&quot; class=&quot;phone-landscape&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Unique unicorn cat for friend invites. Castle Cats by PocApp&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The designers of Castle Cats came up with the idea to run recurring quests to invite friends to the game with the unique “Minty Heart” cat as a reward for completing the quest.&lt;/p&gt;
+
+&lt;h4 id=&quot;increase-rewards-with-each-invited-friend&quot;&gt;Increase rewards with each invited friend&lt;/h4&gt;
+
+&lt;p&gt;Another mechanic is to increase the reward for each invited friend. You can also reset the invite counter every week to create a spike at the beginning of the next week.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/increase-rewards.png&quot; alt=&quot;Increasing chest rewards for friend invites&quot; class=&quot;phone-portrait&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Increasing chest rewards for friend invites. Sonic Forces Speed Battle by SEGA&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Sonic Forces implemented the first part of this mechanic and for every recruited friend, they rewarded the sender with bigger and bigger chests, finishing with an epic chest for the 5th friend.&lt;/p&gt;
+
+&lt;h3 id=&quot;level-3-invites-as-a-core-game-mechanic&quot;&gt;Level 3. Invites as a core game mechanic&lt;/h3&gt;
+
+&lt;p&gt;Both of the previous examples required changes not only to the UI, but also to game mechanics and economy. The next and deepest level of integration is when the game is designed around friend invites.&lt;/p&gt;
+
+&lt;p&gt;For multiplayer games, friend invites is a way to start a session with anyone, even if they don’t have the app installed. When the session is created, all the joining details are attached to the deferred deep link and sent through one of the social channels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/level-3-flow.png&quot; alt=&quot;Level 3 flow&quot; class=&quot;width-75percent&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Integrating such friend invites into your core game mechanics can take anywhere &lt;strong&gt;from days to weeks&lt;/strong&gt;. It all depends on how deep you want the integration to be and how many of the required features can be provided by the third party SDK you’re going to use.&lt;/p&gt;
+
+&lt;p&gt;Hard work on the game design phase pays off. We saw apps that are sending over 140 invites per 1000 DAU, which is 22 times (!) higher than “Level 1” integration metrics.&lt;/p&gt;
+
+&lt;h3 id=&quot;fine-tuning&quot;&gt;Fine tuning&lt;/h3&gt;
+
+&lt;p&gt;To get optimum results you have to tune each step of the invite flow: entry point, invite message, sender’s reward, receiver on-boarding, and receiver’s reward.&lt;/p&gt;
+
+&lt;p&gt;It can take time to test all the steps in this flow. When looking at the friend invite funnel as a whole, based on GetSocial data, the biggest improvements come from making a share button visible and fine-tuning the invite message.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/fine-tunin-flow.png&quot; alt=&quot;Fine tuning flow&quot; class=&quot;phone-landscape&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To fine-tune variables even faster you can use an A/B testing tool. A few months ago, Unity released &lt;a href=&quot;https://docs.unity3d.com/Manual/UnityAnalyticsABTesting.html&quot;&gt;native A/B testing tools&lt;/a&gt;. On the Unity dashboard, they let you define variables, provide a couple of variations, define which metric will determine the winner and configure the best performing value for all users from the Unity Dashboard.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;As with anything, the deeper you go with your integration the better results you will get. By following these best practices, you can push the number of invites sent and conversion to the upper bound of the chart.&lt;/p&gt;
+
+&lt;p&gt;Personally, I’d start with a simple “Level 1” integration and add an invite button. If your game is more fun with friends, a tighter “Level 3” integration can yield amazing results. And if you’re building a single-player experience, rewarded invites are the sweet spot between time invested and return.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 28 Nov 2018 10:20:38 +0800</pubDate>
+        <link>http://v.zasadnyy.com/blog/how-to-get-the-most-out-of-friend-invites-in-your-app</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/how-to-get-the-most-out-of-friend-invites-in-your-app</guid>
+        
+        
+        <category>user-acquisition</category>
+        
+        <category>getsocial</category>
+        
+      </item>
+    
+      <item>
+        <title>Running successful call for papers</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/running-successfull-cfp/header.jpeg&quot; alt=&quot;Header&quot; class=&quot;width-75percent&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;How to distinguish good submission from a poor one? How to check if speakers have enough expertise to speak? And even if they are experts, how to check that they can share knowledge from the stage and not mumble for 40 minutes?&lt;/p&gt;
+
+&lt;p&gt;Keep reading to find what we at GDG Lviv learned from 6 years of running local events and one of the biggest and the most influential DevFest in the world.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-toask&quot;&gt;What to ask?&lt;/h3&gt;
+
+&lt;p&gt;Asking the right questions will give you enough information to make a decision. Below you can find a list of questions with explanations that we ask, and we don’t ask anymore in our call for papers.&lt;/p&gt;
+
+&lt;h4 id=&quot;speaker-details&quot;&gt;Speaker details&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Details for website&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Name, Surname, Title, Company&lt;/strong&gt; as separate fields, it’s easier to merge data later, rather than decouple.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bio.&lt;/strong&gt; Keep it short, people don’t read full bios in any case. We limit it to 500 characters.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Links to social profiles.&lt;/strong&gt; Attendees like to connect with speakers plus it gives you more resources for the background check.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Background check for program committee&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;[removed] On what languages can you deliver the talk?&lt;/strong&gt; We removed the question when decided to do 100% English speaking event.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[removed] What is the level of your English?&lt;/strong&gt; Removed, as everyone is evaluating his level of proficiency subjectively (or just lying). Unfortunately, we learned it in a hard way and got a lot of bad comments in the feedback.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Links to your talk recordings.&lt;/strong&gt; That’s the most, I’ll repeat the most valuable question you may ask. It gives you a chance to see the speaker in action, on the stage. You’ll check language and public speaking skills. The only warning, video can show what person is capable of but do not guarantee the same delivery quality on your event (different topic, time constraints for the preparation, it can be anything). If you want to be sure - look for a proven track record of successful presentations.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Where are you going to travel from?&lt;/strong&gt; If you cover the travel expenses this question will help you to evaluate the budget needed to bring the speaker.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[removed] Are you a GDE?&lt;/strong&gt; A real story, we had a couple of submissions from speakers that said that they are GDEs, but they had no clue what does abbreviation mean (just in case, GDE means Google Developer Expert).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;If you are a GDE, link to your profile in the directory?&lt;/strong&gt; Asking for a link to the official directory helps us to avoid issues like with the previous question.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;session-details&quot;&gt;Session details&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Details for the website&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Title.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Abstract.&lt;/strong&gt; Keep it short, people do not like read the text. We limit it to 500 characters. The abstract should say what attendees are going to learn from the session. If abstract is very generic it often means that speaker does not have what to share.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Session complexity.&lt;/strong&gt; We use: Beginner, Intermediate, Expert.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Track.&lt;/strong&gt; We use: Mobile, Web, Cloud, Other.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Details for the programme committee&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;If you did this talk on the other events, please list them.&lt;/strong&gt; Conferences in the same area often share the audience. This question will allow you to avoid content duplication with the other events around.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/running-successfull-cfp/special-berry.jpeg&quot; alt=&quot;Photo by Jessica Ruscello&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;which-cfp-platform-tochoose&quot;&gt;Which CFP platform to choose?&lt;/h3&gt;
+
+&lt;p&gt;Call for papers involves a lot of data entry from the speaker side and even more content for you to review. Selecting the tool that will support both parties is crucial.&lt;/p&gt;
+
+&lt;p&gt;Up to 2018, we were using Google Forms for CFP. It was not the perfect solution, but we could collect data, somehow analyze it, and publish on the website. We’ve automated a lot of processes to save time and would use it till now, but then Dave Cheney happened:&lt;/p&gt;
+
+&lt;center&gt;&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;smh. google forms is the worst way to run a conference cfp. No way to edit the cfp after submission. Multi page forms are especially bad.&lt;/p&gt;&amp;mdash; Dave Cheney (@davecheney) &lt;a href=&quot;https://twitter.com/davecheney/status/876386399037014016?ref_src=twsrc%5Etfw&quot;&gt;June 18, 2017&lt;/a&gt;&lt;/blockquote&gt;&lt;/center&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;For 2018 we decided to push DevFest Ukraine CFP to the next level. We analyzed platforms available on the market from three view points:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pricing, UI, UX&lt;/li&gt;
+  &lt;li&gt;how easy is it to use from speaker perspective&lt;/li&gt;
+  &lt;li&gt;how powerful is it from organizer perspective&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are the results:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/running-successfull-cfp/cfp-comparison-table.png&quot; alt=&quot;CFP comparision table&quot; class=&quot;width-75percent&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A couple more tools didn’t make into the comparison table because they didn’t satisfy our basic requirements:
+- &lt;a href=&quot;https://easychair.org/&quot;&gt;EasyChair&lt;/a&gt;. Looks powerful but UI is so 2000.
+- &lt;a href=&quot;https://airtable.com/&quot;&gt;Airtable&lt;/a&gt;. A generic data collection solution, similar to Google Forms. We were looking for CFP platform, Airtable is too generic.
+- &lt;a href=&quot;https://github.com/pyvec/cz.pycon.org-2018#&quot;&gt;Open CFP&lt;/a&gt;. A full featured call for papers management system. Open source and looks good. One big downside, you have to host it on your own.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Special thanks to Zan Markan and everyone on Facebook and Twitter who shared CFP tools they use.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;devfest-ukraine-toolchain&quot;&gt;DevFest Ukraine toolchain&lt;/h3&gt;
+
+&lt;p&gt;We decided to go with Sessionize. It is paid. But offers the best UI, the best UX from speakers perspective and has a great review process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/running-successfull-cfp/sessionize-dashboard.png&quot; alt=&quot;Sessionize dashboard&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I hope you enjoyed reading. Do you want to learn more about content management at DevFest Ukraine? What kind of speakers are we looking for? Where do we look for them? 
+ 
+Feel free to ask questions in the comments. If there will be enough interest, I’ll turn it into the post… Let the discussion begin.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 May 2018 10:20:38 +0800</pubDate>
+        <link>http://v.zasadnyy.com/blog/running-succesfull-cfp</link>
+        <guid isPermaLink="true">http://v.zasadnyy.com/blog/running-succesfull-cfp</guid>
+        
+        
+        <category>gdg</category>
+        
+        <category>devfest</category>
+        
+      </item>
+    
+      <item>
+        <title>Public API design resources</title>
         <description>&lt;p&gt;Around a year ago, we at &lt;a href=&quot;https://getsocial.im&quot;&gt;GetSocial&lt;/a&gt; decided to rebuild our mobile SDKs from scratch, utilizing 4 years of experience and all best practices possible. The year has come to an end, we’re doing last preparations before publishing new shiny SKD and decided to share our findings and pitfalls we had along the way.&lt;/p&gt;
 
 &lt;p&gt;To start with, I’m going to share the collection of books, videos, presentations and other resources that we collected and were using during public API design of our new SDK.&lt;/p&gt;
@@ -50,7 +295,7 @@
 
 &lt;p&gt;If you’re interested in the topic and want to learn more, visit my talk at &lt;a href=&quot;http://romobos.com/&quot;&gt;Mobile Operating Systems Conference&lt;/a&gt; that is going to take place in Cluj-Napoca, Romania on February 16-17th. I’m going to share key findings and failures our team had during the complete rewrite of GetSocial SDK.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 16 Dec 2016 17:20:38 +0700</pubDate>
+        <pubDate>Fri, 16 Dec 2016 18:20:38 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/building-mobile-sdk-resources</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/building-mobile-sdk-resources</guid>
         
@@ -62,7 +307,7 @@
       </item>
     
       <item>
-        <title>Challenges in building Unity native plugins. Intro</title>
+        <title>Challenges in building Unity native plugins</title>
         <description>&lt;h3 id=&quot;prehistory&quot;&gt;Prehistory&lt;/h3&gt;
 
 &lt;p&gt;Half a year ago GetSocial Mobile team had to prepare and release SDK v.3.0 with a lot of new cool features and breaking changes from 2.x version. Just in that time I’ve joined a company and had a chance to make a complete revamp of Unity SDK.Half a year ago GetSocial Mobile team released SDK v.3.0 with a lot of new cool features and breaking changes from 2.x version. Since then, I’ve joined GetSocial and have had an opportunity to make a complete revamp of their Unity SDK.&lt;/p&gt;
@@ -160,7 +405,7 @@
 
 &lt;p&gt;It was only a first post from the series, follow GetSocial on social networks in order not to miss updates and don’t hesitate to share your thoughts and experience with building Unity plugins in comments.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Aug 2015 09:20:38 +0700</pubDate>
+        <pubDate>Wed, 05 Aug 2015 10:20:38 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</guid>
         
@@ -242,7 +487,7 @@
 &lt;p&gt;Download demo Unity project from &lt;a href=&quot;/files/posts/unity-issue-non-class-resources-are-not-copied-to-final-apk-demo.zip&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 17 Feb 2015 09:20:38 +0700</pubDate>
+        <pubDate>Tue, 17 Feb 2015 10:20:38 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</guid>
         
@@ -318,7 +563,7 @@ Test devices table&lt;/p&gt;
 &lt;p&gt;Do you use other devices for game testing? Share your list in the comments.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 10 Jun 2014 03:20:38 +0700</pubDate>
+        <pubDate>Tue, 10 Jun 2014 04:20:38 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/best-test-devices-for-game-development</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/best-test-devices-for-game-development</guid>
         
@@ -382,7 +627,7 @@ Test devices table&lt;/p&gt;
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 11 Mar 2014 20:31:43 +0700</pubDate>
+        <pubDate>Tue, 11 Mar 2014 21:31:43 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</guid>
         
@@ -483,7 +728,7 @@ Test devices table&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 13 Feb 2014 20:14:41 +0700</pubDate>
+        <pubDate>Thu, 13 Feb 2014 21:14:41 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</guid>
         
@@ -596,7 +841,7 @@ Test devices table&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 12 Feb 2014 19:42:57 +0700</pubDate>
+        <pubDate>Wed, 12 Feb 2014 20:42:57 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</guid>
         
@@ -637,7 +882,7 @@ Test devices table&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Update (29.01.14):&lt;/strong&gt; Unity releases version 4.3.4, where issue should be fixed. Download it &lt;a href=&quot;http://unity3d.com/unity/whats-new/unity-4.3.4&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Jan 2014 04:16:46 +0700</pubDate>
+        <pubDate>Mon, 20 Jan 2014 05:16:46 +0800</pubDate>
         <link>http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</link>
         <guid isPermaLink="true">http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</guid>
         
@@ -645,181 +890,6 @@ Test devices table&lt;/p&gt;
         <category>unity3d</category>
         
         <category>productivity</category>
-        
-      </item>
-    
-      <item>
-        <title>Android form validation - the right way</title>
-        <description>&lt;p&gt;After quite a long pause, I’m getting back with a new series of posts. And we’ll start with Android &lt;code&gt;EditText&lt;/code&gt; form validations.&lt;/p&gt;
-
-&lt;p&gt;At first let’s define that Android form - it is a set of EditText’s whose data should be processed. There are two main steps to make processing successful: data input and data validation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/android-form-validation-right-way/z-validations-valid-form.png&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;
-Chuck Noris is always valid&lt;/p&gt;
-
-&lt;h4 id=&quot;data-input&quot;&gt;Data input&lt;/h4&gt;
-
-&lt;p&gt;In order to make user input easy and comfortable, we need to configure &lt;code&gt;EditText&lt;/code&gt; properly, here is some tips on it:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;put constraints by specifying the type of keyboard you want for your &lt;code&gt;EditText&lt;/code&gt; with &lt;code&gt;android:inputType&lt;/code&gt; attribute. For example, if you want the user to input only digits write &lt;code&gt;android:inputType=&quot;number&quot;&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;besides specifying keyboard type using &lt;code&gt;android:inputType&lt;/code&gt; attribute you can define other behaviors such as, whether to capitalize all new words or use features like auto-complete and spelling suggestions, e. g.  &lt;code&gt;android:inputType=&quot;textCapWords|textNoSuggestions&quot;&lt;/code&gt;, note that you can put several markers using bitwise operator&lt;/li&gt;
-  &lt;li&gt;probably you’ll want to disable fullscreen keyboard on landscape mode, you can do this using &lt;code&gt;android:imeOptions=&quot;flagNoExtractUi&quot;&lt;/code&gt; attribute&lt;/li&gt;
-  &lt;li&gt;pre-fill form data and provide auto-complete if possible, for example in email registration form you can get user email from &lt;code&gt;AccountManager&lt;/code&gt;, &lt;a href=&quot;http://stackoverflow.com/a/2175688/731775&quot;&gt;example from Roman Nurik on stackoverflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;validate and submit the form when user press enter on last EditText field, here code snippet I use:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mTextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnEditorActionListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OnEditorActionListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onEditorAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actionId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditorInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;IME_ACTION_DONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;n&quot;&gt;validateAndSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&amp;#x7d;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Here is a code snippet from a layout file with described above attributes:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;EditText&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/postal_address&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:inputType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textPostalAddress|textCapWords&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:autoText=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:editable=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:selectAllOnFocus=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:singleLine=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:imeOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;flagNoExtractUi&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;na&quot;&gt;android:hint=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter postal address&quot;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;     &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;data-validation&quot;&gt;Data validation&lt;/h4&gt;
-
-&lt;p&gt;Question is not how to validate, but &lt;strong&gt;how to show validation errors in a user-friendly way&lt;/strong&gt;?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)&quot;&gt;Android API&lt;/a&gt; provide &lt;code&gt;public void setError(CharSequence error, Drawable icon)&lt;/code&gt; method on EditText instance to display errors.&lt;/p&gt;
-
-&lt;p&gt;As form validation is quite a common task, there are several third party libraries for that, e.g.:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/throrin19/Android-Validator&quot;&gt;Android-Validator by Benjamin Besse&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ragunathjawahar/android-saripaar&quot;&gt;Android Saripaar by Ragunath Jawahar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both of this libraries use default API to display errors, and personally I don’t like it because when there are a lot of validation rules neglectful user can get screen like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/android-form-validation-right-way/z-validations-bad-example.png&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;
-Too many errors on one screen&lt;/p&gt;
-
-&lt;p&gt;So what is &lt;em&gt;“the right way”&lt;/em&gt;? Main idea is to help user &lt;strong&gt;solve errors one by one&lt;/strong&gt;. There are several things to do when validation error happens:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;find the first text view where validation failed&lt;/li&gt;
-  &lt;li&gt;request focus for it: &lt;code&gt;mTextView.requestFocus()&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;show error message, I prefer using Crouton library: &lt;code&gt;Crouton.makeText(mActivity, message, Style.ALERT).show()&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;open keyboard so user can start typing instantly:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;InputMethodManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InputMethodManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSystemService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;INPUT_METHOD_SERVICE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;// only will trigger it if no physical keyboard is open&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;n&quot;&gt;imm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;showSoftInput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mTextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;I’ve created the small library with a sample project where you can find all examples from this post. Check it out on &lt;a href=&quot;https://github.com/zasadnyy/z-validations&quot;&gt;GitHub&lt;/a&gt; or install &lt;a href=&quot;https://play.google.com/store/apps/details?id=ua.org.zasadnyy.sample.zvalidations&quot;&gt;Demo app from Google Play&lt;/a&gt;. Sample code of creating validation form:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NotEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NotEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addField&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Field&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;using&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mAge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InRange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isValid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Form is valid&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/android-form-validation-right-way/z-validations-not-in-range.png&quot; alt=&quot;image&quot; class=&quot;medium-width&quot; /&gt;
-Failed InRange validation&lt;/p&gt;
-
-&lt;h5 id=&quot;useful-links&quot;&gt;Useful links&lt;/h5&gt;
-
-&lt;p&gt;&lt;em&gt;(I’ll update lists every time I find related topics)&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://developer.android.com/guide/topics/ui/controls/text.html&quot;&gt;Post about text input on d.android.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 04 Aug 2013 05:14:17 +0700</pubDate>
-        <link>http://v.zasadnyy.com/blog/android-form-validation-right-way</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/android-form-validation-right-way</guid>
-        
-        
-        <category>android</category>
-        
-        <category>best practices</category>
-        
-      </item>
-    
-      <item>
-        <title>Cyrillic app name incorrectly encoded during porting Android app to Blackberry</title>
-        <description>&lt;p&gt;Today I’ll describe bug in the latest version of &lt;code&gt;apk2bar&lt;/code&gt; (version 1.5.0) tool provided by Blackberry for converting Android apk apps to bar.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“If debugging is the process of removing software bugs, then programming must be the process of putting them in.”
-Edsger Dijkstra&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I had a small problem with displaying Cyrillic app name on PlayBook and BB10 simulator. App name was incorrectly encoded from Russian after converting using apk2bar tool. Problem appeared after updating bb eclipse plugin from version 1.3 to 1.5, with plugin v.1.3 it worked just ok (the same issue was with command line tools).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/app-name-incorrectly-encoded/blackberry-10-screenshot.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When I got problems with encoding with bb eclipse plugin, I decided to do the same thing with command line tools.&lt;/p&gt;
-
-&lt;p&gt;After tools setup (sing keys, debug tokens, etc), I’ve tried to repackage my apk file with this command (source apk file was in apk/ folder and destination for bar file was bar/ folder)&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;./apk2bar apk/ -d bbplaybookdebugtoken.bar -t bar/ -a &lt;span class=&quot;s2&quot;&gt;&quot;zasadnyy&quot;&lt;/span&gt; -cg&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;When I’ve got .bar file, I’ve installed it with command:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;/batchbar-deploy bar/ 192.168.1.35 mysecretpass&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Unfortunately result was unsuccessful, app name was incorrectly encoded again. After first fail, I’ve read documentation a bit more and tried to use &lt;a href=&quot;http://developer.blackberry.com/android/documentation/creating_a_custom_manifest_file_2016828_11.htm&quot;&gt;approach described on developer.blackberry.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;When I unzipped bar file and opened &lt;code&gt;MANIFEST.MS&lt;/code&gt;- I’ve found this line:&lt;/p&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Application-Name: –ì–µ—Ä–æ–∏&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;According to documentation solution should be quite strait-forward:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Rename &lt;code&gt;MANIFEST.MS&lt;/code&gt; to &lt;code&gt;&amp;lt;you apk name&amp;gt;.mf&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Update incorrect properties, in my case I’ve changed line from above to &lt;code&gt;&quot;Application-Name: Герои&quot;&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Put edited manifest file in the same folder as &lt;code&gt;&amp;lt;your apk name&amp;gt;.apk&lt;/code&gt; and rerun &lt;code&gt;apk2bar&lt;/code&gt; tool with &lt;code&gt;-m&lt;/code&gt; parameter, e.g.:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;./apk2bar apk/ -d bbplaybookdebugtoken.bar -t bar/ -a &lt;span class=&quot;s2&quot;&gt;&quot;zasadnyy&quot;&lt;/span&gt; -m -cg&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;p&gt;Repackage, deploy, run and ….. and again &lt;strong&gt;FAIL&lt;/strong&gt;. Application name was “–ì–µ—Ä–æ–∏”.&lt;/p&gt;
-
-&lt;p&gt;After second fail, I decided to make dirty hack. I’ve edited &lt;code&gt;MANIFEST.MF&lt;/code&gt; directly in repackaged bar file (Unzip → edit manifest → zip → change file extension to .bar).&lt;/p&gt;
-
-&lt;p&gt;Deploy updated .bar file to playbook and …. &lt;strong&gt;YEAH&lt;/strong&gt;, we’ve got Cyrillic app name!&lt;/p&gt;
-
-&lt;h5 id=&quot;conclusion-and-fix&quot;&gt;Conclusion and FIX:&lt;/h5&gt;
-&lt;ul&gt;
-  &lt;li&gt;Looks like in 1.5 release if apk2bar tool manifest encoding is misconfigured (in ver. 1.3 it worked just ok)&lt;/li&gt;
-  &lt;li&gt;In order to FIX issue: unzip unsigned bar file → edit manifest → zip → change file extension back to .bar&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 28 Jan 2013 04:16:46 +0700</pubDate>
-        <link>http://v.zasadnyy.com/blog/cyrillic-app-name-incorrectly-encoded</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/cyrillic-app-name-incorrectly-encoded</guid>
-        
-        
-        <category>blackberry</category>
-        
-        <category>bug</category>
         
       </item>
     
