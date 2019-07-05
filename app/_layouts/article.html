@@ -39,7 +39,7 @@
                     <li>
                         <span class="name">Share with:</span> {% assign articleUrl = page.url | prepend: site.baseurl | prepend: site.url %}
                         <span class="value">
-								<a href="#" onclick="window.open('https://plus.google.com/share?url={{ articleUrl }}', 'newwindow', 'width=600, height=500'); return false;">Google+</a>
+								<a href="#" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ articleUrl }}&summary={{ page.title }}', 'newwindow', 'width=600, height=500'); return false;">LinkedIn</a>
 						</span>
                         <span>&#8226;</span>
                         <span class="value">
@@ -80,7 +80,7 @@
 
                 <hr> Share with:
                 <span class="value">
-					<a href="#" onclick="window.open('https://plus.google.com/share?url={{ articleUrl }}', 'newwindow', 'width=600, height=500'); return false;">Google+</a>
+					<a href="#" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ articleUrl }}&summary={{ page.title }}', 'newwindow', 'width=600, height=500'); return false;">LinkedIn</a>
 				</span>
                 <span>&#8226;</span>
                 <span class="value">
