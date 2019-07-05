@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description></description>
-    <link>http://v.zasadnyy.com/</link>
-    <atom:link href="http://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 21 Feb 2019 23:37:22 +0800</pubDate>
-    <lastBuildDate>Thu, 21 Feb 2019 23:37:22 +0800</lastBuildDate>
+    <link>https://v.zasadnyy.com/</link>
+    <atom:link href="https://v.zasadnyy.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 05 Jul 2019 11:10:06 +0300</pubDate>
+    <lastBuildDate>Fri, 05 Jul 2019 11:10:06 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -140,9 +140,9 @@
 &lt;p&gt;Personally, I’d start with a simple “Level 1” integration and add an invite button. If your game is more fun with friends, a tighter “Level 3” integration can yield amazing results. And if you’re building a single-player experience, rewarded invites are the sweet spot between time invested and return.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 28 Nov 2018 10:20:38 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/how-to-get-the-most-out-of-friend-invites-in-your-app</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/how-to-get-the-most-out-of-friend-invites-in-your-app</guid>
+        <pubDate>Wed, 28 Nov 2018 04:20:38 +0200</pubDate>
+        <link>https://v.zasadnyy.com/blog/how-to-get-the-most-out-of-friend-invites-in-your-app</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/how-to-get-the-most-out-of-friend-invites-in-your-app</guid>
         
         
         <category>mobile</category>
@@ -245,9 +245,9 @@
  
 Feel free to ask questions in the comments. If there will be enough interest, I’ll turn it into the post… Let the discussion begin.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 07 May 2018 10:20:38 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/running-succesfull-cfp</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/running-succesfull-cfp</guid>
+        <pubDate>Mon, 07 May 2018 05:20:38 +0300</pubDate>
+        <link>https://v.zasadnyy.com/blog/running-succesfull-cfp</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/running-succesfull-cfp</guid>
         
         
         <category>gdg</category>
@@ -276,7 +276,7 @@ Feel free to ask questions in the comments. If there will be enough interest, I�
 
 &lt;p&gt;&lt;a href=&quot;https://people.mpi-inf.mpg.de/~jblanche/api-design.pdf&quot;&gt;The Little Manual of API Design&lt;/a&gt; by Jasmin Blanchette from Nokia. A book very similar by content to presentation “How to Design a Good API and Why it Matters” by Joshua Bloch, but for Qt developers.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://wiki.apidesign.org/wiki/TheAPIBook&quot;&gt;The API Book&lt;/a&gt; is a website created by Jaroslav Tulach. It contains practical advice and solutions to everyday problems during API design and implementation process. If you have a question on what is a better way to implement something, there is a good chance that answer is there.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.apidesign.org/wiki/TheAPIBook&quot;&gt;The API Book&lt;/a&gt; is a website created by Jaroslav Tulach. It contains practical advice and solutions to everyday problems during API design and implementation process. If you have a question on what is a better way to implement something, there is a good chance that answer is there.&lt;/p&gt;
 
 &lt;h4 id=&quot;presentations&quot;&gt;Presentations&lt;/h4&gt;
 
@@ -284,22 +284,22 @@ Feel free to ask questions in the comments. If there will be enough interest, I�
 
 &lt;p&gt;&lt;a href=&quot;https://channel9.msdn.com/blogs/pdc2008/pc58&quot;&gt;Framework Design Guidelines&lt;/a&gt; - is an extract from the book by Krzysztof Cwalina and Brad Abramscreated mentioned above. If the book is too much for you, check this video.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=C2A3MjCA3I4&quot;&gt;Mobile SDK - Considerations &amp;amp; Best Practices&lt;/a&gt; - presentation by Yaron Karasik, a developer from live chat platform Liveperson. I found this presentation especially useful, as it is &lt;strong&gt;focused on mobile&lt;/strong&gt; and also covers best practices about size, resource usage, etc. Slides are available on &lt;a href=&quot;http://www.slideshare.net/LivePersonDev/mobile-sdk-considerations-best-practices&quot;&gt;Slideshare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=C2A3MjCA3I4&quot;&gt;Mobile SDK - Considerations &amp;amp; Best Practices&lt;/a&gt; - presentation by Yaron Karasik, a developer from live chat platform Liveperson. I found this presentation especially useful, as it is &lt;strong&gt;focused on mobile&lt;/strong&gt; and also covers best practices about size, resource usage, etc. Slides are available on &lt;a href=&quot;https://www.slideshare.net/LivePersonDev/mobile-sdk-considerations-best-practices&quot;&gt;Slideshare&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;blog-posts&quot;&gt;Blog Posts&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://dzone.com/articles/how-design-good-regular-api&quot;&gt;How to Design a Good, Regular API&lt;/a&gt; - a great article that focuses on importance of &lt;strong&gt;Regularity&lt;/strong&gt; in the library with the examples on how Java API violates this rule.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://mattgemmell.com/api-design/&quot;&gt;API Design Rules for iOS and OS X&lt;/a&gt; - by Matt Gemmell, a collection of 25 rules for great API that covers class interface, protocols, and notifications.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mattgemmell.com/api-design/&quot;&gt;API Design Rules for iOS and OS X&lt;/a&gt; - by Matt Gemmell, a collection of 25 rules for great API that covers class interface, protocols, and notifications.&lt;/p&gt;
 
 &lt;h3 id=&quot;want-to-learn-more&quot;&gt;Want to learn more?&lt;/h3&gt;
 
 &lt;p&gt;This is the list of the top picks from our team, if you have any suggestions, please share your resources in the comments.&lt;/p&gt;
 
-&lt;p&gt;If you’re interested in the topic and want to learn more, visit my talk at &lt;a href=&quot;http://romobos.com/&quot;&gt;Mobile Operating Systems Conference&lt;/a&gt; that is going to take place in Cluj-Napoca, Romania on February 16-17th. I’m going to share key findings and failures our team had during the complete rewrite of GetSocial SDK.&lt;/p&gt;
+&lt;p&gt;If you’re interested in the topic and want to learn more, visit my talk at &lt;a href=&quot;https://romobos.com/&quot;&gt;Mobile Operating Systems Conference&lt;/a&gt; that is going to take place in Cluj-Napoca, Romania on February 16-17th. I’m going to share key findings and failures our team had during the complete rewrite of GetSocial SDK.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 16 Dec 2016 18:20:38 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/building-mobile-sdk-resources</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/building-mobile-sdk-resources</guid>
+        <pubDate>Fri, 16 Dec 2016 12:20:38 +0200</pubDate>
+        <link>https://v.zasadnyy.com/blog/building-mobile-sdk-resources</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/building-mobile-sdk-resources</guid>
         
         
         <category>apidesign</category>
@@ -407,9 +407,9 @@ Feel free to ask questions in the comments. If there will be enough interest, I�
 
 &lt;p&gt;It was only a first post from the series, follow GetSocial on social networks in order not to miss updates and don’t hesitate to share your thoughts and experience with building Unity plugins in comments.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Aug 2015 10:20:38 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</guid>
+        <pubDate>Wed, 05 Aug 2015 05:20:38 +0300</pubDate>
+        <link>https://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/challenges-in-building-unity-native-plugins-intro</guid>
         
         
         <category>unity3d</category>
@@ -489,9 +489,9 @@ Feel free to ask questions in the comments. If there will be enough interest, I�
 &lt;p&gt;Download demo Unity project from &lt;a href=&quot;/files/posts/unity-issue-non-class-resources-are-not-copied-to-final-apk-demo.zip&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 17 Feb 2015 10:20:38 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</guid>
+        <pubDate>Tue, 17 Feb 2015 04:20:38 +0200</pubDate>
+        <link>https://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/unity-issue-non-class-resources-are-not-copied-to-final-apk</guid>
         
         
         <category>unity3d</category>
@@ -565,9 +565,9 @@ Test devices table&lt;/p&gt;
 &lt;p&gt;Do you use other devices for game testing? Share your list in the comments.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 10 Jun 2014 04:20:38 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/best-test-devices-for-game-development</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/best-test-devices-for-game-development</guid>
+        <pubDate>Mon, 09 Jun 2014 23:20:38 +0300</pubDate>
+        <link>https://v.zasadnyy.com/blog/best-test-devices-for-game-development</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/best-test-devices-for-game-development</guid>
         
         
         <category>unity3d</category>
@@ -629,9 +629,9 @@ Test devices table&lt;/p&gt;
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 11 Mar 2014 21:31:43 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</guid>
+        <pubDate>Tue, 11 Mar 2014 15:31:43 +0200</pubDate>
+        <link>https://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-2-assets-organization</guid>
         
         
         <category>unity3d</category>
@@ -730,9 +730,9 @@ Test devices table&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 13 Feb 2014 21:14:41 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</guid>
+        <pubDate>Thu, 13 Feb 2014 15:14:41 +0200</pubDate>
+        <link>https://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-1-reserved-folders</guid>
         
         
         <category>unity3d</category>
@@ -843,9 +843,9 @@ Test devices table&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/mastering-unity-project-folder-structure-level-2-assets-organization/&quot;&gt;Level 2 – Assets folder organization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 12 Feb 2014 20:42:57 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</guid>
+        <pubDate>Wed, 12 Feb 2014 14:42:57 +0200</pubDate>
+        <link>https://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/mastering-unity-project-folder-structure-level-0-vcs</guid>
         
         
         <category>unity3d</category>
@@ -884,9 +884,9 @@ Test devices table&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Update (29.01.14):&lt;/strong&gt; Unity releases version 4.3.4, where issue should be fixed. Download it &lt;a href=&quot;http://unity3d.com/unity/whats-new/unity-4.3.4&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Jan 2014 05:16:46 +0800</pubDate>
-        <link>http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</link>
-        <guid isPermaLink="true">http://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</guid>
+        <pubDate>Sun, 19 Jan 2014 23:16:46 +0200</pubDate>
+        <link>https://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</link>
+        <guid isPermaLink="true">https://v.zasadnyy.com/blog/how-to-make-unity-work-better-on-maverick</guid>
         
         
         <category>unity3d</category>
