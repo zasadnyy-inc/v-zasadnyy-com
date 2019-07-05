@@ -9,7 +9,7 @@ post: true
 external: true
 sourceName: "Unity Blog"
 sourceUrl: "https://blogs.unity3d.com/2018/11/28/how-to-get-the-most-out-of-friend-invites-in-your-app"
-image: "http://v.zasadnyy.com/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/hero.png"
+image: "https://v.zasadnyy.com/img/posts/how-to-get-the-most-out-of-friend-invites-in-your-app/hero.png"
 ---
 
 An easy and free way to grow your user base is by asking existing users to invite their friends (Friend invites).

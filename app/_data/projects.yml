@@ -4,7 +4,7 @@
     -
       title: "DevFest Ukraine"
       description: "The biggest Google tech conference in CEE. 1000+ attendees and 40+ speakers."
-      project_page: "http://devfest.gdg.org.ua"
+      project_page: "https://devfest.gdg.org.ua"
       tags: ["android", "web", "cloud"]
       featured: true
 -

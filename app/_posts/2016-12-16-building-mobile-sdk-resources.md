@@ -33,7 +33,7 @@ Below you can find a collection of top resources that I collected around the web
 
 [The Little Manual of API Design](https://people.mpi-inf.mpg.de/~jblanche/api-design.pdf) by Jasmin Blanchette from Nokia. A book very similar by content to presentation "How to Design a Good API and Why it Matters" by Joshua Bloch, but for Qt developers.
 
-[The API Book](http://wiki.apidesign.org/wiki/TheAPIBook) is a website created by Jaroslav Tulach. It contains practical advice and solutions to everyday problems during API design and implementation process. If you have a question on what is a better way to implement something, there is a good chance that answer is there.
+[The API Book](https://wiki.apidesign.org/wiki/TheAPIBook) is a website created by Jaroslav Tulach. It contains practical advice and solutions to everyday problems during API design and implementation process. If you have a question on what is a better way to implement something, there is a good chance that answer is there.
 
 
 #### Presentations
@@ -42,18 +42,18 @@ Below you can find a collection of top resources that I collected around the web
 
 [Framework Design Guidelines](https://channel9.msdn.com/blogs/pdc2008/pc58) - is an extract from the book by Krzysztof Cwalina and Brad Abramscreated mentioned above. If the book is too much for you, check this video.
 
-[Mobile SDK - Considerations & Best Practices](https://www.youtube.com/watch?v=C2A3MjCA3I4) - presentation by Yaron Karasik, a developer from live chat platform Liveperson. I found this presentation especially useful, as it is **focused on mobile** and also covers best practices about size, resource usage, etc. Slides are available on [Slideshare](http://www.slideshare.net/LivePersonDev/mobile-sdk-considerations-best-practices).
+[Mobile SDK - Considerations & Best Practices](https://www.youtube.com/watch?v=C2A3MjCA3I4) - presentation by Yaron Karasik, a developer from live chat platform Liveperson. I found this presentation especially useful, as it is **focused on mobile** and also covers best practices about size, resource usage, etc. Slides are available on [Slideshare](https://www.slideshare.net/LivePersonDev/mobile-sdk-considerations-best-practices).
 
 
 
 #### Blog Posts
 [How to Design a Good, Regular API](https://dzone.com/articles/how-design-good-regular-api) - a great article that focuses on importance of **Regularity** in the library with the examples on how Java API violates this rule.
 
-[API Design Rules for iOS and OS X](http://mattgemmell.com/api-design/) - by Matt Gemmell, a collection of 25 rules for great API that covers class interface, protocols, and notifications. 
+[API Design Rules for iOS and OS X](https://mattgemmell.com/api-design/) - by Matt Gemmell, a collection of 25 rules for great API that covers class interface, protocols, and notifications. 
 
 
 ### Want to learn more?
 
 This is the list of the top picks from our team, if you have any suggestions, please share your resources in the comments.
 
-If you're interested in the topic and want to learn more, visit my talk at [Mobile Operating Systems Conference](http://romobos.com/) that is going to take place in Cluj-Napoca, Romania on February 16-17th. I'm going to share key findings and failures our team had during the complete rewrite of GetSocial SDK.
+If you're interested in the topic and want to learn more, visit my talk at [Mobile Operating Systems Conference](https://romobos.com/) that is going to take place in Cluj-Napoca, Romania on February 16-17th. I'm going to share key findings and failures our team had during the complete rewrite of GetSocial SDK.

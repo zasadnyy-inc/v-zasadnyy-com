@@ -4,11 +4,11 @@ past:
   description: "Presentation about porting Web MMO games to Android and iOS. Sharing own experience and best practices."
   thumbnail: "thumb_porting_web_games_tips.png"
   details_url: ""
-  slides_url: "http://prezi.com/ud0ga5eigfeh/porting-web-mmo-games-to-native-platforms-tips-tricks/"
+  slides_url: "https://prezi.com/ud0ga5eigfeh/porting-web-mmo-games-to-native-platforms-tips-tricks/"
   slides_provider: prezi
   recording: "https://www.youtube.com/watch?v=oOpgnjOVViM"
   conference: "GameDev Lviv Conference"
-  conference_url: "http://gamedev.lviv.ua/"
+  conference_url: "https://gamedev.lviv.ua/"
   date: 2013-02-12
 -
   title: "Oh!Mobile! S1E2. Android intro"
@@ -48,7 +48,7 @@ past:
   description: "This presentation is quick walkthrough new Android build system, it core features (dependency management, build types, build flavors, etc)"
   thumbnail: "thumb_gradle.png"
   details_url: ""
-  slides_url: "http://zasadnyy.github.io/gradle-slides/"
+  slides_url: "https://zasadnyy.github.io/gradle-slides/"
   slides_provider: embeded_page
   recording: ""
   conference: "GDG DevFest Tbilisi"
@@ -59,7 +59,7 @@ past:
   description: "Presentation prepared for Android Workshop in scope of GDG DevFest Tbilisi 2013. "
   thumbnail: "thumb_being_productive_android_dev.png"
   details_url: ""
-  slides_url: "http://zasadnyy.github.io/doing-better-on-android-hackathon-slides/"
+  slides_url: "https://zasadnyy.github.io/doing-better-on-android-hackathon-slides/"
   slides_provider: embeded_page
   recording: ""
   conference: "GDG DevFest Tbilisi"
@@ -70,7 +70,7 @@ past:
   description: "Presentation from my talk at TEDxLNU event that took place on December 14, 2013. It's not technical presentation about when future will come and how it will look like."
   thumbnail: "thumb_tedx_lnu.png"
   details_url: ""
-  slides_url: "http://prezi.com/c2ieboc6hkxe/tedxlnu/"
+  slides_url: "https://prezi.com/c2ieboc6hkxe/tedxlnu/"
   slides_provider: prezi
   recording: "https://www.youtube.com/watch?v=uYf_txh0bd0"
   conference: "TEDxLNU"
@@ -94,7 +94,7 @@ past:
   details_url: ""
   slides_url: "https://prezi.com/knzyaibx-srn/ok-glass-play-a-game/"
   slides_provider: prezi
-  recording: "http://www.paylas.com/video/ok-glass-play-a-game-with-vitaliy-zasadnyy"
+  recording: "https://www.paylas.com/video/ok-glass-play-a-game-with-vitaliy-zasadnyy"
   conference: "Droidcon Moskow"
   conference_url: "http://droidcon.moscow/"
   date: 2014-05-16
@@ -118,7 +118,7 @@ past:
   slides_provider: speakerdeck
   recording: ""
   conference: "IT Arena Lviv"
-  conference_url: "http://itarena.lviv.ua/"
+  conference_url: "https://itarena.lviv.ua/"
   date: 2014-09-06
 -
   title: "Wearables Architectures or how to ping your watch"
@@ -140,7 +140,7 @@ past:
   slides_provider: speakerdeck
   recording: "https://www.youtube.com/watch?v=oOpgnjOVViM"
   conference: "Casual Connect Europe"
-  conference_url: "http://europe.casualconnect.org/"
+  conference_url: "https://europe.casualconnect.org/"
   date: 2015-02-04
 -
   title: "Reach 4 million Unity developers with your Android library"
